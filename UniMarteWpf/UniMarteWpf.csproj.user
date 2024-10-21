@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="Apresentacao\Adm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Apresentacao\Login.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Apresentacao\Obras.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Apresentacao\Satisfacao.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ControleCustomizado\Gerenciador.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ControleCustomizado\TecladoVirtual.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Apresentacao\Cadastro.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Apresentacao\Adm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Apresentacao\Login.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Apresentacao\Obras.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Apresentacao\Satisfacao.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ControleCustomizado\Gerenciador.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ControleCustomizado\TecladoVirtual.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Apresentacao\Cadastro.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Apresentacao\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

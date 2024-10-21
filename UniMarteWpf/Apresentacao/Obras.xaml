@@ -1,0 +1,100 @@
+﻿<Window x:Class="UniMarteWpf.Apresentacao.Obras"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UniMarteWpf.Apresentacao"
+        mc:Ignorable="d"
+        Title="Obras" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Images/Fundo.jpg"/>
+        </Grid.Background>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- StackPanel para os botões de navegação -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20">
+        </StackPanel>
+
+        <!-- Viewbox para manter a escala proporcional -->
+        <Viewbox Grid.Row="0" Margin="20" Stretch="Uniform">
+            <Grid>
+                <!-- Grid para controle das posições e tamanhos das imagens -->
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Border BorderBrush="#FF3F51B5" BorderThickness="4" CornerRadius="10" >
+                    <Rectangle Name="IndicativoAnterior" 
+                       Grid.Column="1" 
+                       Fill="LightGray" 
+                       Visibility="Collapsed" 
+                       Opacity="0.2" 
+                       Margin="0,0,-250,0" 
+                       Width="400" 
+                       Height="550" 
+                       Stroke="DarkGray" 
+                       StrokeThickness="2" />
+                </Border>
+
+                <Border BorderBrush="#FF3F51B5" BorderThickness="4" CornerRadius="10" Panel.ZIndex="0">
+                    <Image x:Name="ImagemAnterior"
+                   Grid.Column="1"
+                   Width="400" Height="550"
+                   Opacity="0.4"  
+                   Stretch="UniformToFill"
+                   Margin="0,0,-250,0"/>
+                </Border>
+
+                <Border BorderBrush="#FF3F51B5" BorderThickness="4" CornerRadius="10" Panel.ZIndex="2">
+                    <Image x:Name="ImagemAtual"
+                   Grid.Column="2"
+                   Width="480" Height="600"
+                   Opacity="1"
+                   Stretch="UniformToFill"/>
+                </Border>
+
+                <Border BorderBrush="#FF3F51B5" BorderThickness="4" CornerRadius="10" Panel.ZIndex="0">
+                    <Image x:Name="ImagemPosterior"
+                   Grid.Column="3"
+                   Width="400" Height="550"
+                   Opacity="0.4"  
+                   Stretch="UniformToFill"
+                   Margin="-250,0,0,0"/>
+                </Border>
+
+                <Border BorderBrush="#FF3F51B5" BorderThickness="4" CornerRadius="10" >
+                    <Rectangle Name="IndicativoPosterior" 
+                       Grid.Column="3" 
+                       Fill="LightGray" 
+                       Visibility="Collapsed" 
+                       Opacity="0.2" 
+                       Margin="-250,0,0,0" 
+                       Width="400" 
+                       Height="550" 
+                       Stroke="DarkGray" 
+                       StrokeThickness="2" />
+                </Border>
+
+            </Grid>
+        </Viewbox>
+
+        <!-- StackPanel com os botões de navegação -->
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="50">
+            <Button x:Name="BotaoAnterior" Height="50" Width="200" Content="Anterior" FontSize="28" Margin="0,0,100,0" Click="BotaoAnterior_Click"/>
+            <Button x:Name="BotaoProximo" Height="50" Width="200" Content="Próximo" FontSize="28" Margin="100,0,0,0" Click="BotaoProximo_Click"/>
+        </StackPanel>
+
+        <Button x:Name="BotaoQuestionario" Content="Questionário"
+        FontSize="22" VerticalAlignment="Bottom" HorizontalAlignment="Right" 
+        Margin="0,0,29,50" Height="50" Width="200" Click="BotaoQuestionario_Click" Grid.Row="1"/>
+    </Grid>
+</Window>

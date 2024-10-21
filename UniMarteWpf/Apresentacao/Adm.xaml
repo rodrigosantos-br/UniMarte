@@ -1,0 +1,24 @@
+﻿<Window x:Class="UniMarteWpf.Apresentacao.Adm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:wpf="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
+        xmlns:local="clr-namespace:UniMarteWpf.Apresentacao"
+        mc:Ignorable="d"
+        Title="Adm" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel VerticalAlignment="Center">
+            <Button x:Name="btnRelatorio" Content="Relatorio PowerBI" Height="50" Width="200" Margin="40" Click="Relatorio_Click"/>
+            <Button x:Name="btnGerenciadorUsuarios" Content="Gerenciador de Usuários" Height="50" Width="200" Margin="40" Click="Gerencia_Click"/>
+            <Button x:Name="btnFinalizarSoftware" Content="Fechar Aplicação" Height="50" Width="200" Margin="40" Click="FinalizarSoftware_Click"/>
+        </StackPanel>
+        <Grid Name="grdGerenciador" Grid.Column="1">
+            <wpf:WebView2 x:Name="powerBIWebView" />
+        </Grid>
+    </Grid>
+</Window>
