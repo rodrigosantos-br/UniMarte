@@ -1,7 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 using UniMarteWpf.Modelo;
-using UniMarteWpf.Negocio;
+using UniMarteWpf.Modelo.Controle;
 
 namespace UniMarteWpf.Apresentacao
 {
@@ -53,11 +53,11 @@ namespace UniMarteWpf.Apresentacao
             // Verificar qual controle está ativo
             if (activeControl is TextBox textBox)
             {
-                Utils.TecladoUtils.ProcessKeyPress(key, textBox, currentWindow);
+                Utils.TecladoUtils.ProcessarTeclaPressionada(key, textBox, currentWindow);
             }
             else if (activeControl is PasswordBox passwordBox)
             {
-                Utils.TecladoUtils.ProcessKeyPress(key, passwordBox, currentWindow);
+                Utils.TecladoUtils.ProcessarTeclaPressionada(key, passwordBox, currentWindow);
             }
         }
     }

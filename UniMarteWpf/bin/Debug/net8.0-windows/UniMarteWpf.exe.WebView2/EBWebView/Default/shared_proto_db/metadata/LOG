@@ -1,2 +1,3 @@
-2024/10/21-15:59:56.399 1b4 Creating DB C:\Projects\UniMarte\UniMarteWpf\bin\Debug\net8.0-windows\UniMarteWpf.exe.WebView2\EBWebView\Default\shared_proto_db\metadata since it was missing.
-2024/10/21-15:59:56.427 1b4 Reusing MANIFEST C:\Projects\UniMarte\UniMarteWpf\bin\Debug\net8.0-windows\UniMarteWpf.exe.WebView2\EBWebView\Default\shared_proto_db\metadata/MANIFEST-000001
+2024/10/27-10:48:24.527 45b4 Reusing MANIFEST C:\Projects\UniMarte\UniMarteWpf\bin\Debug\net8.0-windows\UniMarteWpf.exe.WebView2\EBWebView\Default\shared_proto_db\metadata/MANIFEST-000001
+2024/10/27-10:48:24.527 45b4 Recovering log #3
+2024/10/27-10:48:24.528 45b4 Reusing old log C:\Projects\UniMarte\UniMarteWpf\bin\Debug\net8.0-windows\UniMarteWpf.exe.WebView2\EBWebView\Default\shared_proto_db\metadata/000003.log 

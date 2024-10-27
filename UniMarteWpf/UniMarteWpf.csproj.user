@@ -2,7 +2,13 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
+    <Compile Update="Apresentacao\AdicionarUsuario.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Apresentacao\Adm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Apresentacao\EditarUsuario.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Apresentacao\Login.xaml.cs">
@@ -14,10 +20,19 @@
     <Compile Update="Apresentacao\Satisfacao.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="ControleCustomizado\Gerenciador.xaml.cs">
+    <Compile Update="Modelo\ControleCustomizado\EscolhaObra.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="ControleCustomizado\TecladoVirtual.xaml.cs">
+    <Compile Update="Modelo\ControleCustomizado\Estrelas.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Modelo\ControleCustomizado\Gerenciador.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Modelo\ControleCustomizado\SimNao.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Modelo\ControleCustomizado\TecladoVirtual.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Apresentacao\Cadastro.xaml.cs">
@@ -25,7 +40,13 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Apresentacao\AdicionarUsuario.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Apresentacao\Adm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Apresentacao\EditarUsuario.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Apresentacao\Login.xaml">
@@ -37,10 +58,22 @@
     <Page Update="Apresentacao\Satisfacao.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="ControleCustomizado\Gerenciador.xaml">
+    <Page Update="Estilo\EstiloBotao.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="ControleCustomizado\TecladoVirtual.xaml">
+    <Page Update="Modelo\ControleCustomizado\EscolhaObra.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Modelo\ControleCustomizado\Estrelas.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Modelo\ControleCustomizado\Gerenciador.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Modelo\ControleCustomizado\SimNao.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Modelo\ControleCustomizado\TecladoVirtual.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Apresentacao\Cadastro.xaml">

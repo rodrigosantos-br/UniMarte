@@ -1,0 +1,13 @@
+2024/10/27-10:46:47.912 18d4 Reusing MANIFEST C:\Projects\UniMarte\UniMarteWpf\bin\Debug\net8.0-windows\UniMarteWpf.exe.WebView2\EBWebView\Default\Session Storage/MANIFEST-000001
+2024/10/27-10:46:47.914 18d4 Recovering log #373
+2024/10/27-10:46:47.919 18d4 Reusing old log C:\Projects\UniMarte\UniMarteWpf\bin\Debug\net8.0-windows\UniMarteWpf.exe.WebView2\EBWebView\Default\Session Storage/000373.log 
+2024/10/27-10:46:47.920 18d4 Delete type=2 #375
+2024/10/27-10:46:47.921 3f5c Compacting 4@0 + 1@1 files
+2024/10/27-10:46:47.937 3f5c Generated table #376@0: 2263 keys, 82567 bytes
+2024/10/27-10:46:47.938 3f5c Compacted 4@0 + 1@1 files => 82567 bytes
+2024/10/27-10:46:47.939 3f5c compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/10/27-10:46:47.942 3f5c Delete type=2 #363
+2024/10/27-10:46:47.942 3f5c Delete type=2 #365
+2024/10/27-10:46:47.943 3f5c Delete type=2 #368
+2024/10/27-10:46:47.943 3f5c Delete type=2 #371
+2024/10/27-10:46:47.943 3f5c Delete type=2 #374

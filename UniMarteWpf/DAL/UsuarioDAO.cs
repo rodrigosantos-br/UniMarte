@@ -1,4 +1,5 @@
 ﻿using Microsoft.Data.SqlClient;
+using UniMarteWpf.Estatico;
 using UniMarteWpf.Modelo;
 
 namespace UniMarteWpf.DAL
@@ -11,7 +12,7 @@ namespace UniMarteWpf.DAL
             
             SqlConnection con = Conexao.Conectar();
             
-            String sql = "INSERT INTO Usuario (NomeUsuario, Senha, NomeCompleto, Idade, Email) VALUES NomeUsuario, @Senha, @NomeCompleto, @Idade, @Email)";
+            String sql = "INSERT INTO Usuario (NomeUsuario, Senha, NomeCompleto, Idade, Email) VALUES (@NomeUsuario, @Senha, @NomeCompleto, @Idade, @Email)";
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.Parameters.AddWithValue("@NomeUsuario", usuario.NomeUsuario);
             cmd.Parameters.AddWithValue("@Senha", usuario.Senha);
@@ -33,6 +34,32 @@ namespace UniMarteWpf.DAL
             {
                 Conexao.Desconectar();
             }
+        }
+
+        public List<Usuario> ObterTodosUsuarios()
+        {
+            List<Usuario> usuarios = new List<Usuario>();
+            using (SqlConnection con = Conexao.Conectar())
+            {
+                string sql = "SELECT * FROM Usuario";
+                SqlCommand cmd = new SqlCommand(sql, con);
+
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    usuarios.Add(new Usuario
+                    {
+                        Id = (int)reader["Id"],
+                        NomeUsuario = reader["NomeUsuario"].ToString(),
+                        Senha = reader["Senha"].ToString(),
+                        NomeCompleto = reader["NomeCompleto"].ToString(),
+                        Idade = (int)reader["Idade"],
+                        Email = reader["Email"].ToString()
+                    });
+                }
+                Conexao.Desconectar();
+            }
+            return usuarios;
         }
 
         public Usuario ObterUsuarioPorNome(string nomeUsuario)
@@ -75,9 +102,10 @@ namespace UniMarteWpf.DAL
         {
             SqlConnection con = Conexao.Conectar();
             
-            string sql = "UPDATE Usuario SET NomeCompleto = @NomeCompleto, Idade = @Idade, Email = @Email WHERE NomeUsuario = @NomeUsuario";
+            string sql = "UPDATE Usuario SET NomeCompleto = @NomeCompleto, Idade = @Idade, Senha = @Senha, Email = @Email WHERE NomeUsuario = @NomeUsuario";
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.Parameters.AddWithValue("@NomeUsuario", usuario.NomeUsuario);
+            cmd.Parameters.AddWithValue("@Senha", usuario.Senha);
             cmd.Parameters.AddWithValue("@NomeCompleto", usuario.NomeCompleto);
             cmd.Parameters.AddWithValue("@Idade", usuario.Idade);
             cmd.Parameters.AddWithValue("@Email", usuario.Email);
@@ -104,9 +132,20 @@ namespace UniMarteWpf.DAL
             string sql = "DELETE FROM Usuario WHERE NomeUsuario = @NomeUsuario";
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.Parameters.AddWithValue("@NomeUsuario", nomeUsuario);
-
-            cmd.ExecuteNonQuery();
-            return true;
+            try
+            {
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                this.mensagem = "Erro ao excluir usuário";
+                return false;
+            }
+            finally
+            {
+                Conexao.Desconectar();
+            }
         }
     }
 }

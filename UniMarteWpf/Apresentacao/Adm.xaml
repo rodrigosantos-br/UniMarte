@@ -4,21 +4,58 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:wpf="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
+        xmlns:custom="clr-namespace:UniMarteWpf.Modelo.ControleCustomizado"
         xmlns:local="clr-namespace:UniMarteWpf.Apresentacao"
         mc:Ignorable="d"
-        Title="Adm" Height="450" Width="800">
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <StackPanel VerticalAlignment="Center">
-            <Button x:Name="btnRelatorio" Content="Relatorio PowerBI" Height="50" Width="200" Margin="40" Click="Relatorio_Click"/>
-            <Button x:Name="btnGerenciadorUsuarios" Content="Gerenciador de Usuários" Height="50" Width="200" Margin="40" Click="Gerencia_Click"/>
-            <Button x:Name="btnFinalizarSoftware" Content="Fechar Aplicação" Height="50" Width="200" Margin="40" Click="FinalizarSoftware_Click"/>
-        </StackPanel>
-        <Grid Name="grdGerenciador" Grid.Column="1">
-            <wpf:WebView2 x:Name="powerBIWebView" />
-        </Grid>
-    </Grid>
+        Title="Adm" WindowState="Maximized" WindowStyle="None" d:DesignWidth="1079" d:DesignHeight="612">
+    <Border CornerRadius="20">
+        <Border.Background>
+            <ImageBrush ImageSource="/Imagens/Fundo.jpg" Stretch="UniformToFill" />
+        </Border.Background>
+
+        <Border BorderThickness="5" Opacity="0.75" >
+            <Border.BorderBrush>
+                <LinearGradientBrush StartPoint="0 0" EndPoint="1 1">
+                    <GradientStop Color ="DarkBlue" Offset="0"/>
+                    <GradientStop Color ="DarkViolet" Offset="0.75"/>
+                    <GradientStop Color ="Purple" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0 0" EndPoint="1 1">
+                    <GradientStop Color ="DarkBlue" Offset="0"/>
+                    <GradientStop Color ="Black" Offset="0.75"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel VerticalAlignment="Center" Margin="50">
+                    <Button x:Name="btnRelatorio" Content="Relatorio PowerBI" FontSize="20" BorderThickness="0"
+                            Foreground="White" FontFamily="Montserrat"  Height="40" Width="250"
+                            VerticalAlignment="Center"  HorizontalAlignment="Center" Cursor="Hand"
+                            Style="{StaticResource Padrao}" Margin="0 50 0 0" Click="Relatorio_Click"/>
+                    <Button x:Name="btnGerenciadorUsuarios" Content="Gerenciador de Usuários" FontSize="20" BorderThickness="0"
+                            Foreground="White" FontFamily="Montserrat"  Height="40" Width="250"
+                            VerticalAlignment="Center"  HorizontalAlignment="Center" Cursor="Hand"
+                            Style="{StaticResource Padrao}" Margin="0 50 0 0" Click="Gerencia_Click"/>
+                    <Button x:Name="btnFecharAdm" Content="Fechar Adm" FontSize="20" BorderThickness="0"
+                            Foreground="White" FontFamily="Montserrat"  Height="40" Width="250"
+                            VerticalAlignment="Center"  HorizontalAlignment="Center" Cursor="Hand"
+                            Style="{StaticResource Padrao}" Margin="0 50 0 0" Click="FecharAdm_Click" />
+                    <Button x:Name="btnFinalizarSoftware" Content="Fechar Aplicação" FontSize="20" BorderThickness="0"
+                            Foreground="White" FontFamily="Montserrat"  Height="40" Width="250"
+                            VerticalAlignment="Center"  HorizontalAlignment="Center" Cursor="Hand"
+                            Style="{StaticResource Padrao}" Margin="0 50 0 0" Click="FinalizarSoftware_Click"/>
+                </StackPanel>
+                <Grid Name="grdGerenciador" Grid.Column="1" Background="Transparent">
+                    <wpf:WebView2 x:Name="powerBIWebView" />
+                    <custom:Gerenciador Visibility="Collapsed" />
+                </Grid>
+            </Grid>
+        </Border>
+    </Border>
 </Window>

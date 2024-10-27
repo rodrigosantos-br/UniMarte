@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UniMarteWpf.Apresentacao"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" WindowState="Maximized" WindowStyle="None">
     <Grid MouseDown="Grid_MouseDown">
         <!-- Imagem de fundo -->
         <Image x:Name="BackgroundImage" Stretch="UniformToFill"/>
@@ -20,7 +20,7 @@
             </Grid.ColumnDefinitions>
 
             <!-- Logotipo -->
-            <Image Source="/Images/logo.png" Height="80" VerticalAlignment="Center" Margin="100,10,10,10"/>
+            <Image Source="/Imagens/logo.png" Height="80" VerticalAlignment="Center" Margin="100,10,10,10"/>
 
             <!-- Espaço para Propaganda -->
             <TextBlock Text="Espaço para Propaganda" 

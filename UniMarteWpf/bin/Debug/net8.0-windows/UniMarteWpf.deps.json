@@ -9,6 +9,7 @@
       "UniMarteWpf/1.0.0": {
         "dependencies": {
           "Azure.Storage.Blobs": "12.22.2",
+          "FontAwesome.Sharp": "6.6.0",
           "Microsoft.EntityFrameworkCore": "8.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.10",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.10",
@@ -77,6 +78,14 @@
           "lib/net6.0/Azure.Storage.Common.dll": {
             "assemblyVersion": "12.21.1.0",
             "fileVersion": "12.2100.124.51010"
+          }
+        }
+      },
+      "FontAwesome.Sharp/6.6.0": {
+        "runtime": {
+          "lib/net8.0-windows7.0/FontAwesome.Sharp.dll": {
+            "assemblyVersion": "6.6.0.0",
+            "fileVersion": "6.6.0.0"
           }
         }
       },
@@ -992,6 +1001,13 @@
       "sha512": "sha512-NgDJw/upcro33AgGf91sPIG+BU2pFTgGDBzWEp8HctGwzmbjG80eYTl4CJMIwgxVOQWnEXnQZXLY7w3k+BQ9ig==",
       "path": "azure.storage.common/12.21.1",
       "hashPath": "azure.storage.common.12.21.1.nupkg.sha512"
+    },
+    "FontAwesome.Sharp/6.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bJCb2x73UC1nD9+9iMLaUy6Ujf9Pf+buL6FHwVnaoDYT4CQNLazz59hO5gQ0+SMSW0G+ZXmjjShOYr3Jn2UZiw==",
+      "path": "fontawesome.sharp/6.6.0",
+      "hashPath": "fontawesome.sharp.6.6.0.nupkg.sha512"
     },
     "Humanizer.Core/2.14.1": {
       "type": "package",

@@ -22,9 +22,9 @@ namespace UniMarteWpf.Apresentacao
             // Definir o caminho das imagens
             imagePaths = new string[]
             {
-                "/Images/UniMarte.jpg",
-                "/Images/MarteTerra.jpg",
-                "/Images/UniMarteInterior.jpg"
+                "/Imagens/UniMarte.jpg",
+                "/Imagens/MarteTerra.jpg",
+                "/Imagens/UniMarteInterior.jpg"
             };
             currentImageIndex = 0;
 

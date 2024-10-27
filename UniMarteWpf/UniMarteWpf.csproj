@@ -9,26 +9,30 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Images\estrelaBom.png" />
-    <None Remove="Images\estrelaBomCinza.png" />
-    <None Remove="Images\estrelaOtimo.png" />
-    <None Remove="Images\estrelaOtimoCinza.png" />
-    <None Remove="Images\estrelaPessimo.png" />
-    <None Remove="Images\estrelaPessimoCinza.png" />
-    <None Remove="Images\estrelaRegular.png" />
-    <None Remove="Images\estrelaRegularCinza.png" />
-    <None Remove="Images\estrelaRuim.png" />
-    <None Remove="Images\estrelaRuimCinza.png" />
-    <None Remove="Images\Fundo.jpg" />
-    <None Remove="Images\FundoLogin.jpg" />
-    <None Remove="Images\Logo.png" />
-    <None Remove="Images\marca-de-verificacao.png" />
-    <None Remove="Images\MarteTerra.jpg" />
-    <None Remove="Images\passwordBox.jpeg" />
-    <None Remove="Images\seta-esquerda.png" />
-    <None Remove="Images\UniMarte.jpg" />
-    <None Remove="Images\UniMarteInterior.jpg" />
-    <None Remove="Images\usuario.jpg" />
+    <None Remove="Imagens\DataNascimento.png" />
+    <None Remove="Imagens\estrelaBom.png" />
+    <None Remove="Imagens\estrelaBomCinza.png" />
+    <None Remove="Imagens\estrelaOtimo.png" />
+    <None Remove="Imagens\estrelaOtimoCinza.png" />
+    <None Remove="Imagens\estrelaPessimo.png" />
+    <None Remove="Imagens\estrelaPessimoCinza.png" />
+    <None Remove="Imagens\estrelaRegular.png" />
+    <None Remove="Imagens\estrelaRegularCinza.png" />
+    <None Remove="Imagens\estrelaRuim.png" />
+    <None Remove="Imagens\estrelaRuimCinza.png" />
+    <None Remove="Imagens\Fundo.jpg" />
+    <None Remove="Imagens\FundoLogin.jpg" />
+    <None Remove="Imagens\Logo.png" />
+    <None Remove="Imagens\marca-de-verificacao.png" />
+    <None Remove="Imagens\Marte.jpg" />
+    <None Remove="Imagens\MarteTerra.jpg" />
+    <None Remove="Imagens\Nome.png" />
+    <None Remove="Imagens\passwordBox.jpeg" />
+    <None Remove="Imagens\pesquisar.png" />
+    <None Remove="Imagens\seta-esquerda.png" />
+    <None Remove="Imagens\UniMarte.jpg" />
+    <None Remove="Imagens\UniMarteInterior.jpg" />
+    <None Remove="Imagens\usuario.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -37,6 +41,7 @@
 
   <ItemGroup>
     <PackageReference Include="Azure.Storage.Blobs" Version="12.22.2" />
+    <PackageReference Include="FontAwesome.Sharp" Version="6.6.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.10">
@@ -51,64 +56,76 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Images\estrelaBom.png">
+    <Resource Include="Imagens\DataNascimento.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Images\estrelaBomCinza.png">
+    <Resource Include="Imagens\estrelaBom.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Images\estrelaOtimo.png">
+    <Resource Include="Imagens\estrelaBomCinza.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Images\estrelaOtimoCinza.png">
+    <Resource Include="Imagens\estrelaOtimo.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Images\estrelaPessimo.png">
+    <Resource Include="Imagens\estrelaOtimoCinza.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Images\estrelaPessimoCinza.png">
+    <Resource Include="Imagens\estrelaPessimo.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Images\estrelaRegular.png">
+    <Resource Include="Imagens\estrelaPessimoCinza.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Images\estrelaRegularCinza.png">
+    <Resource Include="Imagens\estrelaRegular.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Images\estrelaRuim.png">
+    <Resource Include="Imagens\estrelaRegularCinza.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Images\estrelaRuimCinza.png">
+    <Resource Include="Imagens\estrelaRuim.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Images\Fundo.jpg">
+    <Resource Include="Imagens\estrelaRuimCinza.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Images\FundoLogin.jpg">
+    <Resource Include="Imagens\Fundo.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Images\Logo.png">
+    <Resource Include="Imagens\FundoLogin.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Images\marca-de-verificacao.png">
+    <Resource Include="Imagens\Logo.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Images\MarteTerra.jpg">
+    <Resource Include="Imagens\marca-de-verificacao.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Images\passwordBox.jpeg">
+    <Resource Include="Imagens\Marte.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Images\seta-esquerda.png">
+    <Resource Include="Imagens\MarteTerra.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Images\UniMarte.jpg">
+    <Resource Include="Imagens\Nome.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Images\UniMarteInterior.jpg">
+    <Resource Include="Imagens\passwordBox.jpeg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Images\usuario.jpg">
+    <Resource Include="Imagens\pesquisar.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagens\seta-esquerda.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagens\UniMarte.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagens\UniMarteInterior.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagens\usuario.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

@@ -1,6 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
-using UniMarteWpf.Model;
+using UniMarteWpf.Modelo;
+using UniMarteWpf.Modelo.Controle;
 
 namespace UniMarteWpf.Apresentacao
 {
@@ -25,7 +26,7 @@ namespace UniMarteWpf.Apresentacao
                 Window currentWindow = Window.GetWindow(this);
 
                 // Processar a tecla pressionada
-                Utils.TecladoUtils.ProcessKeyPress(key, activeControl, currentWindow);
+                Utils.TecladoUtils.ProcessarTeclaPressionada(key, activeControl, currentWindow);
             }
             // Verifica se o texto é "entraradm" para exibir o botão
             if (txbNome.Text == "entraradm")
@@ -44,7 +45,6 @@ namespace UniMarteWpf.Apresentacao
         {
             activeControl = sender as Control; // Define o controle ativo como o que recebeu o foco
         }
-
 
         private void Cadastrar_Click(object sender, RoutedEventArgs e)
         {
@@ -78,7 +78,8 @@ namespace UniMarteWpf.Apresentacao
         private void btnAdm_Click(object sender, RoutedEventArgs e)
         {
             Login login = new Login();
-            login.ShowDialog();
+            login.Show();
+            this.Close();
         }
     }
 }

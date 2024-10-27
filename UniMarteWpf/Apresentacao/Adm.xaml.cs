@@ -1,6 +1,6 @@
 ﻿using Microsoft.Web.WebView2.Wpf;
 using System.Windows;
-using UniMarteWpf.ControleCustomizado;
+using UniMarteWpf.Modelo.ControleCustomizado;
 
 namespace UniMarteWpf.Apresentacao
 {
@@ -12,10 +12,10 @@ namespace UniMarteWpf.Apresentacao
         public Adm()
         {
             InitializeComponent();
-            LoadReport();
+            CarregarRelatorio();
         }
 
-        private void LoadReport()
+        private void CarregarRelatorio()
         {
             // Limpa o conteúdo anterior do Grid
             grdGerenciador.Children.Clear();
@@ -38,7 +38,7 @@ namespace UniMarteWpf.Apresentacao
         private void Relatorio_Click(object sender, RoutedEventArgs e)
         {
             grdGerenciador.Children.Clear();
-            LoadReport();
+            CarregarRelatorio();
         }
 
         public void Gerencia_Click(object sender, RoutedEventArgs e)
@@ -48,6 +48,12 @@ namespace UniMarteWpf.Apresentacao
             grdGerenciador.Children.Add(gerenciador);
         }
 
+        private void FecharAdm_Click(object sender, RoutedEventArgs e)
+        { 
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Close();
+        }
 
         private void FinalizarSoftware_Click(object sender, RoutedEventArgs e)
         {

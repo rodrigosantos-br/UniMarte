@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows;
-using UniMarteWpf.Apresentacao;
 
 namespace UniMarteWpf.Utils
 {
     internal class TecladoUtils
     {
-        public static void ProcessKeyPress(string key, Control activeControl, Window cadastroWindow)
+        public static void ProcessarTeclaPressionada(string key, Control activeControl, Window cadastroWindow)
         {
             // Verifica se o controle ativo é um TextBox
             if (activeControl is TextBox textBox)
@@ -63,24 +57,6 @@ namespace UniMarteWpf.Utils
                     }
                 }
             }
-
-            // Verifica se a tecla NEXT foi pressionada
-            if (key == "NEXT")
-            {
-                // Se o texto no TextBox NÃO for "entraradm", avançar para a próxima janela
-                if (!(activeControl is TextBox tb && tb.Text == "entraradm"))
-                {
-                    cadastroWindow.Hide(); // Esconde a janela atual
-
-                    // Exemplo de abertura de uma nova janela, altere "ProximaJanela" para a sua janela real
-                    var obras = new Obras(); // Substitua "ProximaJanela" pela classe da próxima janela
-                    obras.Show();
-
-                    // Fecha a janela atual, se necessário
-                    cadastroWindow.Close();
-                }
-            }
-
             // Foco e comportamento finalizado
             activeControl.Focus();
         }

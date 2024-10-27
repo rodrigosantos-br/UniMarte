@@ -3,10 +3,55 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:custom="clr-namespace:UniMarteWpf.Modelo.ControleCustomizado"
         xmlns:local="clr-namespace:UniMarteWpf.Apresentacao"
         mc:Ignorable="d"
-        Title="Satisfacao" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="Satisfacao" WindowState="Maximized" WindowStyle="None">
+    <Border CornerRadius="20">
+        <Border.Background>
+            <ImageBrush ImageSource="/Imagens/Fundo.jpg" Stretch="UniformToFill" />
+        </Border.Background>
+
+        <Border BorderThickness="5" Opacity="0.75" >
+            <Border.BorderBrush>
+                <LinearGradientBrush StartPoint="0 0" EndPoint="1 1">
+                    <GradientStop Color ="DarkBlue" Offset="0"/>
+                    <GradientStop Color ="DarkViolet" Offset="0.75"/>
+                    <GradientStop Color ="Purple" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0 0" EndPoint="1 1">
+                    <GradientStop Color ="DarkBlue" Offset="0"/>
+                    <GradientStop Color ="Black" Offset="0.75"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Grid Background="Lavender" Width="700" Height="500" Margin="50">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <!-- TextBlock para exibir a pergunta -->
+                <TextBlock x:Name="PerguntaTextBlock" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Black" Grid.Row="0" FontSize="42" Margin="10" TextWrapping="Wrap" />
+
+                <StackPanel x:Name="RespostaPanel" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10">
+                    <custom:EscolhaObra x:Name="EscolhaObra"/>
+                    <custom:Estrelas x:Name="Estrelas"/>
+                    <custom:SimNao x:Name="SimNao"/>
+                </StackPanel>
+                <!-- Botão para avançar para a próxima pergunta -->
+                <Button x:Name="btnProximaPergunta" Content="Próxima Pergunta" 
+                        FontSize="20" BorderThickness="0" Grid.Row="2" Click="ProximaPergunta_Click"
+                        Foreground="White" FontFamily="Montserrat"  Height="40" Width="250"
+                        VerticalAlignment="Center"  HorizontalAlignment="Center" Cursor="Hand"
+                        Style="{StaticResource Padrao}" Margin="0 50 0 0" />
+
+                <Button x:Name="btnSalvar" Content="FIM" Click="BtnSalvar_Click" FontSize="20" BorderThickness="0" Grid.Row="2" 
+                        Foreground="White" FontFamily="Montserrat" VerticalAlignment="Center"  HorizontalAlignment="Center" Cursor="Hand"
+                        Style="{StaticResource Padrao}" Margin="0 50 0 0" Visibility="Collapsed" Width="150" Height="50"/>
+            </Grid>
+        </Border>
+    </Border>
 </Window>
