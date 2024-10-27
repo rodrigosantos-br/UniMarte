@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Projects\UniMarte\UniMarteWpf\App.xaml
-14463791063
+15-1160300518
 3-105841400
-36-2015950402
+381907251031
 244-118024029
-Apresentacao\AdicionarUsuario.xaml;Apresentacao\Adm.xaml;Apresentacao\Cadastro.xaml;Apresentacao\EditarUsuario.xaml;Apresentacao\Login.xaml;Apresentacao\MainWindow.xaml;Apresentacao\Obras.xaml;Apresentacao\Satisfacao.xaml;Estilo\EstiloBotao.xaml;Modelo\ControleCustomizado\EscolhaObra.xaml;Modelo\ControleCustomizado\Estrelas.xaml;Modelo\ControleCustomizado\Gerenciador.xaml;Modelo\ControleCustomizado\SimNao.xaml;Modelo\ControleCustomizado\TecladoVirtual.xaml;
+Apresentacao\AdicionarUsuario.xaml;Apresentacao\Adm.xaml;Apresentacao\Cadastro.xaml;Apresentacao\EditarUsuario.xaml;Apresentacao\Login.xaml;Apresentacao\MainWindow.xaml;Apresentacao\Obras.xaml;Apresentacao\Satisfacao.xaml;Estilo\EstiloBotao.xaml;Modelo\ControleCustomizado\EscolhaObra.xaml;Modelo\ControleCustomizado\Estrelas.xaml;Modelo\ControleCustomizado\Gerenciador.xaml;Modelo\ControleCustomizado\Relatorio.xaml;Modelo\ControleCustomizado\SimNao.xaml;Modelo\ControleCustomizado\TecladoVirtual.xaml;
 
-False
+True
 

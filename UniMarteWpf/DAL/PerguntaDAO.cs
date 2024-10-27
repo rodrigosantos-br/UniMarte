@@ -48,32 +48,28 @@ namespace UniMarteWpf.DAL
             return perguntas; // Retorna as perguntas carregadas do banco de dados
         }
 
-        public void SalvarResposta(List<Resposta> respostas)
+        public void SalvarRespostas(List<Resposta> respostas)
         {
-            // Abrir uma nova conexão quando necessário, como ao salvar uma resposta
-            SqlConnection con = Conexao.Conectar();
-            
-            foreach (var resposta in respostas)
+            using (SqlConnection con = Conexao.Conectar())
             {
-                string sql = "INSERT INTO Resposta (IdPergunta,IdVisitante,RespostaVALUES (@idPergunta, @idVisitante, @resposta)";
-                SqlCommand command = new SqlCommand(sql, con);
-                command.Parameters.AddWithValue("@idPergunta", resposta.IdPergunta);
-                command.Parameters.AddWithValue("@idVisitante", resposta.IdVisitante);
-                command.Parameters.AddWithValue("@resposta", resposta.RespostaTexto);
-                try
+                foreach (var resposta in respostas)
                 {
-                    command.ExecuteNonQuery();
-                }
-                catch
-                {
-                    this.mensagem = "Erro ao salvar as respostas.";
-                }
-                finally
-                {
-                    Conexao.Desconectar();
+                    string sql = "INSERT INTO Resposta (IdPergunta, Resposta) VALUES (@idPergunta, @resposta)";
+                    SqlCommand command = new SqlCommand(sql, con);
+                    command.Parameters.AddWithValue("@idPergunta", resposta.IdPergunta);
+                    command.Parameters.AddWithValue("@resposta", resposta.RespostaTexto);
+
+                    try
+                    {
+                        command.ExecuteNonQuery();
+                    }
+                    catch (SqlException ex)
+                    {
+                        this.mensagem = "Erro ao salvar as respostas: " + ex.Message;
+                    }
                 }
             }
         }
     }
-
 }
+

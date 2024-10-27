@@ -24,27 +24,27 @@ namespace UniMarteWpf.Modelo.ControleCustomizado
             if (sender == estrelaPessimo)
             {
                 AtualizarImagem(estrelaPessimo, "/Imagens/estrelaPessimo.png");
-                respostaSelecionada = "Péssimo";
+                respostaSelecionada = "1";
             }
             else if (sender == estrelaRuim)
             {
                 AtualizarImagem(estrelaRuim, "/Imagens/estrelaRuim.png");
-                respostaSelecionada = "Ruim";
+                respostaSelecionada = "2";
             }
             else if (sender == estrelaRegular)
             {
                 AtualizarImagem(estrelaRegular, "/Imagens/estrelaRegular.png");
-                respostaSelecionada = "Regular";
+                respostaSelecionada = "3";
             }
             else if (sender == estrelaBom)
             {
                 AtualizarImagem(estrelaBom, "/Imagens/estrelaBom.png");
-                respostaSelecionada = "Bom";
+                respostaSelecionada = "4";
             }
             else if (sender == estrelaOtimo)
             {
                 AtualizarImagem(estrelaOtimo, "/Imagens/estrelaOtimo.png");
-                respostaSelecionada = "Ótimo";
+                respostaSelecionada = "5";
             }
         }
 
@@ -83,9 +83,9 @@ namespace UniMarteWpf.Modelo.ControleCustomizado
             }
         }
 
-        public string ObterResposta()
+        public List<Resposta> ObterResposta()
         {
-            return respostaSelecionada; // Retorna a resposta selecionada
+            return new List<Resposta> { new Resposta { RespostaTexto = respostaSelecionada } };
         }
     }
 }

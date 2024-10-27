@@ -32,9 +32,9 @@ namespace UniMarteWpf.Modelo.ControleCustomizado
             RespostaSelecionada = comboObras.SelectedItem?.ToString(); // Captura a resposta
         }
 
-        public string ObterResposta()
+        public List<Resposta> ObterResposta()
         {
-            return RespostaSelecionada; // Retorna a obra escolhida
+            return new List<Resposta> { new Resposta { RespostaTexto = RespostaSelecionada } };
         }
     }
 }

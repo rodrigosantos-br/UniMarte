@@ -27,9 +27,9 @@ namespace UniMarteWpf.Modelo.ControleCustomizado
             chkSim.IsChecked = false; // Desmarca "Sim"
         }
 
-        public string ObterResposta()
+        public List<Resposta> ObterResposta()
         {
-            return RespostaSelecionada; // Retorna a resposta escolhida
+            return new List<Resposta> { new Resposta { RespostaTexto = RespostaSelecionada } };
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using Microsoft.Data.SqlClient;
 using UniMarteWpf.Estatico;
 using UniMarteWpf.Modelo;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace UniMarteWpf.DAL
 {
@@ -22,6 +23,7 @@ namespace UniMarteWpf.DAL
             try
             {
                 cmd.ExecuteNonQuery();
+                SessaoVisitante.IdVisitante = Convert.ToInt32(cmd.ExecuteScalar());
                 return true;
             }
             catch (Exception e)

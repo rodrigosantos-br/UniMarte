@@ -2,6 +2,6 @@
 {
     public interface IResposta
     {
-        string ObterResposta();
+        List<Resposta> ObterResposta();
     }
 }

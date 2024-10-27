@@ -29,6 +29,9 @@
     <Compile Update="Modelo\ControleCustomizado\Gerenciador.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Modelo\ControleCustomizado\Relatorio.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Modelo\ControleCustomizado\SimNao.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -68,6 +71,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Modelo\ControleCustomizado\Gerenciador.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Modelo\ControleCustomizado\Relatorio.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Modelo\ControleCustomizado\SimNao.xaml">

@@ -1,6 +1,8 @@
 ﻿using System.Windows;
-using UniMarteWpf.Estatico;
+using UniMarteWpf.DAL;
+using UniMarteWpf.Modelo;
 using UniMarteWpf.Modelo.Controle;
+using UniMarteWpf.Modelo.ControleCustomizado;
 
 namespace UniMarteWpf.Apresentacao
 {
@@ -10,41 +12,56 @@ namespace UniMarteWpf.Apresentacao
     public partial class Satisfacao : Window
     {
         private PerguntaControle perguntaControle;
+        private PerguntaDAO perguntaDAO;
 
-        
         public Satisfacao()
         {
             InitializeComponent();
-            perguntaControle = new PerguntaControle();
-
-            // Carrega as perguntas na view, passando o StackPanel onde as perguntas serão exibidas
+            this.perguntaDAO = new PerguntaDAO();
+            // Inicializa PerguntaControle com os controles de respostas
+            this.perguntaControle = new PerguntaControle(new List<IResposta> {
+            new SimNao(), new EscolhaObra(), new Estrelas()
+        });
             perguntaControle.ExibirPerguntaAtual(PerguntaTextBlock, RespostaPanel);
         }
 
         // Evento do botão "Próxima"
         private void ProximaPergunta_Click(object sender, RoutedEventArgs e)
         {
+            // Salva a resposta antes de ir para a próxima pergunta
+            perguntaControle.SalvarResposta(RespostaPanel);
+
             if (perguntaControle.ProximaPergunta())
             {
-                perguntaControle.ExibirPerguntaAtual(PerguntaTextBlock, RespostaPanel); // Exibe a próxima pergunta
+                perguntaControle.ExibirPerguntaAtual(PerguntaTextBlock, RespostaPanel);
             }
             else if (perguntaControle.EhUltimaPergunta())
             {
-                
-                btnProximaPergunta.Visibility = Visibility.Collapsed; // Esconde o botão de próxima pergunta
-                btnSalvar.Visibility = Visibility.Visible;               // Mostra o botão de salvar
+                btnProximaPergunta.Visibility = Visibility.Collapsed;
+                btnSalvar.Visibility = Visibility.Visible;
             }
         }
 
         private void BtnSalvar_Click(object sender, RoutedEventArgs e)
         {
-            int idPergunta = perguntaControle.ObterIdPerguntaAtual();
+            // Coleta todas as respostas dos controles
+            List<Resposta> respostas = perguntaControle.ColetarRespostas();
+
+            // Salva as respostas no banco de dados associadas ao visitante atual
+            // Obtenha o ID da pergunta atual
+            int idPerguntaAtual = perguntaControle.ObterIdPerguntaAtual();
+
+            if (!perguntaControle.EhUltimaPergunta())
+            {
+                perguntaControle.SalvarResposta(RespostaPanel);
+                if (!perguntaControle.ProximaPergunta())
+                {
+                    MessageBox.Show("Questionário concluído.");
+                }
+            }
             
-            // Aqui você chama o método SalvarResposta do controle de perguntas, passando o ID do visitante e da pergunta
-            perguntaControle.SalvarResposta(idPergunta,AtualVisitanteId.atualVisitanteId, RespostaPanel);
-            MessageBox.Show("Respostas salvas com sucesso!"); // Mensagem de sucesso ao salvar
-            this.Close(); // Opcional: fecha a janela após salvar
         }
+
     }
 }
 
