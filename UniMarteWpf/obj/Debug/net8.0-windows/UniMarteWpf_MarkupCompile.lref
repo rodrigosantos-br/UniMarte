@@ -1,4 +1,4 @@
-﻿C:\Projects\UniMarte\UniMarteWpf\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+﻿
 FC:\Projects\UniMarte\UniMarteWpf\App.xaml;;
 FC:\Projects\UniMarte\UniMarteWpf\Apresentacao\AdicionarUsuario.xaml;;
 FC:\Projects\UniMarte\UniMarteWpf\Apresentacao\Adm.xaml;;
@@ -11,7 +11,6 @@ FC:\Projects\UniMarte\UniMarteWpf\Apresentacao\PopupSatisfacao.xaml;;
 FC:\Projects\UniMarte\UniMarteWpf\Apresentacao\Questionario.xaml;;
 FC:\Projects\UniMarte\UniMarteWpf\ControleCustomizado\EscolhaObra.xaml;;
 FC:\Projects\UniMarte\UniMarteWpf\ControleCustomizado\Estrelas.xaml;;
-FC:\Projects\UniMarte\UniMarteWpf\ControleCustomizado\EstrelasRelatorio.xaml;;
 FC:\Projects\UniMarte\UniMarteWpf\ControleCustomizado\Gerenciador.xaml;;
 FC:\Projects\UniMarte\UniMarteWpf\ControleCustomizado\Relatorio.xaml;;
 FC:\Projects\UniMarte\UniMarteWpf\ControleCustomizado\SimNao.xaml;;

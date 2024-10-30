@@ -3,16 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:UniMarteWpf.ControleCustomizado"
              mc:Ignorable="d" 
              Width="Auto" Height="Auto">
-    <Grid >
+    <Grid>
         <StackPanel Orientation="Horizontal">
-            <TextBlock x:Name="Star1" Text="★" FontSize="100" Margin="2"/>
-            <TextBlock x:Name="Star2" Text="★" FontSize="100" Margin="2"/>
-            <TextBlock x:Name="Star3" Text="★" FontSize="100" Margin="2"/>
-            <TextBlock x:Name="Star4" Text="★" FontSize="100" Margin="2"/>
-            <TextBlock x:Name="Star5" Text="★" FontSize="100" Margin="2"/>
+            <Image x:Name="Star1" Width="50" Height="50" Margin="2"/>
+            <Image x:Name="Star2" Width="50" Height="50" Margin="2"/>
+            <Image x:Name="Star3" Width="50" Height="50" Margin="2"/>
+            <Image x:Name="Star4" Width="50" Height="50" Margin="2"/>
+            <Image x:Name="Star5" Width="50" Height="50" Margin="2"/>
         </StackPanel>
     </Grid>
 </UserControl>

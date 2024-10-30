@@ -13,7 +13,7 @@ namespace UniMarteWpf.ControleCustomizado
 
         public Relatorio()
         {
-            //InitializeComponent();
+            InitializeComponent();
             CarregarRelatorio();
         }
 

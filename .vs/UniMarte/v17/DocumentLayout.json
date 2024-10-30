@@ -1,7 +1,40 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Projects\\UniMarte\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{709F070A-E4CC-4253-890C-02F738CB6C1C}|UniMarteWpf\\UniMarteWpf.csproj|c:\\projects\\unimarte\\unimartewpf\\controlecustomizado\\estrelasrelatorio.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{709F070A-E4CC-4253-890C-02F738CB6C1C}|UniMarteWpf\\UniMarteWpf.csproj|solutionrelative:unimartewpf\\controlecustomizado\\estrelasrelatorio.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{709F070A-E4CC-4253-890C-02F738CB6C1C}|UniMarteWpf\\UniMarteWpf.csproj|c:\\projects\\unimarte\\unimartewpf\\controlecustomizado\\relatorio.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{709F070A-E4CC-4253-890C-02F738CB6C1C}|UniMarteWpf\\UniMarteWpf.csproj|solutionrelative:unimartewpf\\controlecustomizado\\relatorio.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{709F070A-E4CC-4253-890C-02F738CB6C1C}|UniMarteWpf\\UniMarteWpf.csproj|c:\\projects\\unimarte\\unimartewpf\\controlecustomizado\\relatorio.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{709F070A-E4CC-4253-890C-02F738CB6C1C}|UniMarteWpf\\UniMarteWpf.csproj|solutionrelative:unimartewpf\\controlecustomizado\\relatorio.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{709F070A-E4CC-4253-890C-02F738CB6C1C}|UniMarteWpf\\UniMarteWpf.csproj|c:\\projects\\unimarte\\unimartewpf\\dal\\perguntadao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{709F070A-E4CC-4253-890C-02F738CB6C1C}|UniMarteWpf\\UniMarteWpf.csproj|solutionrelative:unimartewpf\\dal\\perguntadao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{709F070A-E4CC-4253-890C-02F738CB6C1C}|UniMarteWpf\\UniMarteWpf.csproj|c:\\projects\\unimarte\\unimartewpf\\dal\\usuariodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{709F070A-E4CC-4253-890C-02F738CB6C1C}|UniMarteWpf\\UniMarteWpf.csproj|solutionrelative:unimartewpf\\dal\\usuariodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{709F070A-E4CC-4253-890C-02F738CB6C1C}|UniMarteWpf\\UniMarteWpf.csproj|c:\\projects\\unimarte\\unimartewpf\\dal\\visitantedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{709F070A-E4CC-4253-890C-02F738CB6C1C}|UniMarteWpf\\UniMarteWpf.csproj|solutionrelative:unimartewpf\\dal\\visitantedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{709F070A-E4CC-4253-890C-02F738CB6C1C}|UniMarteWpf\\UniMarteWpf.csproj|c:\\projects\\unimarte\\unimartewpf\\dal\\relatoriodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{709F070A-E4CC-4253-890C-02F738CB6C1C}|UniMarteWpf\\UniMarteWpf.csproj|solutionrelative:unimartewpf\\dal\\relatoriodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{709F070A-E4CC-4253-890C-02F738CB6C1C}|UniMarteWpf\\UniMarteWpf.csproj|c:\\projects\\unimarte\\unimartewpf\\controlecustomizado\\estrelasrelatorio.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{709F070A-E4CC-4253-890C-02F738CB6C1C}|UniMarteWpf\\UniMarteWpf.csproj|solutionrelative:unimartewpf\\controlecustomizado\\estrelasrelatorio.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +55,108 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Relatorio.xaml",
+              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarteWpf\\ControleCustomizado\\Relatorio.xaml",
+              "RelativeDocumentMoniker": "UniMarteWpf\\ControleCustomizado\\Relatorio.xaml",
+              "ToolTip": "C:\\Projects\\UniMarte\\UniMarteWpf\\ControleCustomizado\\Relatorio.xaml",
+              "RelativeToolTip": "UniMarteWpf\\ControleCustomizado\\Relatorio.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-30T11:28:28.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Relatorio.xaml.cs",
+              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarteWpf\\ControleCustomizado\\Relatorio.xaml.cs",
+              "RelativeDocumentMoniker": "UniMarteWpf\\ControleCustomizado\\Relatorio.xaml.cs",
+              "ToolTip": "C:\\Projects\\UniMarte\\UniMarteWpf\\ControleCustomizado\\Relatorio.xaml.cs",
+              "RelativeToolTip": "UniMarteWpf\\ControleCustomizado\\Relatorio.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T11:24:16.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PerguntaDAO.cs",
+              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarteWpf\\DAL\\PerguntaDAO.cs",
+              "RelativeDocumentMoniker": "UniMarteWpf\\DAL\\PerguntaDAO.cs",
+              "ToolTip": "C:\\Projects\\UniMarte\\UniMarteWpf\\DAL\\PerguntaDAO.cs",
+              "RelativeToolTip": "UniMarteWpf\\DAL\\PerguntaDAO.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAywAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T11:25:42.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UsuarioDAO.cs",
+              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarteWpf\\DAL\\UsuarioDAO.cs",
+              "RelativeDocumentMoniker": "UniMarteWpf\\DAL\\UsuarioDAO.cs",
+              "ToolTip": "C:\\Projects\\UniMarte\\UniMarteWpf\\DAL\\UsuarioDAO.cs",
+              "RelativeToolTip": "UniMarteWpf\\DAL\\UsuarioDAO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T11:25:40.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "VisitanteDAO.cs",
+              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarteWpf\\DAL\\VisitanteDAO.cs",
+              "RelativeDocumentMoniker": "UniMarteWpf\\DAL\\VisitanteDAO.cs",
+              "ToolTip": "C:\\Projects\\UniMarte\\UniMarteWpf\\DAL\\VisitanteDAO.cs",
+              "RelativeToolTip": "UniMarteWpf\\DAL\\VisitanteDAO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T11:25:39.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RelatorioDAO.cs",
+              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarteWpf\\DAL\\RelatorioDAO.cs",
+              "RelativeDocumentMoniker": "UniMarteWpf\\DAL\\RelatorioDAO.cs",
+              "ToolTip": "C:\\Projects\\UniMarte\\UniMarteWpf\\DAL\\RelatorioDAO.cs",
+              "RelativeToolTip": "UniMarteWpf\\DAL\\RelatorioDAO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T11:25:33.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EstrelasRelatorio.xaml.cs",
+              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarteWpf\\ControleCustomizado\\EstrelasRelatorio.xaml.cs",
+              "RelativeDocumentMoniker": "UniMarteWpf\\ControleCustomizado\\EstrelasRelatorio.xaml.cs",
+              "ToolTip": "C:\\Projects\\UniMarte\\UniMarteWpf\\ControleCustomizado\\EstrelasRelatorio.xaml.cs",
+              "RelativeToolTip": "UniMarteWpf\\ControleCustomizado\\EstrelasRelatorio.xaml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAywBEAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T11:19:35.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EstrelasRelatorio.xaml",
+              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarteWpf\\ControleCustomizado\\EstrelasRelatorio.xaml",
+              "RelativeDocumentMoniker": "UniMarteWpf\\ControleCustomizado\\EstrelasRelatorio.xaml",
+              "ToolTip": "C:\\Projects\\UniMarte\\UniMarteWpf\\ControleCustomizado\\EstrelasRelatorio.xaml",
+              "RelativeToolTip": "UniMarteWpf\\ControleCustomizado\\EstrelasRelatorio.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-30T11:19:23.439Z",
+              "EditorCaption": ""
             }
           ]
         }

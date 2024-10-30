@@ -1,12 +1,9 @@
 ﻿using System.Diagnostics;
 using System.Windows.Controls;
-using System.Windows.Media; // Adicione esta linha
+using System.Windows.Media.Imaging;
 
 namespace UniMarteWpf.ControleCustomizado
 {
-    /// <summary>
-    /// Interação lógica para EstrelasRelatorio.xam
-    /// </summary>
     public partial class EstrelasRelatorio : UserControl
     {
         public EstrelasRelatorio()
@@ -24,26 +21,29 @@ namespace UniMarteWpf.ControleCustomizado
             {
                 if (i <= estrelasCompletas)
                 {
-                    GetStar(i).Foreground = Brushes.Gold; // Estrela cheia
+                    SetStarImage(i, "pack://application:,,,/Imagens/estrela_cheia.png"); // Estrela cheia
                     Debug.WriteLine($"Estrela {i} preenchida");
                 }
                 else if (i == estrelasCompletas + 1 && metadeEstrela >= 0.5)
                 {
-                    GetStar(i).Foreground = Brushes.Gold; // Estrela meia cheia
+                    SetStarImage(i, "pack://application:,,,/Imagens/estrela_parcial.png"); // Estrela meia cheia
                     Debug.WriteLine($"Estrela {i} meia preenchida");
                 }
                 else
                 {
-                    GetStar(i).Foreground = Brushes.Gray; // Estrela vazia
+                    SetStarImage(i, "pack://application:,,,/Imagens/estrela_vazia.png"); // Estrela vazia
                     Debug.WriteLine($"Estrela {i} vazia");
                 }
             }
         }
 
-
-        private TextBlock GetStar(int index)
+        private void SetStarImage(int index, string imagePath)
         {
-            return (TextBlock)FindName($"Star{index}");
+            Image star = (Image)FindName($"Star{index}");
+            if (star != null)
+            {
+                star.Source = new BitmapImage(new Uri(imagePath));
+            }
         }
     }
 }
