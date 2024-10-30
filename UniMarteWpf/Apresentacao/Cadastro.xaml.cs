@@ -18,24 +18,22 @@ namespace UniMarteWpf.Apresentacao
 
         private void Teclado_OnKeyPressed(object sender, string key)
         {
-            // Obter o TextBox ativo (adapte conforme necessário)
-            if (activeControl is TextBox textBox)
-            {
-                // Obter a janela atual
-                Window currentWindow = Window.GetWindow(this);
+            // Obter a janela atual
+            Window currentWindow = Window.GetWindow(this);
 
-                // Processar a tecla pressionada
+            // Processa a tecla pressionada para o controle ativo (TextBox, PasswordBox, ou DatePicker)
+            if (activeControl != null)
+            {
                 Utils.TecladoUtils.ProcessarTeclaPressionada(key, activeControl, currentWindow);
             }
-            // Verifica se o texto é "entraradm" para exibir o botão
+
+            // Verifica se o texto do TextBox ativo corresponde à senha "entraradm" para exibir o botão administrativo
             if (txbNome.Text == "entraradm")
             {
-                // Exibe o botão na tela (substitua 'meuBotao' pelo nome do seu botão)
                 btnAdm.Visibility = Visibility.Visible;
             }
             else
             {
-                // Caso contrário, esconde o botão
                 btnAdm.Visibility = Visibility.Hidden;
             }
         }

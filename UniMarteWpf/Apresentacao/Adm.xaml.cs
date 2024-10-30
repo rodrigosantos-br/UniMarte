@@ -48,13 +48,6 @@ namespace UniMarteWpf.Apresentacao
             grdGerenciador.Children.Add(gerenciador);
         }
 
-        private void FecharAdm_Click(object sender, RoutedEventArgs e)
-        { 
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.Show();
-            this.Close();
-        }
-
         private void FinalizarSoftware_Click(object sender, RoutedEventArgs e)
         {
             this.Close();

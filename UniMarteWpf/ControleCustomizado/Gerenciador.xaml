@@ -8,7 +8,7 @@
              mc:Ignorable="d" Cursor="" 
              >
     
-    <Grid HorizontalAlignment="Center" VerticalAlignment="Stretch">
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="20 50 20 50">
         <StackPanel Margin="50" Cursor="">
             <!-- DataGrid -->
             <DataGrid x:Name="dgUsuarios" AutoGenerateColumns="False" Height="500" Margin="10,10,10,10"
@@ -69,15 +69,15 @@
                 <Button x:Name="btnInserirUsuario" Content="Adicionar" HorizontalAlignment="Right" FontSize="20" BorderThickness="0"
                         Foreground="White" FontFamily="Montserrat"  Height="40" Width="250"
                         VerticalAlignment="Center" Cursor="Hand"
-                        Style="{StaticResource Padrao}" Margin="10 50 10 0" Click="Adicionar_Click"/>
+                        Style="{StaticResource Padrao}" Margin="10 50 60 10" Click="Adicionar_Click"/>
                 <Button Content="Editar" HorizontalAlignment="Right" FontSize="20" BorderThickness="0"
                         Foreground="White" FontFamily="Montserrat"  Height="40" Width="250"
                         VerticalAlignment="Center" Cursor="Hand"
-                        Style="{StaticResource Padrao}" Margin="10 50 10 0" Click="Editar_Click"/>
+                        Style="{StaticResource Padrao}" Margin="10 50 60 10" Click="Editar_Click"/>
                 <Button Content="Excluir" HorizontalAlignment="Right" FontSize="20" BorderThickness="0"
                         Foreground="White" FontFamily="Montserrat"  Height="40" Width="250"
                         VerticalAlignment="Center" Cursor="Hand"
-                        Style="{StaticResource Padrao}" Margin="10 50 10 0" Click="Excluir_Click"/>
+                        Style="{StaticResource Padrao}" Margin="10 50 10 10" Click="Excluir_Click"/>
             </StackPanel>
         </StackPanel>
     </Grid>

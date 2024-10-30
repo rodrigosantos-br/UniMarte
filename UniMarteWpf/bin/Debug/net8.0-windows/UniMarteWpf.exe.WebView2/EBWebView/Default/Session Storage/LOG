@@ -1,21 +1,12 @@
-2024/10/29-20:59:54.864 2b54 Reusing MANIFEST C:\Projects\UniMarte\UniMarteWpf\bin\Debug\net8.0-windows\UniMarteWpf.exe.WebView2\EBWebView\Default\Session Storage/MANIFEST-000001
-2024/10/29-20:59:54.865 2b54 Recovering log #439
-2024/10/29-20:59:54.868 2b54 Reusing old log C:\Projects\UniMarte\UniMarteWpf\bin\Debug\net8.0-windows\UniMarteWpf.exe.WebView2\EBWebView\Default\Session Storage/000439.log 
-2024/10/29-21:00:54.884 29e0 Level-0 table #443: started
-2024/10/29-21:00:54.893 29e0 Level-0 table #443: 17552 bytes OK
-2024/10/29-21:00:54.898 29e0 Delete type=0 #439
-2024/10/29-21:03:00.815 29e0 Level-0 table #445: started
-2024/10/29-21:03:00.844 29e0 Level-0 table #445: 52874 bytes OK
-2024/10/29-21:03:00.849 29e0 Delete type=0 #442
-2024/10/29-21:15:19.305 29e0 Level-0 table #447: started
-2024/10/29-21:15:19.335 29e0 Level-0 table #447: 51130 bytes OK
-2024/10/29-21:15:19.340 29e0 Delete type=0 #444
-2024/10/29-21:15:19.342 29e0 Compacting 4@0 + 1@1 files
-2024/10/29-21:15:19.357 29e0 Generated table #448@0: 2673 keys, 92523 bytes
-2024/10/29-21:15:19.357 29e0 Compacted 4@0 + 1@1 files => 92523 bytes
-2024/10/29-21:15:19.359 29e0 compacted to: files[ 0 1 1 0 0 0 0 ]
-2024/10/29-21:15:19.362 29e0 Delete type=2 #437
-2024/10/29-21:15:19.363 29e0 Delete type=2 #440
-2024/10/29-21:15:19.363 29e0 Delete type=2 #443
-2024/10/29-21:15:19.363 29e0 Delete type=2 #445
-2024/10/29-21:15:19.363 29e0 Delete type=2 #447
+2024/10/30-14:47:40.973 1d2c Reusing MANIFEST C:\Projects\UniMarte\UniMarteWpf\bin\Debug\net8.0-windows\UniMarteWpf.exe.WebView2\EBWebView\Default\Session Storage/MANIFEST-000001
+2024/10/30-14:47:40.974 1d2c Recovering log #453
+2024/10/30-14:47:40.975 1d2c Level-0 table #456: started
+2024/10/30-14:47:40.982 1d2c Level-0 table #456: 19759 bytes OK
+2024/10/30-14:47:40.983 1d2c Recovering log #455
+2024/10/30-14:47:40.984 1d2c Reusing old log C:\Projects\UniMarte\UniMarteWpf\bin\Debug\net8.0-windows\UniMarteWpf.exe.WebView2\EBWebView\Default\Session Storage/000455.log 
+2024/10/30-14:47:40.986 1d2c Delete type=0 #453
+2024/10/30-14:48:21.486 266c Level-0 table #458: started
+2024/10/30-14:48:21.493 266c Level-0 table #458: 25460 bytes OK
+2024/10/30-14:48:21.496 266c Delete type=0 #455
+2024/10/30-14:48:21.498 266c Compacting 4@0 + 1@1 files
+2024/10/30-14:48:21.508 266c compacted to: files[ 4 1 1 0 0 0 0 ]

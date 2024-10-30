@@ -5,7 +5,7 @@ namespace UniMarteWpf.Apresentacao
 {
     public partial class PopupSatisfacao : Window
     {
-        public event Action? PopupFechado;
+        public event Action PopupFechado;
 
         public PopupSatisfacao()
         {

@@ -1,6 +1,9 @@
-2024/10/29-09:09:22.778 3630 Reusing MANIFEST C:\Projects\UniMarte\UniMarteWpf\bin\Debug\net8.0-windows\UniMarteWpf.exe.WebView2\EBWebView\Default\Session Storage/MANIFEST-000001
-2024/10/29-09:09:22.779 3630 Recovering log #435
-2024/10/29-09:09:22.781 3630 Reusing old log C:\Projects\UniMarte\UniMarteWpf\bin\Debug\net8.0-windows\UniMarteWpf.exe.WebView2\EBWebView\Default\Session Storage/000435.log 
-2024/10/29-09:09:46.309 90c Level-0 table #440: started
-2024/10/29-09:09:46.320 90c Level-0 table #440: 26976 bytes OK
-2024/10/29-09:09:46.343 90c Delete type=0 #435
+2024/10/30-14:46:57.644 45e4 Reusing MANIFEST C:\Projects\UniMarte\UniMarteWpf\bin\Debug\net8.0-windows\UniMarteWpf.exe.WebView2\EBWebView\Default\Session Storage/MANIFEST-000001
+2024/10/30-14:46:57.645 45e4 Recovering log #450
+2024/10/30-14:46:57.647 45e4 Reusing old log C:\Projects\UniMarte\UniMarteWpf\bin\Debug\net8.0-windows\UniMarteWpf.exe.WebView2\EBWebView\Default\Session Storage/000450.log 
+2024/10/30-14:47:11.881 3488 Level-0 table #454: started
+2024/10/30-14:47:11.883 45e4 Current memtable full; waiting...
+2024/10/30-14:47:11.890 3488 Level-0 table #454: 33285 bytes OK
+2024/10/30-14:47:11.894 3488 Delete type=0 #450
+2024/10/30-14:47:11.900 45e4 Level-0 table #456: started
+2024/10/30-14:47:11.931 45e4 Level-0 table #456: 19759 bytes OK
