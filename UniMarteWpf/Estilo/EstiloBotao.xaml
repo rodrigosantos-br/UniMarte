@@ -99,7 +99,7 @@
     </Style>
 
     <!-- Menu button icon-->
-    <Style x:Key="CntrolButtonIcon" TargetType="fa:IconImage">
+    <Style x:Key="ControlButtonIcon" TargetType="fa:IconImage">
         <Setter Property="Foreground" Value="LightYellow" />
         <Setter Property="Width" Value="9"/>
         <Setter Property="Height" Value="9"/>

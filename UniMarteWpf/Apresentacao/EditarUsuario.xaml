@@ -50,7 +50,7 @@
                 <Button x:Name="btnclose"  Margin="0 2 5 0"
                     Cursor="Hand" Grid.Column=" 2"
                     Click="btnClose_Click" Style="{StaticResource controlButton}" >
-                    <fa:IconImage Icon="Xmark" Style="{StaticResource CntrolButtonIcon}"/>
+                    <fa:IconImage Icon="Xmark" Style="{StaticResource ControlButtonIcon}"/>
                 </Button>
                 <Grid Grid.Row="1">
                     <Grid Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1">
@@ -86,7 +86,10 @@
                                 <Label Content="E-mail:" Grid.Row="4" Grid.Column="0"/>
                                 <TextBox x:Name="txtEmail" Grid.Row="4" Grid.Column="1" Margin="5"/>
                                 <!-- Botões -->
-                                <Button Content="Atualizar" Grid.Row="5" Grid.Column="1" Width="100" Margin="20" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Editar_Click"/>
+                                <Button Content="Atualizar" Grid.Row="5" Grid.Column="1" Width="100" Height="30"
+                                        HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" Background="#462AD8" 
+                                        BorderThickness="0" Foreground="White" FontFamily="Montserrat" Cursor=""
+                                        Style="{StaticResource Padrao}" Margin="20" Click="Editar_Click"/>
                             </Grid>
                         </GroupBox>
                     </Grid>

@@ -1,7 +1,6 @@
 ﻿using Microsoft.Data.SqlClient;
 using UniMarteWpf.Estatico;
 using UniMarteWpf.Modelo;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace UniMarteWpf.DAL
 {
@@ -12,8 +11,8 @@ namespace UniMarteWpf.DAL
         public bool InserirVisitante(Visitante visitante)
         {
             SqlConnection con = Conexao.Conectar(); // Declara a conexão aqui
-            String sql = @"INSERT INTO Visitante (Nome, DataNascimento, DataHoraCadastro) 
-                        OUTPUT INSERTED.Id
+            String sql = @"INSERT INTO Visitantes (Nome, DataNascimento, DataHoraCadastro) 
+                        OUTPUT INSERTED.IdVisitante
                         VALUES (@Nome, @DataNascimento, @DataHoraCadastro)";
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.Parameters.AddWithValue("@Nome", visitante.Nome);
@@ -22,7 +21,6 @@ namespace UniMarteWpf.DAL
 
             try
             {
-                cmd.ExecuteNonQuery();
                 SessaoVisitante.IdVisitante = Convert.ToInt32(cmd.ExecuteScalar());
                 return true;
             }

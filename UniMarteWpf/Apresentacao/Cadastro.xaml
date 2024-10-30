@@ -1,7 +1,7 @@
 ﻿<Window x:Class="UniMarteWpf.Apresentacao.Cadastro"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:custom="clr-namespace:UniMarteWpf.Modelo.ControleCustomizado" 
+        xmlns:custom="clr-namespace:UniMarteWpf.ControleCustomizado" 
         Title="Cadastro"
         WindowStyle="None" WindowState="Maximized">
     
@@ -10,14 +10,26 @@
             <ImageBrush ImageSource="/Imagens/Fundo.jpg" Stretch="UniformToFill" />
         </Border.Background>
         <Grid Background="Transparent">
-            <Button x:Name="btnAdm" Click="btnAdm_Click" Content="Adm" Visibility="Collapsed"
+            <Button x:Name="btnAdm" Click="btnAdm_Click" Visibility="Collapsed"
             Background="#462AD8" BorderThickness="0"
-            Foreground="White" FontFamily="Montserrat"  Height="40" Width="200"
+            Foreground="White" FontFamily="Montserrat"  Height="100" Width="100"
             VerticalAlignment="Top"  HorizontalAlignment="Right" Panel.ZIndex="1"
-            Style="{StaticResource Padrao}" Margin="100"/>
-        
+            Style="{StaticResource Padrao}" Margin="10 100 200 10">
+                <Button.Content>
+                    <Image Source="/Imagens/gestao.png"/>
+                </Button.Content>
+            </Button>
 
-        <Border BorderThickness="5" Opacity="0.75" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Button x:Name="btnHome" FontSize="20" Background="#462AD8" BorderThickness="0"
+            Foreground="White" FontFamily="Montserrat"  Height="100" Width="100"
+            VerticalAlignment="Top"  HorizontalAlignment="Left" Cursor="" Panel.ZIndex="1"
+            Style="{StaticResource Padrao}" Margin="200 100 10 10" Click="PaginaInicial_Click">
+                <Button.Content>
+                    <Image Source="/Imagens/home.png"/>
+                </Button.Content>
+            </Button>
+
+            <Border BorderThickness="5" Opacity="0.75" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
             <Border.BorderBrush>
                 <LinearGradientBrush StartPoint="0 0" EndPoint="1 1">
                     <GradientStop Color ="DarkBlue" Offset="0"/>
@@ -52,7 +64,7 @@
                         <TextBox x:Name="txbNome" 
                                  GotFocus="Control_GotFocus"
                                  FontSize="22" FontWeight="Medium" FontFamily="Montserrat" Foreground="Black"
-                                 CaretBrush="LightGray" BorderBrush="#FF5C5454" BorderThickness="0 0 0 2.5" Height="28" 
+                                 CaretBrush="Black" BorderBrush="#FF5C5454" BorderThickness="0 0 0 2.5" Height="28" 
                                  VerticalContentAlignment="Center"
                                  Margin="2, 5, 0, 0" Padding="30 0 0 0 " >
                             <TextBox.Background>

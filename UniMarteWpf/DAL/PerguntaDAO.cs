@@ -28,7 +28,7 @@ namespace UniMarteWpf.DAL
             // Exemplo simplificado:
             SqlConnection con = Conexao.Conectar();
             {
-                string sql = "SELECT Id, TextoPergunta, TipoResposta FROM Pergunta";
+                string sql = "SELECT IdPergunta, TextoPergunta, TipoResposta FROM Perguntas";
                 SqlCommand command = new SqlCommand(sql, con);
                 SqlDataReader reader = command.ExecuteReader();
 
@@ -54,8 +54,9 @@ namespace UniMarteWpf.DAL
             {
                 foreach (var resposta in respostas)
                 {
-                    string sql = "INSERT INTO Resposta (IdPergunta, Resposta) VALUES (@idPergunta, @resposta)";
+                    string sql = "INSERT INTO Respostas (IdVisitante, IdPergunta, Resposta) VALUES (@idVisitante, @idPergunta, @resposta)";
                     SqlCommand command = new SqlCommand(sql, con);
+                    command.Parameters.AddWithValue("@idVisitante", resposta.IdVisitante);
                     command.Parameters.AddWithValue("@idPergunta", resposta.IdPergunta);
                     command.Parameters.AddWithValue("@resposta", resposta.RespostaTexto);
 
@@ -68,6 +69,7 @@ namespace UniMarteWpf.DAL
                         this.mensagem = "Erro ao salvar as respostas: " + ex.Message;
                     }
                 }
+                Conexao.Desconectar();
             }
         }
     }

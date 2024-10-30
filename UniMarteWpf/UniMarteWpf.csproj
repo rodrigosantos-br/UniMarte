@@ -20,8 +20,13 @@
     <None Remove="Imagens\estrelaRegularCinza.png" />
     <None Remove="Imagens\estrelaRuim.png" />
     <None Remove="Imagens\estrelaRuimCinza.png" />
+    <None Remove="Imagens\estrela_cheia.png" />
+    <None Remove="Imagens\estrela_parcial.png" />
+    <None Remove="Imagens\estrela_vazia.png" />
     <None Remove="Imagens\Fundo.jpg" />
     <None Remove="Imagens\FundoLogin.jpg" />
+    <None Remove="Imagens\gestao.png" />
+    <None Remove="Imagens\home.png" />
     <None Remove="Imagens\Logo.png" />
     <None Remove="Imagens\marca-de-verificacao.png" />
     <None Remove="Imagens\Marte.jpg" />
@@ -33,10 +38,6 @@
     <None Remove="Imagens\UniMarte.jpg" />
     <None Remove="Imagens\UniMarteInterior.jpg" />
     <None Remove="Imagens\usuario.jpg" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Servico\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -89,10 +90,25 @@
     <Resource Include="Imagens\estrelaRuimCinza.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Imagens\estrela_cheia.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagens\estrela_parcial.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagens\estrela_vazia.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Imagens\Fundo.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Imagens\FundoLogin.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagens\gestao.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagens\home.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Imagens\Logo.png">
@@ -128,6 +144,10 @@
     <Resource Include="Imagens\usuario.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Servico\" />
   </ItemGroup>
 
 </Project>

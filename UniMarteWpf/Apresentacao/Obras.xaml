@@ -89,11 +89,14 @@
                             Style="{StaticResource Padrao}" Margin="100 30 10 10" Click="BotaoProximo_Click"/>
                 </StackPanel>
 
-                <Button x:Name="BotaoQuestionario" Content="Questionário"
-                        FontSize="20" Background="#462AD8" BorderThickness="0"
-                        Foreground="White" FontFamily="Montserrat"  Height="40" Width="200"
-                        VerticalAlignment="Center"  HorizontalAlignment="Right" Cursor=""
-                        Style="{StaticResource Padrao}" Margin="10 30 100 10" Click="BotaoQuestionario_Click" Grid.Row="1"/>
+                <Button x:Name="btnHome" FontSize="20" Background="#462AD8" BorderThickness="0"
+                            Foreground="White" FontFamily="Montserrat"  Height="100" Width="100"
+                            VerticalAlignment="Top"  HorizontalAlignment="Left" Cursor=""
+                            Style="{StaticResource Padrao}" Margin="200 30 10 10" Click="PaginaInicial_Click">
+                    <Button.Content>
+                        <Image Source="/Imagens/home.png"/>
+                    </Button.Content>
+                </Button>
             </Grid>
         </Border>
     </Border>

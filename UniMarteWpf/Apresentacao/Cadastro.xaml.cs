@@ -1,7 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
-using UniMarteWpf.Modelo;
-using UniMarteWpf.Modelo.Controle;
+using UniMarteWpf.Controle;
 
 namespace UniMarteWpf.Apresentacao
 {
@@ -79,6 +78,13 @@ namespace UniMarteWpf.Apresentacao
         {
             Login login = new Login();
             login.Show();
+            this.Close();
+        }
+
+        private void PaginaInicial_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainwindow = new MainWindow();
+            mainwindow.Show();
             this.Close();
         }
     }

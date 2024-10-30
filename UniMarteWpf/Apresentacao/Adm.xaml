@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:wpf="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
-        xmlns:custom="clr-namespace:UniMarteWpf.Modelo.ControleCustomizado"
+        xmlns:custom="clr-namespace:UniMarteWpf.ControleCustomizado"
         xmlns:local="clr-namespace:UniMarteWpf.Apresentacao"
         mc:Ignorable="d"
         Title="Adm" WindowState="Maximized" WindowStyle="None" d:DesignWidth="1079" d:DesignHeight="612">

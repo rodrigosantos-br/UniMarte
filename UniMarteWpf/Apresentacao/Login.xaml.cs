@@ -1,7 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
+using UniMarteWpf.Controle;
 using UniMarteWpf.Modelo;
-using UniMarteWpf.Modelo.Controle;
 
 namespace UniMarteWpf.Apresentacao
 {

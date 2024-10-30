@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace UniMarteWpf.Estatico
+﻿namespace UniMarteWpf.Estatico
 {
     public static class AzureBlobStorageConfig
     {
@@ -16,5 +10,4 @@ namespace UniMarteWpf.Estatico
 
         public const string ContainerName = "unimarteimages";
     }
-
 }

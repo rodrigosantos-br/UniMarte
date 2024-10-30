@@ -1,6 +1,6 @@
 ﻿using System.Windows;
+using UniMarteWpf.Controle;
 using UniMarteWpf.Modelo;
-using UniMarteWpf.Modelo.Controle;
 
 namespace UniMarteWpf.Apresentacao
 {

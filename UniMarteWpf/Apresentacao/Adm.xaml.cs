@@ -1,6 +1,6 @@
 ﻿using Microsoft.Web.WebView2.Wpf;
 using System.Windows;
-using UniMarteWpf.Modelo.ControleCustomizado;
+using UniMarteWpf.ControleCustomizado;
 
 namespace UniMarteWpf.Apresentacao
 {

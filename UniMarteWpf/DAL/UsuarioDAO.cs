@@ -1,5 +1,4 @@
 ﻿using Microsoft.Data.SqlClient;
-using UniMarteWpf.Estatico;
 using UniMarteWpf.Modelo;
 
 namespace UniMarteWpf.DAL
@@ -12,7 +11,7 @@ namespace UniMarteWpf.DAL
             
             SqlConnection con = Conexao.Conectar();
             
-            String sql = "INSERT INTO Usuario (NomeUsuario, Senha, NomeCompleto, Idade, Email) VALUES (@NomeUsuario, @Senha, @NomeCompleto, @Idade, @Email)";
+            String sql = "INSERT INTO Usuarios (NomeUsuario, Senha, NomeCompleto, Idade, Email) VALUES (@NomeUsuario, @Senha, @NomeCompleto, @Idade, @Email)";
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.Parameters.AddWithValue("@NomeUsuario", usuario.NomeUsuario);
             cmd.Parameters.AddWithValue("@Senha", usuario.Senha);
@@ -41,7 +40,7 @@ namespace UniMarteWpf.DAL
             List<Usuario> usuarios = new List<Usuario>();
             using (SqlConnection con = Conexao.Conectar())
             {
-                string sql = "SELECT * FROM Usuario";
+                string sql = "SELECT * FROM Usuarios";
                 SqlCommand cmd = new SqlCommand(sql, con);
 
                 SqlDataReader reader = cmd.ExecuteReader();
@@ -49,7 +48,7 @@ namespace UniMarteWpf.DAL
                 {
                     usuarios.Add(new Usuario
                     {
-                        Id = (int)reader["Id"],
+                        Id = (int)reader["IdUsuario"],
                         NomeUsuario = reader["NomeUsuario"].ToString(),
                         Senha = reader["Senha"].ToString(),
                         NomeCompleto = reader["NomeCompleto"].ToString(),
@@ -66,7 +65,7 @@ namespace UniMarteWpf.DAL
         {
             SqlConnection con = Conexao.Conectar();
         
-            string sql = "SELECT * FROM Usuario WHERE NomeUsuario = @NomeUsuario";
+            string sql = "SELECT * FROM Usuarios WHERE NomeUsuario = @NomeUsuario";
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.Parameters.AddWithValue("@NomeUsuario", nomeUsuario);
 
@@ -77,7 +76,7 @@ namespace UniMarteWpf.DAL
                 {
                     return new Usuario
                     {
-                        Id = (int)reader["Id"],
+                        Id = (int)reader["IdUsuario"],
                         NomeUsuario = reader["NomeUsuario"].ToString(),
                         Senha = reader["Senha"].ToString(),
                         NomeCompleto = reader["NomeCompleto"].ToString(),
@@ -102,7 +101,7 @@ namespace UniMarteWpf.DAL
         {
             SqlConnection con = Conexao.Conectar();
             
-            string sql = "UPDATE Usuario SET NomeCompleto = @NomeCompleto, Idade = @Idade, Senha = @Senha, Email = @Email WHERE NomeUsuario = @NomeUsuario";
+            string sql = "UPDATE Usuarios SET NomeCompleto = @NomeCompleto, Idade = @Idade, Senha = @Senha, Email = @Email WHERE NomeUsuario = @NomeUsuario";
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.Parameters.AddWithValue("@NomeUsuario", usuario.NomeUsuario);
             cmd.Parameters.AddWithValue("@Senha", usuario.Senha);
@@ -129,7 +128,7 @@ namespace UniMarteWpf.DAL
         {
             SqlConnection con = Conexao.Conectar();
             
-            string sql = "DELETE FROM Usuario WHERE NomeUsuario = @NomeUsuario";
+            string sql = "DELETE FROM Usuarios WHERE NomeUsuario = @NomeUsuario";
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.Parameters.AddWithValue("@NomeUsuario", nomeUsuario);
             try

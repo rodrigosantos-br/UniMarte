@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
-        xmlns:custom="clr-namespace:UniMarteWpf.Modelo.ControleCustomizado"
+        xmlns:custom="clr-namespace:UniMarteWpf.ControleCustomizado"
         xmlns:local="clr-namespace:UniMarteWpf.Apresentacao"
         mc:Ignorable="d"
         Title="Login" WindowState="Maximized" WindowStyle="None" 
@@ -15,7 +15,7 @@
             <ImageBrush ImageSource="/Imagens/FundoLogin.jpg" Stretch="UniformToFill" />
         </Border.Background>
 
-        <Border CornerRadius="20"  BorderThickness="5" Opacity="0.75" >
+        <Border CornerRadius="20" BorderThickness="5" Opacity="0.75" >
             <Border.BorderBrush>
                 <LinearGradientBrush StartPoint="0 0" EndPoint="1 1">
                     <GradientStop Color ="DarkBlue" Offset="0"/>

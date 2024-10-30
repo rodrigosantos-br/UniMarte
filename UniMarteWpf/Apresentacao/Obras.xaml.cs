@@ -1,7 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Media.Imaging;
+using UniMarteWpf.Controle;
 using UniMarteWpf.Estatico;
-using UniMarteWpf.Modelo.Controle;
 
 namespace UniMarteWpf.Apresentacao
 {
@@ -51,6 +51,12 @@ namespace UniMarteWpf.Apresentacao
                 else
                 {
                     ImagemPosterior.Visibility = Visibility.Collapsed;
+                    PopupSatisfacao satisfacao = new PopupSatisfacao
+                    {
+                        Owner = this, // Define a janela atual (Obras) como proprietária
+                        WindowStartupLocation = WindowStartupLocation.CenterOwner // Centraliza no centro da janela "Owner"
+                    };
+                    satisfacao.ShowDialog();
                 }
             }
         }
@@ -67,12 +73,11 @@ namespace UniMarteWpf.Apresentacao
             ExibirImagemAtual();
         }
 
-        private void BotaoQuestionario_Click(object sender, RoutedEventArgs e)
+        private void PaginaInicial_Click(object sender, RoutedEventArgs e)
         {
-            // Abre o UserControl do questionário em uma nova janela
-            Satisfacao _satisfacao = new Satisfacao();
-            _satisfacao.Show();
-            this.Hide(); // Esconde a janela atual
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Close();
         }
     }
 }

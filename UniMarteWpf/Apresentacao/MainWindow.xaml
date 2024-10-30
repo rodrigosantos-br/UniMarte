@@ -6,40 +6,18 @@
         xmlns:local="clr-namespace:UniMarteWpf.Apresentacao"
         mc:Ignorable="d"
         Title="MainWindow" WindowState="Maximized" WindowStyle="None">
+    
     <Grid MouseDown="Grid_MouseDown">
         <!-- Imagem de fundo -->
         <Image x:Name="BackgroundImage" Stretch="UniformToFill"/>
 
-        <!-- Barra Superior -->
-        <Grid Height="100" Background="Transparent" VerticalAlignment="Top">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto"/>
-                <!-- Para o logotipo -->
-                <ColumnDefinition Width="*"/>
-                <!-- Para a propaganda -->
-            </Grid.ColumnDefinitions>
-
-            <!-- Logotipo -->
-            <Image Source="/Imagens/logo.png" Height="80" VerticalAlignment="Center" Margin="100,10,10,10"/>
-
-            <!-- Espaço para Propaganda -->
-            <TextBlock Text="Espaço para Propaganda" 
-               VerticalAlignment="Center" 
-               HorizontalAlignment="Center" 
-               FontSize="20" 
-               Grid.Column="1"
-               Foreground="White" 
-               FontWeight="Bold"/>
-        </Grid>
-
         <!-- Informação ao usuário -->
-        <TextBlock Text="Toque na tela para iniciar a navegação"
-           HorizontalAlignment="Center"
-           VerticalAlignment="Bottom"
-           FontSize="50"
-           FontWeight="SemiBold"
-           Foreground="Wheat"
-           Margin="0,0,0,150"/>
+        <Border CornerRadius="30" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="White" Margin="100" Padding="20 10 20 10">
+            <TextBlock Text="Toque na tela para iniciar a navegação"
+                       FontSize="32"
+                       FontFamily="Montserrat"
+                       Foreground="Black"/>
+        </Border>
 
     </Grid>
 </Window>
