@@ -51,15 +51,24 @@ namespace UniMarteWpf.Apresentacao
                 else
                 {
                     ImagemPosterior.Visibility = Visibility.Collapsed;
+
                     PopupSatisfacao satisfacao = new PopupSatisfacao
                     {
-                        Owner = this, // Define a janela atual (Obras) como proprietária
-                        WindowStartupLocation = WindowStartupLocation.CenterOwner // Centraliza no centro da janela "Owner"
+                        Owner = this,
+                        WindowStartupLocation = WindowStartupLocation.CenterOwner
                     };
+
+                    // Inscreva-se no evento PopupFechado
+                    satisfacao.PopupFechado += () =>
+                    {
+                        this.Close(); // Fecha a janela de obras
+                    };
+
                     satisfacao.ShowDialog();
                 }
             }
         }
+
 
         private void BotaoAnterior_Click(object sender, RoutedEventArgs e)
         {

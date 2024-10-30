@@ -22,20 +22,6 @@ namespace UniMarteWpf.Controle
             this.controles = controles;
         }
 
-        public int PerguntaAtualIndex => perguntaAtualIndex;
-
-        public List<Resposta> ColetarRespostas()
-        {
-            List<Resposta> respostas = new List<Resposta>();
-
-            foreach (var controle in controles)
-            {
-                respostas.AddRange(controle.ObterResposta());
-            }
-
-            return respostas;
-        }
-
         // Método para exibir a pergunta atual na View
         public void ExibirPerguntaAtual(TextBlock perguntaTextBlock, Panel respostaPanel)
         {
@@ -73,28 +59,18 @@ namespace UniMarteWpf.Controle
             }
         }
 
-        public int ObterIdPerguntaAtual()
-        {
-            return perguntas[perguntaAtualIndex].Id; // Retorna o ID da pergunta atual
-        }
-
         // Método para avançar para a próxima pergunta
         public bool ProximaPergunta(Panel respostaPanel)
         {
-            // Primeiro, tenta salvar e validar a resposta atual
-            if (SalvarResposta(respostaPanel))
+            if (perguntaAtualIndex < perguntas.Count - 1)
             {
-                if (perguntaAtualIndex < perguntas.Count - 1)
-                {
-                    perguntaAtualIndex++;
-                    return true;
-                }
-                else
-                {
-                    return false; // Se já estiver na última pergunta, não avança
-                }
+                perguntaAtualIndex++;
+                return true;
             }
-            return false;
+            else
+            {
+                return false; // Se já estiver na última pergunta, não avança
+            }
         }
 
         // Método para verificar se está na última pergunta

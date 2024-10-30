@@ -1,12 +1,12 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
 
 namespace UniMarteWpf.Apresentacao
 {
-    /// <summary>
-    /// Lógica interna para PopupSatisfacao.xaml
-    /// </summary>
     public partial class PopupSatisfacao : Window
     {
+        public event Action? PopupFechado;
+
         public PopupSatisfacao()
         {
             InitializeComponent();
@@ -21,6 +21,7 @@ namespace UniMarteWpf.Apresentacao
         {
             Satisfacao satisfacao = new Satisfacao();
             satisfacao.ShowDialog();
+            PopupFechado?.Invoke(); // Dispara o evento
             this.Close();
         }
     }
