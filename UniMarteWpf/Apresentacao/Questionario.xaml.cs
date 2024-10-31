@@ -42,7 +42,6 @@ namespace UniMarteWpf.Apresentacao
             }
         }
 
-
         private void BtnFinalizar_Click(object sender, RoutedEventArgs e)
         {
             MainWindow mainWindow = new MainWindow();

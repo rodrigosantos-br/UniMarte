@@ -15,46 +15,20 @@ namespace UniMarteWpf.Apresentacao
         public Obras()
         {
             InitializeComponent();
-            _obrasControle = new ObrasControle();
-            AtualizarImagens();
+            _obrasControle = new ObrasControle(this);
+            _obrasControle.AtualizarImagens(ImagemAtual, ImagemAnterior, ImagemPosterior);
         }
-
-        private void AtualizarImagens()
-        {
-            string imagemAtual = _obrasControle.ObterImagemAtual();
-            string imagemAnterior = _obrasControle.ObterImagemAnterior();
-            string imagemPosterior = _obrasControle.ObterImagemPosterior();
-
-            // Verifica se as imagens não são nulas antes de criar a Uri
-            if (imagemAtual == null)
-            {
-                throw new InvalidOperationException("Imagem atual não pode ser nula.");
-            }
-
-            ImagemAtual.Source = new BitmapImage(new Uri(imagemAtual));
-
-            if (imagemAnterior != null)
-            {
-                ImagemAnterior.Source = new BitmapImage(new Uri(imagemAnterior));
-            }
-
-            if (imagemPosterior != null)
-            {
-                ImagemPosterior.Source = new BitmapImage(new Uri(imagemPosterior));
-            }
-        }
-
 
         private void BotaoProximo_Click(object sender, RoutedEventArgs e)
         {
             _obrasControle.Proximo();
-            AtualizarImagens();
+            _obrasControle.AtualizarImagens(ImagemAtual, ImagemAnterior, ImagemPosterior);
         }
 
         private void BotaoAnterior_Click(object sender, RoutedEventArgs e)
         {
             _obrasControle.Anterior();
-            AtualizarImagens();
+            _obrasControle.AtualizarImagens(ImagemAtual, ImagemAnterior, ImagemPosterior);
         }
 
         private void PaginaInicial_Click(object sender, RoutedEventArgs e)
