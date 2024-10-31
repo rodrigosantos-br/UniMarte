@@ -12,7 +12,7 @@
     
     <Border CornerRadius="20">
         <Border.Background>
-            <ImageBrush ImageSource="/Imagens/FundoLogin.jpg" Stretch="UniformToFill" />
+            <ImageBrush ImageSource="/Imagens/Fundos/FundoLogin.jpg" Stretch="UniformToFill" />
         </Border.Background>
 
         <Border CornerRadius="20" BorderThickness="5" Opacity="0.75" >
@@ -52,7 +52,7 @@
                          CaretBrush="LightGray" BorderBrush="#FF5C5454" BorderThickness="0 0 0 2.5" Height="28" VerticalContentAlignment="Center"
                          Margin="2, 5, 0, 0" Padding="30 0 0 0 " >
                         <TextBox.Background>
-                            <ImageBrush ImageSource="/Imagens/usuario.jpg" Stretch="Uniform" AlignmentX="Left"/>
+                            <ImageBrush ImageSource="/Imagens/Icones/usuario.jpg" Stretch="Uniform" AlignmentX="Left"/>
                         </TextBox.Background>
                     </TextBox>
 
@@ -64,7 +64,7 @@
                                  Margin="2, 5, 0, 0" Padding="30 0 0 0 ">
 
                         <PasswordBox.Background>
-                            <ImageBrush ImageSource="/Imagens/passwordBox.jpeg" Stretch="Uniform" AlignmentX="Left"/>
+                            <ImageBrush ImageSource="/Imagens/Icones/passwordBox.jpeg" Stretch="Uniform" AlignmentX="Left"/>
                         </PasswordBox.Background>
                     </PasswordBox>
 

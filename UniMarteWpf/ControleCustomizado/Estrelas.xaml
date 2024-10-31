@@ -39,25 +39,25 @@
         </Border>
             <CheckBox x:Name="estrelaPessimo" Grid.Row="0" Grid.Column="0" Margin="20" HorizontalAlignment="Center" VerticalAlignment="Center"
                     Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked">
-                <Image Height="80" Source="/Imagens/estrelaPessimoCinza.png" 
+                <Image Height="80" Source="/Imagens/Icones/estrelaPessimoCinza.png" 
                     Stretch="Fill" Width="84"/>
             </CheckBox>
             <CheckBox x:Name="estrelaRuim" Grid.Row="0" Margin="20" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"
                     Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked">
-                <Image Height="80" Source="/Imagens/estrelaRuimCinza.png" 
+                <Image Height="80" Source="/Imagens/Icones/estrelaRuimCinza.png" 
                     Stretch="Fill" Width="84"/>
             </CheckBox>
             <CheckBox x:Name="estrelaRegular" Margin="20" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"
                     Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked">
-                <Image Height="80" Source="/Imagens/estrelaRegularCinza.png" Stretch="Fill" Width="84"/>
+                <Image Height="80" Source="/Imagens/Icones/estrelaRegularCinza.png" Stretch="Fill" Width="84"/>
             </CheckBox>
             <CheckBox x:Name="estrelaBom" Margin="20" Grid.Row="0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center"
                     Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked">
-                <Image Height="80" Source="/Imagens/estrelaBomCinza.png" Stretch="Fill" Width="84"/>
+                <Image Height="80" Source="/Imagens/Icones/estrelaBomCinza.png" Stretch="Fill" Width="84"/>
             </CheckBox>
             <CheckBox x:Name="estrelaOtimo" Margin="20" Grid.Row="0" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center"
                     Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked">
-                <Image Height="80" Source="/Imagens/estrelaOtimoCinza.png" Stretch="Fill" Width="83"/>
+                <Image Height="80" Source="/Imagens/Icones/estrelaOtimoCinza.png" Stretch="Fill" Width="83"/>
             </CheckBox>
         
         <TextBlock FontSize="22" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Text="Péssimo" Foreground="Black"/>

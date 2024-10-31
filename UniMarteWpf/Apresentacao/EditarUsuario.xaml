@@ -12,7 +12,7 @@
     
     <Border CornerRadius="20">
         <Border.Background>
-            <ImageBrush ImageSource="/Imagens/Fundo.jpg" Stretch="UniformToFill" />
+            <ImageBrush ImageSource="/Imagens/Fundos/Fundo.jpg" Stretch="UniformToFill" />
         </Border.Background>
 
         <Border BorderThickness="5" Opacity="0.75" >

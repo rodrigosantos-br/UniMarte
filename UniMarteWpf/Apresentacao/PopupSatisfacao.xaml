@@ -8,7 +8,7 @@
         Title="PopupSatisfacao" Height="200" Width="400" WindowStyle="None">
     <Border CornerRadius="20" >
         <Border.Background>
-            <ImageBrush ImageSource="/Imagens/FundoLogin.jpg" Stretch="UniformToFill" />
+            <ImageBrush ImageSource="/Imagens/Fundos/FundoLogin.jpg" Stretch="UniformToFill" />
         </Border.Background>
 
         <Border BorderThickness="5" Opacity="0.75"  >

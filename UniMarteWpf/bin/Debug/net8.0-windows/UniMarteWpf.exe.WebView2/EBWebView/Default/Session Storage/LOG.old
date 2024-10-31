@@ -1,9 +1,27 @@
-2024/10/30-14:46:57.644 45e4 Reusing MANIFEST C:\Projects\UniMarte\UniMarteWpf\bin\Debug\net8.0-windows\UniMarteWpf.exe.WebView2\EBWebView\Default\Session Storage/MANIFEST-000001
-2024/10/30-14:46:57.645 45e4 Recovering log #450
-2024/10/30-14:46:57.647 45e4 Reusing old log C:\Projects\UniMarte\UniMarteWpf\bin\Debug\net8.0-windows\UniMarteWpf.exe.WebView2\EBWebView\Default\Session Storage/000450.log 
-2024/10/30-14:47:11.881 3488 Level-0 table #454: started
-2024/10/30-14:47:11.883 45e4 Current memtable full; waiting...
-2024/10/30-14:47:11.890 3488 Level-0 table #454: 33285 bytes OK
-2024/10/30-14:47:11.894 3488 Delete type=0 #450
-2024/10/30-14:47:11.900 45e4 Level-0 table #456: started
-2024/10/30-14:47:11.931 45e4 Level-0 table #456: 19759 bytes OK
+2024/10/30-20:03:18.648 22e4 Reusing MANIFEST C:\Projects\UniMarte\UniMarteWpf\bin\Debug\net8.0-windows\UniMarteWpf.exe.WebView2\EBWebView\Default\Session Storage/MANIFEST-000001
+2024/10/30-20:03:18.651 22e4 Recovering log #471
+2024/10/30-20:03:18.657 22e4 Reusing old log C:\Projects\UniMarte\UniMarteWpf\bin\Debug\net8.0-windows\UniMarteWpf.exe.WebView2\EBWebView\Default\Session Storage/000471.log 
+2024/10/30-20:04:14.434 3f1c Level-0 table #475: started
+2024/10/30-20:04:14.462 3f1c Level-0 table #475: 23816 bytes OK
+2024/10/30-20:04:14.467 3f1c Delete type=0 #471
+2024/10/30-20:04:20.270 3f1c Level-0 table #477: started
+2024/10/30-20:04:20.281 3f1c Level-0 table #477: 109603 bytes OK
+2024/10/30-20:04:20.286 3f1c Delete type=0 #474
+2024/10/30-20:04:38.558 3f1c Level-0 table #479: started
+2024/10/30-20:04:38.587 3f1c Level-0 table #479: 21253 bytes OK
+2024/10/30-20:04:38.590 3f1c Delete type=0 #476
+2024/10/30-20:04:38.592 3f1c Compacting 4@0 + 1@1 files
+2024/10/30-20:04:38.607 3f1c Generated table #480@0: 2849 keys, 65357 bytes
+2024/10/30-20:04:38.607 3f1c Compacted 4@0 + 1@1 files => 65357 bytes
+2024/10/30-20:04:38.609 3f1c compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/10/30-20:04:38.612 3f1c Delete type=2 #469
+2024/10/30-20:04:38.612 3f1c Delete type=2 #472
+2024/10/30-20:04:38.612 3f1c Delete type=2 #475
+2024/10/30-20:04:38.612 3f1c Delete type=2 #477
+2024/10/30-20:04:38.612 3f1c Delete type=2 #479
+2024/10/30-20:05:18.687 3f1c Level-0 table #482: started
+2024/10/30-20:05:18.716 3f1c Level-0 table #482: 41965 bytes OK
+2024/10/30-20:05:18.722 3f1c Delete type=0 #478
+2024/10/30-20:08:51.885 3f1c Level-0 table #484: started
+2024/10/30-20:08:51.894 3f1c Level-0 table #484: 42461 bytes OK
+2024/10/30-20:08:51.898 3f1c Delete type=0 #481

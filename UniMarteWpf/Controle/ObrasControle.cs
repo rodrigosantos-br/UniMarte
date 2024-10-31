@@ -1,76 +1,66 @@
-﻿using Azure.Storage.Blobs;
-using Azure.Storage.Blobs.Models;
+﻿using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 
-namespace UniMarteWpf.Controle
+namespace UniMarteWpf
 {
-    internal class ObrasControle
+    public class ObrasControle
     {
-        private BlobServiceClient blobServiceClient;
         private List<string> _imagens;
         private int _indiceAtual;
 
-        public ObrasControle(string connectionString, string containerName)
+        public ObrasControle()
         {
-            blobServiceClient = new BlobServiceClient(connectionString);
-            _imagens = new List<string>();
-            _indiceAtual = 0;
+            CarregarImagens();
+            _indiceAtual = 0; // Começar na primeira imagem
         }
 
-        // Carrega as imagens do container Blob
-        public async Task CarregarImagensDoBlob(string containerName)
+        private void CarregarImagens()
         {
-            BlobContainerClient containerClient = blobServiceClient.GetBlobContainerClient(containerName);
-            await foreach (BlobItem blobItem in containerClient.GetBlobsAsync())
+                // Carregar imagens como recursos
+                _imagens = new List<string>
             {
-                string blobUrl = $"{containerClient.Uri}/{blobItem.Name}";
-                _imagens.Add(blobUrl);
-            }
+                "pack://application:,,,/Imagens/Obras/chegada_marte.jpg",
+                "pack://application:,,,/Imagens/Obras/colonia_espacial.jpg",
+                "pack://application:,,,/Imagens/Obras/crateras_vulcoes.jpg",
+                "pack://application:,,,/Imagens/Obras/exploracao_robotica.jpg",
+                "pack://application:,,,/Imagens/Obras/horizonte_marte.jpg",
+                "pack://application:,,,/Imagens/Obras/paisagens_noturnas.jpg",
+                "pack://application:,,,/Imagens/Obras/primeira_base_marte.jpg",
+                "pack://application:,,,/Imagens/Obras/solo_formacao_marte.jpg",
+                "pack://application:,,,/Imagens/Obras/solo_vermelho.jpg",
+                "pack://application:,,,/Imagens/Obras/tecnologia_colonizacao.jpg",
+                "pack://application:,,,/Imagens/Obras/vales_marte.jpg",
+                "pack://application:,,,/Imagens/Obras/viagem_marte.jpg",
+            };
         }
 
-        public string ObterImagemAtual()
-        {
-            if (_imagens.Count > 0)
-            {
-                return _imagens[_indiceAtual];
-            }
-            return null;
-        }
+        public string ObterImagemAtual() => _imagens[_indiceAtual];
 
         public string ObterImagemAnterior()
         {
-            if (TemImagemAnterior())
-            {
+            if (_indiceAtual > 0)
                 return _imagens[_indiceAtual - 1];
-            }
-            return null;
+            return null; // ou retornar a primeira imagem
         }
 
         public string ObterImagemPosterior()
         {
-            if (TemImagemPosterior())
-            {
+            if (_indiceAtual < _imagens.Count - 1)
                 return _imagens[_indiceAtual + 1];
-            }
-            return null;
+            return null; // ou retornar a última imagem
         }
 
-        public void AvancarImagem()
+        public void Proximo()
         {
             if (_indiceAtual < _imagens.Count - 1)
-            {
                 _indiceAtual++;
-            }
         }
 
-        public void RetrocederImagem()
+        public void Anterior()
         {
             if (_indiceAtual > 0)
-            {
                 _indiceAtual--;
-            }
         }
-
-        public bool TemImagemAnterior() => _indiceAtual > 0;
-        public bool TemImagemPosterior() => _indiceAtual < _imagens.Count - 1;
     }
 }

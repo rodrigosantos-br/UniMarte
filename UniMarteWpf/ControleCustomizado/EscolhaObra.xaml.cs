@@ -1,43 +1,48 @@
-﻿using System.Windows.Controls;
+﻿using System.Collections.ObjectModel;
+using System.Windows.Controls;
 using UniMarteWpf.Modelo;
 
 namespace UniMarteWpf.ControleCustomizado
 {
-    /// <summary>
-    /// Interação lógica para EscolhaObra.xam
-    /// </summary>
     public partial class EscolhaObra : UserControl, IResposta
     {
         public string RespostaSelecionada { get; private set; }
+        public ObservableCollection<Obra> obras { get; set; } = new ObservableCollection<Obra>();
 
         public EscolhaObra()
         {
             InitializeComponent();
-            // Exemplo de obras (você deve preencher isso com suas obras do banco de dados)
-            comboObras.Items.Add("Nenhuma");
-            comboObras.Items.Add("Obra 1");
-            comboObras.Items.Add("Obra 2");
-            comboObras.Items.Add("Obra 3");
-            comboObras.Items.Add("Obra 4");
-            comboObras.Items.Add("Obra 5");
-            comboObras.Items.Add("Obra 6");
-            comboObras.Items.Add("Obra 7");
-            comboObras.Items.Add("Obra 8");
-            comboObras.Items.Add("Obra 9");
-            comboObras.Items.Add("Obra 10");
-            comboObras.Items.Add("Obra 11");
-            comboObras.Items.Add("Obra 12");
+            ImageListBox.ItemsSource = obras;
+            obras.Add(new Obra { ImagePath = "/Imagens/Obras/chegada_marte.jpg", Titulo = "Chegada à Marte" });
+            obras.Add(new Obra { ImagePath = "/Imagens/Obras/colonia_espacial.jpg", Titulo = "Colônia Espacial"});
+            obras.Add(new Obra { ImagePath = "/Imagens/Obras/crateras_vulcoes.jpg", Titulo = "Cratera e Vulcões" });
+            obras.Add(new Obra { ImagePath = "/Imagens/Obras/exploracao_robotica.jpg", Titulo = "Exploração Robótica"});
+            obras.Add(new Obra { ImagePath = "/Imagens/Obras/horizonte_marte.jpg", Titulo = "Horizonte Marte" });
+            obras.Add(new Obra { ImagePath = "/Imagens/Obras/paisagens_noturnas.jpg", Titulo = "Paisagens Noturnas" });
+            obras.Add(new Obra { ImagePath = "/Imagens/Obras/primeira_base_marte.jpg", Titulo = "Primeira Base em Marte" });
+            obras.Add(new Obra { ImagePath = "/Imagens/Obras/solo_formacao_marte.jpg", Titulo = "Solo Foormação Marte" });
+            obras.Add(new Obra { ImagePath = "/Imagens/Obras/solo_vermelho.jpg", Titulo = "Solo Vermelho" });
+            obras.Add(new Obra { ImagePath = "/Imagens/Obras/tecnologia_colonizacao.jpg", Titulo = "Tecnologia de Colonização" });
+            obras.Add(new Obra { ImagePath = "/Imagens/Obras/vales_marte.jpg", Titulo = "Vales de Marte" });
+            obras.Add(new Obra { ImagePath = "/Imagens/Obras/viagem_marte.jpg", Titulo = "Viagem à Marte" });
+
+            ImageListBox.SelectionChanged += ImageListBox_SelectionChanged;
         }
 
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        // Método chamado ao selecionar uma obra
+        private void ImageListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            RespostaSelecionada = comboObras.SelectedItem?.ToString(); // Captura a resposta
+            if (ImageListBox.SelectedIndex >= 0) // Verifica se há uma seleção
+            {
+                // Retorna "Obra 1", "Obra 2", etc., conforme o índice
+                RespostaSelecionada = $"Obra {ImageListBox.SelectedIndex + 1}";
+            }
         }
 
+        // Método ObterResposta retorna a obra selecionada
         public List<Resposta> ObterResposta()
         {
             return new List<Resposta> { new Resposta { RespostaTexto = RespostaSelecionada } };
         }
     }
 }
-

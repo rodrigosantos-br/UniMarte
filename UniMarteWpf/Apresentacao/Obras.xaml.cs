@@ -10,76 +10,51 @@ namespace UniMarteWpf.Apresentacao
     /// </summary>
     public partial class Obras : Window
     {
-        private ObrasControle _controle;
+        private ObrasControle _obrasControle;
 
         public Obras()
         {
             InitializeComponent();
-            _controle = new ObrasControle(AzureBlobStorageConfig.ConnectionString, AzureBlobStorageConfig.ContainerName);
-            IniciarCarregamento(); // Chama o método de carregamento
+            _obrasControle = new ObrasControle();
+            AtualizarImagens();
         }
 
-        private async void IniciarCarregamento()
+        private void AtualizarImagens()
         {
-            await _controle.CarregarImagensDoBlob(AzureBlobStorageConfig.ContainerName);
-            ExibirImagemAtual();
-        }
+            string imagemAtual = _obrasControle.ObterImagemAtual();
+            string imagemAnterior = _obrasControle.ObterImagemAnterior();
+            string imagemPosterior = _obrasControle.ObterImagemPosterior();
 
-        private void ExibirImagemAtual()
-        {
-            string imagemAtual = _controle.ObterImagemAtual();
-            if (imagemAtual != null)
+            // Verifica se as imagens não são nulas antes de criar a Uri
+            if (imagemAtual == null)
             {
-                ImagemAtual.Source = new BitmapImage(new Uri(imagemAtual));
+                throw new InvalidOperationException("Imagem atual não pode ser nula.");
+            }
 
-                // Exibir imagens anteriores e posteriores
-                if (_controle.TemImagemAnterior())
-                {
-                    ImagemAnterior.Source = new BitmapImage(new Uri(_controle.ObterImagemAnterior()));
-                    ImagemAnterior.Visibility = Visibility.Visible;
-                }
-                else
-                {
-                    ImagemAnterior.Visibility = Visibility.Collapsed;
-                }
+            ImagemAtual.Source = new BitmapImage(new Uri(imagemAtual));
 
-                if (_controle.TemImagemPosterior())
-                {
-                    ImagemPosterior.Source = new BitmapImage(new Uri(_controle.ObterImagemPosterior()));
-                    ImagemPosterior.Visibility = Visibility.Visible;
-                }
-                else
-                {
-                    ImagemPosterior.Visibility = Visibility.Collapsed;
+            if (imagemAnterior != null)
+            {
+                ImagemAnterior.Source = new BitmapImage(new Uri(imagemAnterior));
+            }
 
-                    PopupSatisfacao satisfacao = new PopupSatisfacao
-                    {
-                        Owner = this,
-                        WindowStartupLocation = WindowStartupLocation.CenterOwner
-                    };
-
-                    // Inscreva-se no evento PopupFechado
-                    satisfacao.PopupFechado += () =>
-                    {
-                        this.Close(); // Fecha a janela de obras
-                    };
-
-                    satisfacao.ShowDialog();
-                }
+            if (imagemPosterior != null)
+            {
+                ImagemPosterior.Source = new BitmapImage(new Uri(imagemPosterior));
             }
         }
 
 
-        private void BotaoAnterior_Click(object sender, RoutedEventArgs e)
-        {
-            _controle.RetrocederImagem();
-            ExibirImagemAtual();
-        }
-
         private void BotaoProximo_Click(object sender, RoutedEventArgs e)
         {
-            _controle.AvancarImagem();
-            ExibirImagemAtual();
+            _obrasControle.Proximo();
+            AtualizarImagens();
+        }
+
+        private void BotaoAnterior_Click(object sender, RoutedEventArgs e)
+        {
+            _obrasControle.Anterior();
+            AtualizarImagens();
         }
 
         private void PaginaInicial_Click(object sender, RoutedEventArgs e)

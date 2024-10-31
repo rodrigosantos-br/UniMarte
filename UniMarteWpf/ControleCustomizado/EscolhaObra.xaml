@@ -3,14 +3,35 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:UniMarteWpf.ControleCustomizado"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <ListBox x:Name="ImageListBox" 
+                 Margin="100 10 100 10"
+                 SelectionMode="Single" 
+                 ScrollViewer.HorizontalScrollBarVisibility="Auto" 
+                 BorderThickness="0"
+                 SelectionChanged="ImageListBox_SelectionChanged">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel Orientation="Horizontal" />
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
 
-    <StackPanel Margin="20">
-        <ContentControl x:Name="ctcPergunta" />
-        <TextBlock Text="Escolha uma obra:" FontSize="18" Margin="0,0,0,10"/>
-        <ComboBox x:Name="comboObras" Width="300" SelectionChanged="ComboBox_SelectionChanged">
-        </ComboBox>
-    </StackPanel>
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Vertical" Margin="5">
+                        <Border BorderBrush="Gray" BorderThickness="1" Background="White">
+                            <Image Source="{Binding ImagePath}" Stretch="Fill" Width="100" Height="100"/>
+                        </Border>
+                        <TextBlock Text="{Binding Titulo}" 
+                                   HorizontalAlignment="Center" 
+                                   Margin="0,5,0,0" 
+                                   FontWeight="Bold" 
+                                   Foreground="Black" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
 </UserControl>

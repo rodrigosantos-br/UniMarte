@@ -32,8 +32,19 @@
     <None Remove="Imagens\Marte.jpg" />
     <None Remove="Imagens\MarteTerra.jpg" />
     <None Remove="Imagens\Nome.png" />
+    <None Remove="Imagens\Obras\chegada_marte.jpg" />
+    <None Remove="Imagens\Obras\colonia_espacial.jpg" />
+    <None Remove="Imagens\Obras\crateras_vulcoes.jpg" />
+    <None Remove="Imagens\Obras\exploracao_robotica.jpg" />
+    <None Remove="Imagens\Obras\horizonte_marte.jpg" />
+    <None Remove="Imagens\Obras\paisagens_noturnas.jpg" />
+    <None Remove="Imagens\Obras\primeira_base_marte.jpg" />
+    <None Remove="Imagens\Obras\solo_formacao_marte.jpg" />
+    <None Remove="Imagens\Obras\solo_vermelho.jpg" />
+    <None Remove="Imagens\Obras\tecnologia_colonizacao.jpg" />
+    <None Remove="Imagens\Obras\vales_marte.jpg" />
+    <None Remove="Imagens\Obras\viagem_marte.jpg" />
     <None Remove="Imagens\passwordBox.jpeg" />
-    <None Remove="Imagens\pesquisar.png" />
     <None Remove="Imagens\seta-esquerda.png" />
     <None Remove="Imagens\UniMarte.jpg" />
     <None Remove="Imagens\UniMarteInterior.jpg" />
@@ -57,91 +68,121 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Imagens\DataNascimento.png">
+    <Resource Include="Imagens\Icones\DataNascimento.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Imagens\estrelaBom.png">
+    <Resource Include="Imagens\Icones\estrelaBom.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Imagens\estrelaBomCinza.png">
+    <Resource Include="Imagens\Icones\estrelaBomCinza.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Imagens\estrelaOtimo.png">
+    <Resource Include="Imagens\Icones\estrelaOtimo.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Imagens\estrelaOtimoCinza.png">
+    <Resource Include="Imagens\Icones\estrelaOtimoCinza.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Imagens\estrelaPessimo.png">
+    <Resource Include="Imagens\Icones\estrelaPessimo.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Imagens\estrelaPessimoCinza.png">
+    <Resource Include="Imagens\Icones\estrelaPessimoCinza.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Imagens\estrelaRegular.png">
+    <Resource Include="Imagens\Icones\estrelaRegular.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Imagens\estrelaRegularCinza.png">
+    <Resource Include="Imagens\Icones\estrelaRegularCinza.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Imagens\estrelaRuim.png">
+    <Resource Include="Imagens\Icones\estrelaRuim.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Imagens\estrelaRuimCinza.png">
+    <Resource Include="Imagens\Icones\estrelaRuimCinza.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Imagens\estrela_cheia.png">
+    <Resource Include="Imagens\Icones\estrela_cheia.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Imagens\estrela_parcial.png">
+    <Resource Include="Imagens\Icones\estrela_parcial.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Imagens\estrela_vazia.png">
+    <Resource Include="Imagens\Icones\estrela_vazia.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Imagens\Fundo.jpg">
+    <Resource Include="Imagens\Fundos\Fundo.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Imagens\FundoLogin.jpg">
+    <Resource Include="Imagens\Fundos\FundoLogin.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Imagens\gestao.png">
+    <Resource Include="Imagens\Icones\gestao.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Imagens\home.png">
+    <Resource Include="Imagens\Icones\home.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Imagens\Logo.png">
+    <Resource Include="Imagens\Logotipo\Logo.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Imagens\marca-de-verificacao.png">
+    <Resource Include="Imagens\Fundos\Marte.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Imagens\Marte.jpg">
+    <Resource Include="Imagens\Obras\chegada_marte.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Imagens\MarteTerra.jpg">
+    <Resource Include="Imagens\Obras\colonia_espacial.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Imagens\Nome.png">
+    <Resource Include="Imagens\Obras\crateras_vulcoes.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Imagens\passwordBox.jpeg">
+    <Resource Include="Imagens\Obras\exploracao_robotica.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Imagens\pesquisar.png">
+    <Resource Include="Imagens\Obras\horizonte_marte.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Imagens\seta-esquerda.png">
+    <Resource Include="Imagens\Obras\paisagens_noturnas.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Imagens\UniMarte.jpg">
+    <Resource Include="Imagens\Obras\primeira_base_marte.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Imagens\UniMarteInterior.jpg">
+    <Resource Include="Imagens\Obras\solo_formacao_marte.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Imagens\usuario.jpg">
+    <Resource Include="Imagens\Obras\solo_vermelho.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagens\Obras\tecnologia_colonizacao.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagens\Obras\vales_marte.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagens\Obras\viagem_marte.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagens\TelaInicial\MarteTerra.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagens\Icones\Nome.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagens\Icones\passwordBox.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagens\Icones\seta-esquerda.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagens\TelaInicial\UniMarte.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagens\TelaInicial\UniMarteInterior.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagens\Icones\usuario.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

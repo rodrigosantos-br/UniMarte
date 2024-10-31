@@ -24,27 +24,27 @@ namespace UniMarteWpf.ControleCustomizado
             // Atualizar a imagem e a resposta baseada no checkBox selecionado
             if (sender == estrelaPessimo)
             {
-                AtualizarImagem(estrelaPessimo, "/Imagens/estrelaPessimo.png");
+                AtualizarImagem(estrelaPessimo, "/Imagens/Icones/estrelaPessimo.png");
                 respostaSelecionada = "1";
             }
             else if (sender == estrelaRuim)
             {
-                AtualizarImagem(estrelaRuim, "/Imagens/estrelaRuim.png");
+                AtualizarImagem(estrelaRuim, "/Imagens/Icones/estrelaRuim.png");
                 respostaSelecionada = "2";
             }
             else if (sender == estrelaRegular)
             {
-                AtualizarImagem(estrelaRegular, "/Imagens/estrelaRegular.png");
+                AtualizarImagem(estrelaRegular, "/Imagens/Icones/estrelaRegular.png");
                 respostaSelecionada = "3";
             }
             else if (sender == estrelaBom)
             {
-                AtualizarImagem(estrelaBom, "/Imagens/estrelaBom.png");
+                AtualizarImagem(estrelaBom, "/Imagens/Icones/estrelaBom.png");
                 respostaSelecionada = "4";
             }
             else if (sender == estrelaOtimo)
             {
-                AtualizarImagem(estrelaOtimo, "/Imagens/estrelaOtimo.png");
+                AtualizarImagem(estrelaOtimo, "/Imagens/Icones/estrelaOtimo.png");
                 respostaSelecionada = "5";
             }
         }
@@ -53,15 +53,15 @@ namespace UniMarteWpf.ControleCustomizado
         {
             // Voltar a imagem para cinza quando desmarcado
             if (sender == estrelaPessimo)
-                AtualizarImagem(estrelaPessimo, "/Imagens/estrelaPessimoCinza.png");
+                AtualizarImagem(estrelaPessimo, "/Imagens/Icones/estrelaPessimoCinza.png");
             else if (sender == estrelaRuim)
-                AtualizarImagem(estrelaRuim, "/Imagens/estrelaRuimCinza.png");
+                AtualizarImagem(estrelaRuim, "/Imagens/Icones/estrelaRuimCinza.png");
             else if (sender == estrelaRegular)
-                AtualizarImagem(estrelaRegular, "/Imagens/estrelaRegularCinza.png");
+                AtualizarImagem(estrelaRegular, "/Imagens/Icones/estrelaRegularCinza.png");
             else if (sender == estrelaBom)
-                AtualizarImagem(estrelaBom, "/Imagens/estrelaBomCinza.png");
+                AtualizarImagem(estrelaBom, "/Imagens/Icones/estrelaBomCinza.png");
             else if (sender == estrelaOtimo)
-                AtualizarImagem(estrelaOtimo, "/Imagens/estrelaOtimoCinza.png");
+                AtualizarImagem(estrelaOtimo, "/Imagens/Icones/estrelaOtimoCinza.png");
         }
 
         private void DesmarcarOutros(CheckBox selecionado)

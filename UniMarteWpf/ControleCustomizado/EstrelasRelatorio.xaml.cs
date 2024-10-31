@@ -21,15 +21,15 @@ namespace UniMarteWpf.ControleCustomizado
             {
                 if (i <= estrelasCompletas)
                 {
-                    SetStarImage(i, "pack://application:,,,/Imagens/estrela_cheia.png"); 
+                    SetStarImage(i, "pack://application:,,,/Imagens/Icones/estrela_cheia.png"); 
                 }
                 else if (i == estrelasCompletas + 1 && metadeEstrela >= 0.5)
                 {
-                    SetStarImage(i, "pack://application:,,,/Imagens/estrela_parcial.png");
+                    SetStarImage(i, "pack://application:,,,/Imagens/Icones/estrela_parcial.png");
                 }
                 else
                 {
-                    SetStarImage(i, "pack://application:,,,/Imagens/estrela_vazia.png");
+                    SetStarImage(i, "pack://application:,,,/Imagens/Icones/estrela_vazia.png");
                 }
             }
         }

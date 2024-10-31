@@ -8,7 +8,7 @@
         Title="Obras" WindowState="Maximized" WindowStyle="None">
     <Border CornerRadius="20">
         <Border.Background>
-            <ImageBrush ImageSource="/Imagens/Fundo.jpg" Stretch="UniformToFill" />
+            <ImageBrush ImageSource="/Imagens/Fundos/Fundo.jpg" Stretch="UniformToFill" />
         </Border.Background>
 
         <Border BorderThickness="5" Opacity="0.75" >
@@ -47,7 +47,6 @@
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
-
 
                         <Border BorderBrush="#FF3F51B5" BorderThickness="4" CornerRadius="10" Panel.ZIndex="0">
                             <Image x:Name="ImagemPosterior"
@@ -94,7 +93,7 @@
                             VerticalAlignment="Top"  HorizontalAlignment="Left" Cursor=""
                             Style="{StaticResource Padrao}" Margin="200 30 10 10" Click="PaginaInicial_Click">
                     <Button.Content>
-                        <Image Source="/Imagens/home.png"/>
+                        <Image Source="/Imagens/Icones/home.png"/>
                     </Button.Content>
                 </Button>
             </Grid>

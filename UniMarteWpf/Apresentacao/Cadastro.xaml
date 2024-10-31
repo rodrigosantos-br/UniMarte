@@ -7,7 +7,7 @@
     
     <Border CornerRadius="20" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
         <Border.Background>
-            <ImageBrush ImageSource="/Imagens/Fundo.jpg" Stretch="UniformToFill" />
+            <ImageBrush ImageSource="/Imagens/Fundos/Fundo.jpg" Stretch="UniformToFill" />
         </Border.Background>
         <Grid Background="Transparent">
             <Button x:Name="btnAdm" Click="btnAdm_Click" Visibility="Collapsed"
@@ -16,7 +16,7 @@
             VerticalAlignment="Top"  HorizontalAlignment="Right" Panel.ZIndex="1"
             Style="{StaticResource Padrao}" Margin="10 100 200 10">
                 <Button.Content>
-                    <Image Source="/Imagens/gestao.png"/>
+                    <Image Source="/Imagens/Icones/gestao.png"/>
                 </Button.Content>
             </Button>
 
@@ -25,7 +25,7 @@
             VerticalAlignment="Top"  HorizontalAlignment="Left" Cursor="" Panel.ZIndex="1"
             Style="{StaticResource Padrao}" Margin="200 100 10 10" Click="PaginaInicial_Click">
                 <Button.Content>
-                    <Image Source="/Imagens/home.png"/>
+                    <Image Source="/Imagens/Icones/home.png"/>
                 </Button.Content>
             </Button>
 
@@ -68,7 +68,7 @@
                                  VerticalContentAlignment="Center"
                                  Margin="2, 5, 0, 0" Padding="30 0 0 0 " >
                             <TextBox.Background>
-                                <ImageBrush ImageSource="/Imagens/Nome.png" Stretch="Uniform" AlignmentX="Left"/>
+                                <ImageBrush ImageSource="/Imagens/Icones/Nome.png" Stretch="Uniform" AlignmentX="Left"/>
                             </TextBox.Background>
                         </TextBox>
                         
@@ -86,7 +86,7 @@
                             </Grid.ColumnDefinitions>
 
                             <!-- Imagem ao lado esquerdo -->
-                            <Image Source="/Imagens/DataNascimento.png" Stretch="Uniform"
+                            <Image Source="/Imagens/Icones/DataNascimento.png" Stretch="Uniform"
                                    Width="30" Height="30" HorizontalAlignment="Left" VerticalAlignment="Center"/>
 
                             <!-- DatePicker ao lado direito -->

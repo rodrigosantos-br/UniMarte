@@ -230,7 +230,7 @@
         <Button Name="btnApagar" Grid.Row="1" Grid.Column="10" Grid.ColumnSpan="2"  Click="btnApagar_Click">
             <StackPanel Orientation="Horizontal">
                 <TextBlock Text="APAGAR" VerticalAlignment="Center"/>
-                <Image Source="/Imagens/seta-esquerda.png"
+                <Image Source="/Imagens/Icones/seta-esquerda.png"
                    Stretch="Fill" Height="60" Width="82" Margin="10,0,0,0"/>
             </StackPanel>
         </Button>
