@@ -142,7 +142,7 @@ namespace UniMarteWpf.ControleCustomizado
                     Title = setor.Key,
                     StrokeThickness = 2,
                     MarkerType = MarkerType.Circle,
-                    InterpolationAlgorithm = InterpolationAlgorithms.CanonicalSpline // Adiciona curvas suaves
+                    InterpolationAlgorithm = InterpolationAlgorithms.CanonicalSpline
                 };
 
                 // Mapeando as médias às datas
@@ -160,7 +160,6 @@ namespace UniMarteWpf.ControleCustomizado
                         lineSeries.Points.Add(new DataPoint(DateTimeAxis.ToDouble(data), double.NaN)); // Usa NaN para não exibir o ponto
                     }
                 }
-
 
                 LineModel.Series.Add(lineSeries);
             }

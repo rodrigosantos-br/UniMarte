@@ -96,8 +96,32 @@
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
                     <TextBlock Text="Avaliação de Cada Setor do Museu" Grid.Row="0" FontWeight="Bold" Foreground="Gray" />
-                    <oxy:PlotView x:Name="plotViewAvaliacoes" Grid.Row="1" />
+                    <StackPanel x:Name="Legendas" Grid.Row="0" Grid.Column="1"  Orientation="Vertical" Margin="10">
+                        <!-- A legenda será preenchida no código -->
+                        <StackPanel Orientation="Horizontal" Margin="5">
+                            <Ellipse Width="10" Height="10" Fill="Red" VerticalAlignment="Center" />
+                            <TextBlock Text="Arquitetura" Margin="5,-2,0,0" VerticalAlignment="Center" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="5">
+                            <Ellipse Width="10" Height="10" Fill="Green" VerticalAlignment="Center" />
+                            <TextBlock Text="Atendimento dos Funcionários" Margin="5,0,0,0" VerticalAlignment="Center" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="5">
+                            <Ellipse Width="10" Height="10" Fill="Yellow" VerticalAlignment="Center" />
+                            <TextBlock Text="Ambiente e Limpeza" Margin="5,0,0,0" VerticalAlignment="Center" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="5">
+                            <Ellipse Width="10" Height="10" Fill="Orange" VerticalAlignment="Center" />
+                            <TextBlock Text="Qualidade da Obras" Margin="5,0,0,0" VerticalAlignment="Center" />
+                        </StackPanel>
+                    </StackPanel>
+
+                    <oxy:PlotView x:Name="plotViewAvaliacoes" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" />
                 </Grid>
             </Border>
         </Grid>
