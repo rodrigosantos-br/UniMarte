@@ -38,6 +38,9 @@
     <Compile Update="ControleCustomizado\Relatorio.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="ControleCustomizado\RelatorioAdm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="ControleCustomizado\SimNao.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -68,6 +71,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Apresentacao\Questionario.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ControleCustomizado\RelatorioAdm.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Estilo\EstiloBotao.xaml">

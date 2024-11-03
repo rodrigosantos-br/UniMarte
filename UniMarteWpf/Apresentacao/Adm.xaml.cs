@@ -19,20 +19,7 @@ namespace UniMarteWpf.Apresentacao
         {
             // Limpa o conteúdo anterior do Grid
             grdGerenciador.Children.Clear();
-
-            // Cria uma nova instância do WebView2
-            WebView2 powerBIWebView = new WebView2();
-
-            // Define as propriedades necessárias (opcional)
-            powerBIWebView.HorizontalAlignment = HorizontalAlignment.Stretch;
-            powerBIWebView.VerticalAlignment = VerticalAlignment.Stretch;
-
-            // Define a URL do relatório Power BI
-            string reportUrl = "https://app.powerbi.com/view?r=eyJrIjoiZGFjNTc5YmQtY2JhZC00MzYyLWJhOGQtNDdmNzU4ZWFjMTAzIiwidCI6ImIxMDUxYzRiLTNiOTQtNDFhYi05NDQxLWU3M2E3MjM0MmZkZCJ9";
-            powerBIWebView.Source = new Uri(reportUrl);
-
-            // Adiciona o WebView2 ao Grid
-            grdGerenciador.Children.Add(powerBIWebView);
+            grdGerenciador.Children.Add(relatorioAdm);
         }
 
         private void Relatorio_Click(object sender, RoutedEventArgs e)

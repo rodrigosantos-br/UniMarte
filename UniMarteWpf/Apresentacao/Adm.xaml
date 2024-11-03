@@ -34,7 +34,7 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 <StackPanel VerticalAlignment="Center" Grid.Column="0" Margin="50">
-                    <Button x:Name="btnRelatorio" Content="Relatorio PowerBI" FontSize="20" BorderThickness="0"
+                    <Button x:Name="btnRelatorio" Content="Relatorio" FontSize="20" BorderThickness="0"
                             Foreground="White" FontFamily="Montserrat"  Height="40" Width="250"
                             VerticalAlignment="Center"  HorizontalAlignment="Center" Cursor="Hand"
                             Style="{StaticResource Padrao}" Margin="0 100 0 0" Click="Relatorio_Click"/>
@@ -48,7 +48,7 @@
                             Style="{StaticResource Padrao}" Margin="0 100 0 100" Click="FinalizarSoftware_Click"/>
                 </StackPanel>
                 <Grid Name="grdGerenciador" Grid.Column="1" Background="Transparent">
-                    <wpf:WebView2 x:Name="powerBIWebView" />
+                    <custom:RelatorioAdm x:Name="relatorioAdm" Visibility="Visible" />
                     <custom:Gerenciador Visibility="Collapsed" />
                 </Grid>
             </Grid>

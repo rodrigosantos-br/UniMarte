@@ -1,6 +1,15 @@
-2024/10/31-07:13:22.937 471c Reusing MANIFEST C:\Projects\UniMarte\UniMarteWpf\bin\Debug\net8.0-windows\UniMarteWpf.exe.WebView2\EBWebView\Default\Session Storage/MANIFEST-000001
-2024/10/31-07:13:22.938 471c Recovering log #483
-2024/10/31-07:13:22.942 471c Reusing old log C:\Projects\UniMarte\UniMarteWpf\bin\Debug\net8.0-windows\UniMarteWpf.exe.WebView2\EBWebView\Default\Session Storage/000483.log 
-2024/10/31-07:13:38.091 32d4 Level-0 table #487: started
-2024/10/31-07:13:38.100 32d4 Level-0 table #487: 82232 bytes OK
-2024/10/31-07:13:38.104 32d4 Delete type=0 #483
+2024/11/02-11:03:22.840 fc4 Reusing MANIFEST C:\Projects\UniMarte\UniMarteWpf\bin\Debug\net8.0-windows\UniMarteWpf.exe.WebView2\EBWebView\Default\Session Storage/MANIFEST-000001
+2024/11/02-11:03:22.843 fc4 Recovering log #510
+2024/11/02-11:03:22.847 fc4 Reusing old log C:\Projects\UniMarte\UniMarteWpf\bin\Debug\net8.0-windows\UniMarteWpf.exe.WebView2\EBWebView\Default\Session Storage/000510.log 
+2024/11/02-11:03:35.074 24d0 Level-0 table #514: started
+2024/11/02-11:03:35.080 24d0 Level-0 table #514: 29840 bytes OK
+2024/11/02-11:03:35.083 24d0 Delete type=0 #510
+2024/11/02-11:03:35.085 24d0 Compacting 4@0 + 1@1 files
+2024/11/02-11:03:35.128 24d0 Generated table #515@0: 3250 keys, 65623 bytes
+2024/11/02-11:03:35.128 24d0 Compacted 4@0 + 1@1 files => 65623 bytes
+2024/11/02-11:03:35.143 24d0 compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/11/02-11:03:35.145 24d0 Delete type=2 #502
+2024/11/02-11:03:35.145 24d0 Delete type=2 #505
+2024/11/02-11:03:35.145 24d0 Delete type=2 #508
+2024/11/02-11:03:35.145 24d0 Delete type=2 #511
+2024/11/02-11:03:35.146 24d0 Delete type=2 #514

@@ -4,7 +4,7 @@ namespace UniMarteWpf.Controle
 {
     public class RelatorioControle
     {
-        private RelatorioDAO relatorioDAO = new RelatorioDAO();
+        private RelatorioVisitanteDAO relatorioDAO = new RelatorioVisitanteDAO();
 
         public (int totalVisitantes, float mediaRespostas) GerarRelatorio()
         {
