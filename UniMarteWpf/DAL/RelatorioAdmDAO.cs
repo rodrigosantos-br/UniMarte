@@ -73,7 +73,7 @@ namespace UniMarteWpf.DataAccess
                 {
                     // Acesse a coluna de índice 0
                     double mediaRespostas = reader.IsDBNull(0) ? 0 : reader.GetDouble(0);
-                    return (float)mediaRespostas; // Retorne o valor da média
+                    return (float)Math.Round(mediaRespostas, 2); // Retorne o valor da média
                 }
 
                 return 0; // Retorne 0 caso não haja resultados
