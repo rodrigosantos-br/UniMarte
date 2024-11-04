@@ -186,8 +186,4 @@
     </Resource>
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Servico\" />
-  </ItemGroup>
-
 </Project>

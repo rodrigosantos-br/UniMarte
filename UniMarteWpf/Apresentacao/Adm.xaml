@@ -34,7 +34,7 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 <StackPanel VerticalAlignment="Center" Grid.Column="0" Margin="50">
-                    <Button x:Name="btnRelatorio" Content="Relatorio" FontSize="20" BorderThickness="0"
+                    <Button x:Name="btnRelatorio" Content="Relatório" FontSize="20" BorderThickness="0"
                             Foreground="White" FontFamily="Montserrat"  Height="40" Width="250"
                             VerticalAlignment="Center"  HorizontalAlignment="Center" Cursor="Hand"
                             Style="{StaticResource Padrao}" Margin="0 100 0 0" Click="Relatorio_Click"/>

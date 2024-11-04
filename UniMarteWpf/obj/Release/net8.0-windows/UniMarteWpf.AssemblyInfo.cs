@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UniMarteWpf")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+751b62faac20327185aa5ce92be35a8440ccfb83")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0fe31e24287673f94841140cf6531221beb94ff6")]
 [assembly: System.Reflection.AssemblyProductAttribute("UniMarteWpf")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UniMarteWpf")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

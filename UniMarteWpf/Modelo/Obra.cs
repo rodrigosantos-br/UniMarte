@@ -1,7 +1,4 @@
-﻿using System.Drawing;
-using System.Windows.Media.Imaging;
-
-namespace UniMarteWpf.Modelo
+﻿namespace UniMarteWpf.Modelo
 {
     public class Obra
     {

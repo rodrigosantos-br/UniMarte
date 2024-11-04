@@ -1,7 +1,4 @@
 ﻿using System.Windows;
-using System.Windows.Media.Imaging;
-using UniMarteWpf.Controle;
-using UniMarteWpf.Estatico;
 
 namespace UniMarteWpf.Apresentacao
 {
