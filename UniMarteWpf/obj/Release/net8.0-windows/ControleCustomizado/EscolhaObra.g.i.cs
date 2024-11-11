@@ -61,7 +61,7 @@ namespace UniMarteWpf.ControleCustomizado {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/UniMarteWpf;component/controlecustomizado/escolhaobra.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/UniMarte.Wpf;component/controlecustomizado/escolhaobra.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\ControleCustomizado\EscolhaObra.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

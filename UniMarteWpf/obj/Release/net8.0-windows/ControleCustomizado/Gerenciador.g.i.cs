@@ -71,7 +71,7 @@ namespace UniMarteWpf.ControleCustomizado {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/UniMarteWpf;component/controlecustomizado/gerenciador.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/UniMarte.Wpf;component/controlecustomizado/gerenciador.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\ControleCustomizado\Gerenciador.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

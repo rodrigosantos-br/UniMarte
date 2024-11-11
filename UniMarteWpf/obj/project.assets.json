@@ -4323,9 +4323,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\UniMarte\\UniMarteWpf\\UniMarteWpf.csproj",
-      "projectName": "UniMarteWpf",
-      "projectPath": "C:\\Projects\\UniMarte\\UniMarteWpf\\UniMarteWpf.csproj",
+      "projectUniqueName": "C:\\Projects\\UniMarte\\UniMarteWpf\\UniMarte.Wpf.csproj",
+      "projectName": "UniMarte.Wpf",
+      "projectPath": "C:\\Projects\\UniMarte\\UniMarteWpf\\UniMarte.Wpf.csproj",
       "packagesPath": "C:\\Users\\rodri\\.nuget\\packages\\",
       "outputPath": "C:\\Projects\\UniMarte\\UniMarteWpf\\obj\\",
       "projectStyle": "PackageReference",

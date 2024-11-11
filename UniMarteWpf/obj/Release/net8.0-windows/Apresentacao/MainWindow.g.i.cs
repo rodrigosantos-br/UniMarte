@@ -62,7 +62,7 @@ namespace UniMarteWpf.Apresentacao {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/UniMarteWpf;component/apresentacao/mainwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/UniMarte.Wpf;component/apresentacao/mainwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Apresentacao\MainWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

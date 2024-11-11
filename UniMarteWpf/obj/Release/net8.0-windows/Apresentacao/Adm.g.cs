@@ -96,7 +96,7 @@ namespace UniMarteWpf.Apresentacao {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/UniMarteWpf;component/apresentacao/adm.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/UniMarte.Wpf;component/apresentacao/adm.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Apresentacao\Adm.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

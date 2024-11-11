@@ -1,0 +1,18 @@
+﻿@model IEnumerable<Obra>
+
+<h2>Obras do Museu</h2>
+
+<div class="row">
+    @foreach (var obra in Model)
+    {
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="@obra.ImagemUrl" alt="Imagem da obra">
+                <div class="card-body">
+                    <h5 class="card-title">@obra.Titulo</h5>
+                    <p class="card-text">@obra.Historico</p>
+                </div>
+            </div>
+        </div>
+    }
+</div>
