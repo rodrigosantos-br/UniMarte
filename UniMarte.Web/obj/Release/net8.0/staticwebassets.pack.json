@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "C:\\Projects\\UniMarte\\UniMarte.Web\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\UniMarte.Web.bundle.scp.css",
-      "PackagePath": "staticwebassets\\UniMarte.Web.bundle.scp.css"
+      "PackagePath": "staticwebassets\\UniMarte.Web.igk9nni2cr.bundle.scp.css"
     },
     {
       "Id": "C:\\Projects\\UniMarte\\UniMarte.Web\\wwwroot\\css\\site.css",
@@ -419,6 +419,10 @@
     {
       "Id": "C:\\Users\\rodri\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.UniMarte.Web.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.UniMarte.Web.Microsoft.AspNetCore.StaticWebAssets.props",

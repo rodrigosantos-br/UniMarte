@@ -30,7 +30,6 @@ C:\Projects\UniMarte\UniMarteWpf\bin\Release\net8.0-windows\Microsoft.Extensions
 C:\Projects\UniMarte\UniMarteWpf\bin\Release\net8.0-windows\Microsoft.Extensions.Primitives.dll
 C:\Projects\UniMarte\UniMarteWpf\bin\Release\net8.0-windows\Microsoft.Identity.Client.dll
 C:\Projects\UniMarte\UniMarteWpf\bin\Release\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
-C:\Projects\UniMarte\UniMarteWpf\bin\Release\net8.0-windows\Microsoft.Identity.Client.NativeInterop.dll
 C:\Projects\UniMarte\UniMarteWpf\bin\Release\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
 C:\Projects\UniMarte\UniMarteWpf\bin\Release\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\Projects\UniMarte\UniMarteWpf\bin\Release\net8.0-windows\Microsoft.IdentityModel.Logging.dll
@@ -38,9 +37,6 @@ C:\Projects\UniMarte\UniMarteWpf\bin\Release\net8.0-windows\Microsoft.IdentityMo
 C:\Projects\UniMarte\UniMarteWpf\bin\Release\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Projects\UniMarte\UniMarteWpf\bin\Release\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
 C:\Projects\UniMarte\UniMarteWpf\bin\Release\net8.0-windows\Microsoft.SqlServer.Server.dll
-C:\Projects\UniMarte\UniMarteWpf\bin\Release\net8.0-windows\Microsoft.Web.WebView2.Core.dll
-C:\Projects\UniMarte\UniMarteWpf\bin\Release\net8.0-windows\Microsoft.Web.WebView2.WinForms.dll
-C:\Projects\UniMarte\UniMarteWpf\bin\Release\net8.0-windows\Microsoft.Web.WebView2.Wpf.dll
 C:\Projects\UniMarte\UniMarteWpf\bin\Release\net8.0-windows\Mono.TextTemplating.dll
 C:\Projects\UniMarte\UniMarteWpf\bin\Release\net8.0-windows\OxyPlot.dll
 C:\Projects\UniMarte\UniMarteWpf\bin\Release\net8.0-windows\OxyPlot.Wpf.dll
@@ -112,12 +108,6 @@ C:\Projects\UniMarte\UniMarteWpf\bin\Release\net8.0-windows\runtimes\win-arm\nat
 C:\Projects\UniMarte\UniMarteWpf\bin\Release\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Projects\UniMarte\UniMarteWpf\bin\Release\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Projects\UniMarte\UniMarteWpf\bin\Release\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Projects\UniMarte\UniMarteWpf\bin\Release\net8.0-windows\runtimes\win-arm64\native\msalruntime_arm64.dll
-C:\Projects\UniMarte\UniMarteWpf\bin\Release\net8.0-windows\runtimes\win-x64\native\msalruntime.dll
-C:\Projects\UniMarte\UniMarteWpf\bin\Release\net8.0-windows\runtimes\win-x86\native\msalruntime_x86.dll
-C:\Projects\UniMarte\UniMarteWpf\bin\Release\net8.0-windows\runtimes\win-arm64\native\WebView2Loader.dll
-C:\Projects\UniMarte\UniMarteWpf\bin\Release\net8.0-windows\runtimes\win-x64\native\WebView2Loader.dll
-C:\Projects\UniMarte\UniMarteWpf\bin\Release\net8.0-windows\runtimes\win-x86\native\WebView2Loader.dll
 C:\Projects\UniMarte\UniMarteWpf\bin\Release\net8.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Projects\UniMarte\UniMarteWpf\obj\Release\net8.0-windows\UniMarte.Wpf.csproj.AssemblyReference.cache
 C:\Projects\UniMarte\UniMarteWpf\obj\Release\net8.0-windows\ControleCustomizado\EscolhaObra.baml
@@ -172,3 +162,5 @@ C:\Projects\UniMarte\UniMarteWpf\obj\Release\net8.0-windows\refint\UniMarte.Wpf.
 C:\Projects\UniMarte\UniMarteWpf\obj\Release\net8.0-windows\UniMarte.Wpf.pdb
 C:\Projects\UniMarte\UniMarteWpf\obj\Release\net8.0-windows\UniMarte.Wpf.genruntimeconfig.cache
 C:\Projects\UniMarte\UniMarteWpf\obj\Release\net8.0-windows\ref\UniMarte.Wpf.dll
+C:\Projects\UniMarte\UniMarteWpf\bin\Release\net8.0-windows\System.ClientModel.dll
+C:\Projects\UniMarte\UniMarteWpf\bin\Release\net8.0-windows\System.Diagnostics.DiagnosticSource.dll
