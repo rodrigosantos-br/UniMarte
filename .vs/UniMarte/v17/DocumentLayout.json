@@ -1,7 +1,28 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Projects\\UniMarte\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|c:\\projects\\unimarte\\unimarte.web\\models\\iobrarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|solutionrelative:unimarte.web\\models\\iobrarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|c:\\projects\\unimarte\\unimarte.web\\controllers\\obrascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|solutionrelative:unimarte.web\\controllers\\obrascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|c:\\projects\\unimarte\\unimarte.web\\models\\obra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|solutionrelative:unimarte.web\\models\\obra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|c:\\projects\\unimarte\\unimarte.web\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|solutionrelative:unimarte.web\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\UniMarte\\.github\\workflows\\unimarte.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.github\\workflows\\unimarte.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,6 +47,71 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IObraRepository.cs",
+              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarte.Web\\Models\\IObraRepository.cs",
+              "RelativeDocumentMoniker": "UniMarte.Web\\Models\\IObraRepository.cs",
+              "ToolTip": "C:\\Projects\\UniMarte\\UniMarte.Web\\Models\\IObraRepository.cs",
+              "RelativeToolTip": "UniMarte.Web\\Models\\IObraRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T17:24:18.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Obra.cs",
+              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarte.Web\\Models\\Obra.cs",
+              "RelativeDocumentMoniker": "UniMarte.Web\\Models\\Obra.cs",
+              "ToolTip": "C:\\Projects\\UniMarte\\UniMarte.Web\\Models\\Obra.cs",
+              "RelativeToolTip": "UniMarte.Web\\Models\\Obra.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T17:24:15.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ObrasController.cs",
+              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarte.Web\\Controllers\\ObrasController.cs",
+              "RelativeDocumentMoniker": "UniMarte.Web\\Controllers\\ObrasController.cs",
+              "ToolTip": "C:\\Projects\\UniMarte\\UniMarte.Web\\Controllers\\ObrasController.cs",
+              "RelativeToolTip": "UniMarte.Web\\Controllers\\ObrasController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T17:24:03.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarte.Web\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "UniMarte.Web\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Projects\\UniMarte\\UniMarte.Web\\Properties\\launchSettings.json",
+              "RelativeToolTip": "UniMarte.Web\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-13T17:10:20.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "unimarte.yml",
+              "DocumentMoniker": "C:\\Projects\\UniMarte\\.github\\workflows\\unimarte.yml",
+              "RelativeDocumentMoniker": ".github\\workflows\\unimarte.yml",
+              "ToolTip": "C:\\Projects\\UniMarte\\.github\\workflows\\unimarte.yml",
+              "RelativeToolTip": ".github\\workflows\\unimarte.yml",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2024-11-12T19:41:45.995Z",
+              "EditorCaption": ""
             }
           ]
         }
