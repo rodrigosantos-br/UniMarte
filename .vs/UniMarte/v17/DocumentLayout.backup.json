@@ -71,8 +71,7 @@
               "RelativeToolTip": "UniMarte.Web\\Models\\Obra.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T17:24:15.346Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T17:24:15.346Z"
             },
             {
               "$type": "Document",
@@ -84,8 +83,7 @@
               "RelativeToolTip": "UniMarte.Web\\Controllers\\ObrasController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T17:24:03.869Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T17:24:03.869Z"
             },
             {
               "$type": "Document",
@@ -97,8 +95,7 @@
               "RelativeToolTip": "UniMarte.Web\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-13T17:10:20.401Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T17:10:20.401Z"
             },
             {
               "$type": "Document",
@@ -110,8 +107,7 @@
               "RelativeToolTip": ".github\\workflows\\unimarte.yml",
               "ViewState": "AgIAADYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2024-11-12T19:41:45.995Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T19:41:45.995Z"
             }
           ]
         }
