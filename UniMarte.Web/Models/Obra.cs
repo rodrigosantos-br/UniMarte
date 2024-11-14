@@ -1,7 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace UniMarte.Web.Models
 {
+    [Table("Obras")]
     public class Obra
     {
         [Key]

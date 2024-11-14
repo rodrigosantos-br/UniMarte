@@ -3,12 +3,76 @@
   "WorkspaceRootPath": "C:\\Projects\\UniMarte\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{709F070A-E4CC-4253-890C-02F738CB6C1C}|UniMarteWpf\\UniMarte.Wpf.csproj|c:\\projects\\unimarte\\unimartewpf\\dal\\conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{709F070A-E4CC-4253-890C-02F738CB6C1C}|UniMarteWpf\\UniMarte.Wpf.csproj|solutionrelative:unimartewpf\\dal\\conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|c:\\projects\\unimarte\\unimarte.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|solutionrelative:unimarte.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|c:\\projects\\unimarte\\unimarte.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|solutionrelative:unimarte.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|c:\\projects\\unimarte\\unimarte.web\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|solutionrelative:unimarte.web\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|c:\\projects\\unimarte\\unimarte.web\\controllers\\visitantescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|solutionrelative:unimarte.web\\controllers\\visitantescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|c:\\projects\\unimarte\\unimarte.web\\data\\perguntarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|solutionrelative:unimarte.web\\data\\perguntarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|c:\\projects\\unimarte\\unimarte.web\\data\\obrarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|solutionrelative:unimarte.web\\data\\obrarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|c:\\projects\\unimarte\\unimarte.web\\data\\respostarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|solutionrelative:unimarte.web\\data\\respostarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|c:\\projects\\unimarte\\unimarte.web\\controllers\\perguntascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|solutionrelative:unimarte.web\\controllers\\perguntascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|c:\\projects\\unimarte\\unimarte.web\\controllers\\obrascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|solutionrelative:unimarte.web\\controllers\\obrascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|c:\\projects\\unimarte\\unimarte.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|solutionrelative:unimarte.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|c:\\projects\\unimarte\\unimarte.web\\data\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|solutionrelative:unimarte.web\\data\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|c:\\projects\\unimarte\\unimarte.web\\models\\obra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|solutionrelative:unimarte.web\\models\\obra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|c:\\projects\\unimarte\\unimarte.web\\viewmodel\\visitanteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|solutionrelative:unimarte.web\\viewmodel\\visitanteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|c:\\projects\\unimarte\\unimarte.web\\data\\visitanterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|solutionrelative:unimarte.web\\data\\visitanterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|c:\\projects\\unimarte\\unimarte.web\\models\\pergunta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|solutionrelative:unimarte.web\\models\\pergunta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|c:\\projects\\unimarte\\unimarte.web\\models\\visitante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|solutionrelative:unimarte.web\\models\\visitante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|c:\\projects\\unimarte\\unimarte.web\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|solutionrelative:unimarte.web\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|c:\\projects\\unimarte\\unimarte.web\\models\\resposta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|solutionrelative:unimarte.web\\models\\resposta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|c:\\projects\\unimarte\\unimarte.web\\controllers\\relatoriocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|solutionrelative:unimarte.web\\controllers\\relatoriocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +82,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -33,29 +97,242 @@
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Conexao.cs",
-              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarteWpf\\DAL\\Conexao.cs",
-              "RelativeDocumentMoniker": "UniMarteWpf\\DAL\\Conexao.cs",
-              "ToolTip": "C:\\Projects\\UniMarte\\UniMarteWpf\\DAL\\Conexao.cs",
-              "RelativeToolTip": "UniMarteWpf\\DAL\\Conexao.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T11:07:46.38Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarte.Web\\appsettings.json",
-              "RelativeDocumentMoniker": "UniMarte.Web\\appsettings.json",
-              "ToolTip": "C:\\Projects\\UniMarte\\UniMarte.Web\\appsettings.json",
-              "RelativeToolTip": "UniMarte.Web\\appsettings.json",
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarte.Web\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "UniMarte.Web\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Projects\\UniMarte\\UniMarte.Web\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "UniMarte.Web\\Views\\_ViewImports.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-14T11:07:39.66Z"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-14T22:09:52.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VisitantesController.cs",
+              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarte.Web\\Controllers\\VisitantesController.cs",
+              "RelativeDocumentMoniker": "UniMarte.Web\\Controllers\\VisitantesController.cs",
+              "ToolTip": "C:\\Projects\\UniMarte\\UniMarte.Web\\Controllers\\VisitantesController.cs",
+              "RelativeToolTip": "UniMarte.Web\\Controllers\\VisitantesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T22:07:52.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarte.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "UniMarte.Web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Projects\\UniMarte\\UniMarte.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "UniMarte.Web\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAB2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-14T22:06:56.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarte.Web\\Data\\UsuarioRepository.cs",
+              "RelativeDocumentMoniker": "UniMarte.Web\\Data\\UsuarioRepository.cs",
+              "ToolTip": "C:\\Projects\\UniMarte\\UniMarte.Web\\Data\\UsuarioRepository.cs",
+              "RelativeToolTip": "UniMarte.Web\\Data\\UsuarioRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T21:55:12.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ObraRepository.cs",
+              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarte.Web\\Data\\ObraRepository.cs",
+              "RelativeDocumentMoniker": "UniMarte.Web\\Data\\ObraRepository.cs",
+              "ToolTip": "C:\\Projects\\UniMarte\\UniMarte.Web\\Data\\ObraRepository.cs",
+              "RelativeToolTip": "UniMarte.Web\\Data\\ObraRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T21:54:37.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Obra.cs",
+              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarte.Web\\Models\\Obra.cs",
+              "RelativeDocumentMoniker": "UniMarte.Web\\Models\\Obra.cs",
+              "ToolTip": "C:\\Projects\\UniMarte\\UniMarte.Web\\Models\\Obra.cs",
+              "RelativeToolTip": "UniMarte.Web\\Models\\Obra.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T21:52:30.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarte.Web\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "UniMarte.Web\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Projects\\UniMarte\\UniMarte.Web\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "UniMarte.Web\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T19:09:05.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ObrasController.cs",
+              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarte.Web\\Controllers\\ObrasController.cs",
+              "RelativeDocumentMoniker": "UniMarte.Web\\Controllers\\ObrasController.cs",
+              "ToolTip": "C:\\Projects\\UniMarte\\UniMarte.Web\\Controllers\\ObrasController.cs",
+              "RelativeToolTip": "UniMarte.Web\\Controllers\\ObrasController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T19:08:26.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PerguntasController.cs",
+              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarte.Web\\Controllers\\PerguntasController.cs",
+              "RelativeDocumentMoniker": "UniMarte.Web\\Controllers\\PerguntasController.cs",
+              "ToolTip": "C:\\Projects\\UniMarte\\UniMarte.Web\\Controllers\\PerguntasController.cs",
+              "RelativeToolTip": "UniMarte.Web\\Controllers\\PerguntasController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T21:50:58.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PerguntaRepository.cs",
+              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarte.Web\\Data\\PerguntaRepository.cs",
+              "RelativeDocumentMoniker": "UniMarte.Web\\Data\\PerguntaRepository.cs",
+              "ToolTip": "C:\\Projects\\UniMarte\\UniMarte.Web\\Data\\PerguntaRepository.cs",
+              "RelativeToolTip": "UniMarte.Web\\Data\\PerguntaRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T21:54:43.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RespostaRepository.cs",
+              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarte.Web\\Data\\RespostaRepository.cs",
+              "RelativeDocumentMoniker": "UniMarte.Web\\Data\\RespostaRepository.cs",
+              "ToolTip": "C:\\Projects\\UniMarte\\UniMarte.Web\\Data\\RespostaRepository.cs",
+              "RelativeToolTip": "UniMarte.Web\\Data\\RespostaRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T21:55:07.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "VisitanteViewModel.cs",
+              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarte.Web\\ViewModel\\VisitanteViewModel.cs",
+              "RelativeDocumentMoniker": "UniMarte.Web\\ViewModel\\VisitanteViewModel.cs",
+              "ToolTip": "C:\\Projects\\UniMarte\\UniMarte.Web\\ViewModel\\VisitanteViewModel.cs",
+              "RelativeToolTip": "UniMarte.Web\\ViewModel\\VisitanteViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T19:08:43.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "VisitanteRepository.cs",
+              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarte.Web\\Data\\VisitanteRepository.cs",
+              "RelativeDocumentMoniker": "UniMarte.Web\\Data\\VisitanteRepository.cs",
+              "ToolTip": "C:\\Projects\\UniMarte\\UniMarte.Web\\Data\\VisitanteRepository.cs",
+              "RelativeToolTip": "UniMarte.Web\\Data\\VisitanteRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T21:55:14.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Visitante.cs",
+              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarte.Web\\Models\\Visitante.cs",
+              "RelativeDocumentMoniker": "UniMarte.Web\\Models\\Visitante.cs",
+              "ToolTip": "C:\\Projects\\UniMarte\\UniMarte.Web\\Models\\Visitante.cs",
+              "RelativeToolTip": "UniMarte.Web\\Models\\Visitante.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T21:53:33.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarte.Web\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "UniMarte.Web\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Projects\\UniMarte\\UniMarte.Web\\Models\\Usuario.cs",
+              "RelativeToolTip": "UniMarte.Web\\Models\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T21:52:58.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Resposta.cs",
+              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarte.Web\\Models\\Resposta.cs",
+              "RelativeDocumentMoniker": "UniMarte.Web\\Models\\Resposta.cs",
+              "ToolTip": "C:\\Projects\\UniMarte\\UniMarte.Web\\Models\\Resposta.cs",
+              "RelativeToolTip": "UniMarte.Web\\Models\\Resposta.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T21:52:46.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Pergunta.cs",
+              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarte.Web\\Models\\Pergunta.cs",
+              "RelativeDocumentMoniker": "UniMarte.Web\\Models\\Pergunta.cs",
+              "ToolTip": "C:\\Projects\\UniMarte\\UniMarte.Web\\Models\\Pergunta.cs",
+              "RelativeToolTip": "UniMarte.Web\\Models\\Pergunta.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T21:52:38.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "RelatorioController.cs",
+              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarte.Web\\Controllers\\RelatorioController.cs",
+              "RelativeDocumentMoniker": "UniMarte.Web\\Controllers\\RelatorioController.cs",
+              "ToolTip": "C:\\Projects\\UniMarte\\UniMarte.Web\\Controllers\\RelatorioController.cs",
+              "RelativeToolTip": "UniMarte.Web\\Controllers\\RelatorioController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T21:51:18.628Z",
+              "EditorCaption": ""
             }
           ]
         }

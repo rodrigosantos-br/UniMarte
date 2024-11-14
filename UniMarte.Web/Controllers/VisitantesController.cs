@@ -3,11 +3,12 @@ using UniMarte.Web.Models;
 
 namespace UniMarte.Web.Controllers
 {
-    public class CadastroVisitantesController : Controller
+    [Route("Cadastro")]
+    public class VisitantesController : Controller
     {
         private readonly IVisitanteRepository _visitanteRepository;
 
-        public CadastroVisitantesController(IVisitanteRepository visitanteRepository)
+        public VisitantesController(IVisitanteRepository visitanteRepository)
         {
             _visitanteRepository = visitanteRepository;
         }
