@@ -6,7 +6,7 @@ namespace UniMarteWpf.DAL
     {
         public static SqlConnection con = new SqlConnection();
         public static string mensagem = "";
-        public static string stringConexao = "Data Source=RODRIGO_STUDIE;Initial Catalog=UniMarte_DB;Persist Security Info=True;User ID=sa;Password=Sa123!@#;Trust Server Certificate=True";
+        public static string stringConexao = "workstation id=UniMarte_DB.mssql.somee.com;packet size=4096;user id=rodrigosantos_SQLLogin_1;pwd=7x3lszkbzl;data source=UniMarte_DB.mssql.somee.com;persist security info=False;initial catalog=UniMarte_DB;TrustServerCertificate=True";
 
         public static SqlConnection Conectar()
         {

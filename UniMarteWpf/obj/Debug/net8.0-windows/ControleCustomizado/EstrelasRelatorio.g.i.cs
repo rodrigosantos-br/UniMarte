@@ -93,7 +93,7 @@ namespace UniMarteWpf.ControleCustomizado {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/UniMarte.Wpf;V1.0.0.0;component/controlecustomizado/estrelasrelatorio.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/UniMarte.Wpf;component/controlecustomizado/estrelasrelatorio.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\ControleCustomizado\EstrelasRelatorio.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -78,7 +78,7 @@ namespace UniMarteWpf.Apresentacao {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/UniMarte.Wpf;V1.0.0.0;component/apresentacao/popupsatisfacao.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/UniMarte.Wpf;component/apresentacao/popupsatisfacao.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Apresentacao\PopupSatisfacao.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
