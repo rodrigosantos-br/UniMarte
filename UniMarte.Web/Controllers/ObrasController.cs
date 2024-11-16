@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using UniMarte.Web.Models;
+using UniMarte.Web.Models.Interfaces;
 
 namespace UniMarte.Web.Controllers
 {
@@ -12,7 +12,7 @@ namespace UniMarte.Web.Controllers
             _obraRepository = obraRepository;
         }
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Listar()
         {
             var obras = await _obraRepository.ObterTodasAsObras();
             return View(obras);

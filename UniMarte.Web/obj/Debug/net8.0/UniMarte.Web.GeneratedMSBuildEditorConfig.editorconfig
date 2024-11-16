@@ -32,12 +32,12 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/UniMarte/UniMarte.Web/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[C:/Projects/UniMarte/UniMarte.Web/Views/Obras/Listar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2JyYXNcTGlzdGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/UniMarte/UniMarte.Web/Views/Obras/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2JyYXNcSW5kZXguY3NodG1s
+[C:/Projects/UniMarte/UniMarte.Web/Views/Questionario/ExibirPerguntas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVlc3Rpb25hcmlvXEV4aWJpclBlcmd1bnRhcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Projects/UniMarte/UniMarte.Web/Views/Shared/Error.cshtml]
@@ -48,8 +48,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/UniMarte/UniMarte.Web/Views/Visitantes/Cadastro.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlzaXRhbnRlc1xDYWRhc3Ryby5jc2h0bWw=
+[C:/Projects/UniMarte/UniMarte.Web/Views/Visitantes/Cadastrar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlzaXRhbnRlc1xDYWRhc3RyYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Projects/UniMarte/UniMarte.Web/Views/_ViewImports.cshtml]

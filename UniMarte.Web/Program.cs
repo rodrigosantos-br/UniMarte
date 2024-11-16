@@ -1,33 +1,46 @@
 using Microsoft.EntityFrameworkCore;
 using UniMarte.Web.Data;
-using UniMarte.Web.Models;
+using UniMarte.Web.Models.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Configurar o banco de dados usando a string de conexão no appsettings.json
+// Adicionar suporte Ã  sessÃ£o
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30); // Tempo de expiraÃ§Ã£o da sessÃ£o
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true; // NecessÃ¡rio para conformidade com a GDPR
+});
+
+// Configurar o banco de dados usando a string de conexï¿½o no appsettings.json
 builder.Services.AddDbContext<ConnectionContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// Adicionar repositórios e serviços à injeção de dependência
+// Adicionar repositï¿½rios e serviï¿½os ï¿½ injeï¿½ï¿½o de dependï¿½ncia
 builder.Services.AddScoped<IVisitanteRepository, VisitanteRepository>();
 builder.Services.AddScoped<IObraRepository, ObraRepository>();
+builder.Services.AddScoped<IPerguntaRepository, PerguntaRepository>();
+builder.Services.AddScoped<IRespostaRepository, RespostaRepository>();
 builder.Services.AddControllersWithViews();
 
-// Agora que todos os serviços foram configurados, construímos o aplicativo
+// Agora que todos os serviï¿½os foram configurados, construï¿½mos o aplicativo
 var app = builder.Build();
 
-// Configurar o pipeline de requisição HTTP
+// Configurar o pipeline de requisiï¿½ï¿½o HTTP
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
 }
+app.UseSession();
+
 app.UseStaticFiles();
 
 app.UseRouting();
 
 app.UseAuthorization();
 
-// Configurar a rota padrão
+// Configurar a rota padrï¿½o
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");

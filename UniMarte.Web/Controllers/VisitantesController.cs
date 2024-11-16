@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using UniMarte.Web.Models;
+using UniMarte.Web.Models.Interfaces;
 
 namespace UniMarte.Web.Controllers
 {
-    [Route("Cadastro")]
     public class VisitantesController : Controller
     {
         private readonly IVisitanteRepository _visitanteRepository;
@@ -15,25 +15,29 @@ namespace UniMarte.Web.Controllers
 
         // Action para exibir o formulário de cadastro (GET)
         [HttpGet]
-        public IActionResult Cadastro()
+        public IActionResult Cadastrar()
         {
-            return View(new Visitante());
+            return View(); 
         }
 
         // Action para processar o envio do formulário de cadastro (POST)
         [HttpPost]
-        public async Task<IActionResult> Cadastro(Visitante visitante)
+        public async Task<IActionResult> Cadastrar(Visitante visitante)
         {
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
-                return View(visitante);
+                visitante.DataHoraCadastro = DateTime.Now;
+                await _visitanteRepository.AdicionarVisitante(visitante);
+                HttpContext.Session.SetString("VisitanteCadastrado", "true");
+                // Salva o ID do visitante na sessão
+                HttpContext.Session.SetInt32("VisitanteId", visitante.IdVisitante);
+                HttpContext.Session.SetString("VisitanteCadastrado", "true");
+                return RedirectToAction("Listar", "Obras");
+
             }
 
-            visitante.DataHoraCadastro = DateTime.Now;
-            await _visitanteRepository.AdicionarVisitante(visitante);
+            return View("Cadastrar", visitante);
 
-            // Redireciona para a página inicial ou qualquer página de sucesso desejada
-            return RedirectToAction("Index", "Obras");
         }
     }
 }

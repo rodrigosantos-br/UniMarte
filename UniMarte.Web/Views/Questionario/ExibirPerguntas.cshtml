@@ -1,0 +1,17 @@
+﻿@model List<UniMarte.Web.Models.Pergunta>
+@{
+    var visitanteId = ViewBag.VisitanteId;
+}
+
+<form asp-action="SalvarRespostas" method="post">
+    <input type="hidden" name="IdVisitante" value="@visitanteId" />
+    @foreach (var pergunta in Model)
+    {
+        <div>
+            <label>@pergunta.TextoPergunta</label>
+            <input type="text" name="respostas[@pergunta.IdPergunta].Resposta" />
+            <input type="hidden" name="respostas[@pergunta.IdPergunta].IdPergunta" value="@pergunta.IdPergunta" />
+        </div>
+    }
+    <button type="submit">Enviar Respostas</button>
+</form>

@@ -1,4 +1,4 @@
-﻿namespace UniMarte.Web.Models
+﻿namespace UniMarte.Web.Models.Interfaces
 {
     public interface IObraRepository
     {

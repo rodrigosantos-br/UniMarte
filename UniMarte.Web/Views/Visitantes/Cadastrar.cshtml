@@ -1,0 +1,26 @@
+﻿@model UniMarte.Web.Models.Visitante
+
+@{
+    ViewData["Title"] = "Cadastro";
+}
+
+<h1>Museu UniMarte</h1>
+<hr />
+
+<div class="form-container">
+    <button class="close-button">×</button>
+    <h2>Bem Vindo!</h2>
+    <form id ="visitantesForm" asp-action="Cadastrar" method="post">
+        <div class="form-group">
+            <input asp-for="Nome" class="form-control" placeholder="Nome" required>
+            <span asp-validation-for="Nome" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <input asp-for="DataNascimento" class="form-control" type="date" placeholder="Data de Nascimento" required>
+            <span asp-validation-for="DataNascimento" class="text-danger"></span>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+        
+    </form>
+</div>

@@ -12,7 +12,6 @@ namespace UniMarte.Web.Data
 
         public DbSet<Visitante> Visitantes { get; set; }
         public DbSet<Obra> Obras { get; set; }
-        public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Pergunta> Perguntas { get; set; }
         public DbSet<Resposta> Respostas { get; set; }
     }

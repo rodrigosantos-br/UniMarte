@@ -18,7 +18,5 @@ namespace UniMarte.Web.Models
         public string TextoPergunta { get; set; }
         [Required]
         public string TipoResposta { get; set; }
-        // Relacionamento de um para muitos: Uma Pergunta tem várias Respostas
-        public ICollection<Resposta> Respostas { get; set; }
     }
 }
