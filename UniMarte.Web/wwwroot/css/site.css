@@ -241,7 +241,6 @@ input {
     }
 }
 
-
 /* Mantendo os estilos anteriores dos botões e container */
 .survey-container {
     text-align: center;
@@ -387,3 +386,4 @@ input {
     .submit-button:hover {
         background-color: #45a049; /* Cor do fundo quando o mouse passa em cima */
     }
+

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BP0LiTtww9JBYSBk39Yqermrxk74/k1EFf+EBvvYL+c=",
+  "Hash": "lYjTghyaPycOM+xIS7vS5kZF9tjTMKNI1vqNtYoMat8=",
   "Source": "UniMarte.Web",
   "BasePath": "_content/UniMarte.Web",
   "Mode": "Default",
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "1iosy275ce",
-      "Integrity": "CcU1ww2e0jVeG3oZgOYvQm5Nj/QVF2gUv2mKUTbZmX8=",
+      "Fingerprint": "pzlt9ouivq",
+      "Integrity": "a4KZ0frIgfOXLa9sotUHzpPTM87y853EOqmi020mgTA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -1384,51 +1384,6 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/site.1iosy275ce.css",
-      "AssetFile": "C:\\Projects\\UniMarte\\UniMarte.Web\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "6922"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"CcU1ww2e0jVeG3oZgOYvQm5Nj/QVF2gUv2mKUTbZmX8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 16 Nov 2024 18:29:39 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "1iosy275ce"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-CcU1ww2e0jVeG3oZgOYvQm5Nj/QVF2gUv2mKUTbZmX8="
-        }
-      ]
-    },
-    {
       "Route": "css/site.css",
       "AssetFile": "C:\\Projects\\UniMarte\\UniMarte.Web\\wwwroot\\css\\site.css",
       "Selectors": [],
@@ -1447,11 +1402,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"CcU1ww2e0jVeG3oZgOYvQm5Nj/QVF2gUv2mKUTbZmX8=\""
+          "Value": "\"a4KZ0frIgfOXLa9sotUHzpPTM87y853EOqmi020mgTA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 16 Nov 2024 18:29:39 GMT"
+          "Value": "Sat, 16 Nov 2024 23:03:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1461,7 +1416,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-CcU1ww2e0jVeG3oZgOYvQm5Nj/QVF2gUv2mKUTbZmX8="
+          "Value": "sha256-a4KZ0frIgfOXLa9sotUHzpPTM87y853EOqmi020mgTA="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.pzlt9ouivq.css",
+      "AssetFile": "C:\\Projects\\UniMarte\\UniMarte.Web\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6922"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"a4KZ0frIgfOXLa9sotUHzpPTM87y853EOqmi020mgTA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 16 Nov 2024 23:03:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pzlt9ouivq"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-a4KZ0frIgfOXLa9sotUHzpPTM87y853EOqmi020mgTA="
         }
       ]
     },
