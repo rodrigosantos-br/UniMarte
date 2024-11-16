@@ -1,4 +1,5 @@
-﻿using UniMarte.Web.Models;
+﻿using System.Diagnostics;
+using UniMarte.Web.Models;
 using UniMarte.Web.Models.Interfaces;
 
 namespace UniMarte.Web.Data
@@ -12,10 +13,22 @@ namespace UniMarte.Web.Data
             _context = context;
         }
 
+        // Adicione logs no RespostaRepository
         public void AdicionarRespostas(Resposta resposta)
         {
-            _context.Respostas.Add(resposta);
-            _context.SaveChanges();
+            try
+            {
+                _context.Respostas.Add(resposta);
+                Debug.WriteLine($"Tentando salvar resposta: Visitante {resposta.IdVisitante}, Pergunta {resposta.IdPergunta}");
+                _context.SaveChanges();
+                Debug.WriteLine("Resposta salva com sucesso");
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Erro ao salvar no banco: {ex.Message}");
+                throw;
+            }
         }
+
     }
 }

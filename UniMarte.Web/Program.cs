@@ -4,6 +4,10 @@ using UniMarte.Web.Models.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Configurar o banco de dados usando a string de conex�o no appsettings.json
+builder.Services.AddDbContext<ConnectionContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 // Adicionar suporte à sessão
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
@@ -13,15 +17,13 @@ builder.Services.AddSession(options =>
     options.Cookie.IsEssential = true; // Necessário para conformidade com a GDPR
 });
 
-// Configurar o banco de dados usando a string de conex�o no appsettings.json
-builder.Services.AddDbContext<ConnectionContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // Adicionar reposit�rios e servi�os � inje��o de depend�ncia
 builder.Services.AddScoped<IVisitanteRepository, VisitanteRepository>();
 builder.Services.AddScoped<IObraRepository, ObraRepository>();
 builder.Services.AddScoped<IPerguntaRepository, PerguntaRepository>();
 builder.Services.AddScoped<IRespostaRepository, RespostaRepository>();
+builder.Services.AddScoped<IRelatorioRepository, RelatorioRepository>();
 builder.Services.AddControllersWithViews();
 
 // Agora que todos os servi�os foram configurados, constru�mos o aplicativo
@@ -32,6 +34,13 @@ if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
 }
+else
+{
+    app.UseDeveloperExceptionPage();
+}
+
+app.UseHttpsRedirection();
+
 app.UseSession();
 
 app.UseStaticFiles();

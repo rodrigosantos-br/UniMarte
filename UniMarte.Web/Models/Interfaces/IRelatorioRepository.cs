@@ -3,7 +3,8 @@ namespace UniMarte.Web.Models.Interfaces
 {
     public interface IRelatorioRepository
     {
-        IEnumerable<Resposta> ObterRespostas();
+        int ObterNumeroTotalDeVisitantes();
+        double ObterMediaEstrelas();
     }
 }
 

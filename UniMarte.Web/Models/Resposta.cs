@@ -6,6 +6,14 @@ namespace UniMarte.Web.Models
     [Table("Respostas")]
     public class Resposta
     {
+        [Key]
+        public int IdResposta { get; set; }
+        public int IdPergunta { get; set; }
+        public int IdVisitante { get; set; }
+        [Column("Resposta")]
+        public string RespostaTexto { get; set; }
+
+        // Construtor que recebe os três parâmetros necessários
         public Resposta(int idPergunta, int idVisitante, string respostaTexto)
         {
             IdPergunta = idPergunta;
@@ -13,17 +21,8 @@ namespace UniMarte.Web.Models
             RespostaTexto = respostaTexto;
         }
 
-        [Key]
-        public int IdResposta { get; set; }
-        public int IdPergunta { get; set; }
-        public int IdVisitante { get; set; }
-        public string RespostaTexto { get; set; }
-        // Relacionamento: uma Resposta está associada a uma Pergunta
-        [ForeignKey("IdPergunta")]
-        public Pergunta Pergunta { get; set; }
-
-        // Relacionamento: uma Resposta pertence a um Visitante
-        [ForeignKey("IdVisitante")]
-        public Visitante Visitante { get; set; }
+        // Construtor sem parâmetros (opcional)
+        public Resposta() { }
     }
+
 }

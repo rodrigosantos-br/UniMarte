@@ -1,16 +1,16 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/UniMarte.Web/css/site.1iosy275ce.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"1iosy275ce"},{"Name":"integrity","Value":"sha256-CcU1ww2e0jVeG3oZgOYvQm5Nj/QVF2gUv2mKUTbZmX8="},{"Name":"label","Value":"_content/UniMarte.Web/css/site.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6922"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022CcU1ww2e0jVeG3oZgOYvQm5Nj/QVF2gUv2mKUTbZmX8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 16 Nov 2024 18:29:39 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/UniMarte.Web/css/site.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-JGIJytJFAWyGx2dNhYBHfK5YwMWnmNfs8nR3d2u5CnE="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"6115"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022JGIJytJFAWyGx2dNhYBHfK5YwMWnmNfs8nR3d2u5CnE=\u0022"},{"Name":"Last-Modified","Value":"Sat, 16 Nov 2024 10:46:08 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/UniMarte.Web/css/site.grstjpns3x.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"grstjpns3x"},{"Name":"integrity","Value":"sha256-JGIJytJFAWyGx2dNhYBHfK5YwMWnmNfs8nR3d2u5CnE="},{"Name":"label","Value":"_content/UniMarte.Web/css/site.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6115"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022JGIJytJFAWyGx2dNhYBHfK5YwMWnmNfs8nR3d2u5CnE=\u0022"},{"Name":"Last-Modified","Value":"Sat, 16 Nov 2024 10:46:08 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-CcU1ww2e0jVeG3oZgOYvQm5Nj/QVF2gUv2mKUTbZmX8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"6922"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022CcU1ww2e0jVeG3oZgOYvQm5Nj/QVF2gUv2mKUTbZmX8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 16 Nov 2024 18:29:39 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/UniMarte.Web/favicon.61n19gt1b8.ico">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</AssetFile>
