@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qJNKJeFqdx9ZQSwQsxrQ5v00WoSf3BtxPGV3P3e3HvE=",
+  "Hash": "4x8CZnxooeKrL+2tBXzt4xPvAfzFhbm8xfoKEdpwoOo=",
   "Source": "UniMarte.Web",
   "BasePath": "_content/UniMarte.Web",
   "Mode": "Default",
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "rna7n2jr8w",
-      "Integrity": "SR8BLh7tl4qJHdku/HRAQ0ocZcIAdXNYxMMtpxA9azk=",
+      "Fingerprint": "qj7t47m1ko",
+      "Integrity": "ipQ8emEcbv7miWXkGQ5gIOepYBcJTyqvdZWMot/Jb2c=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -1415,7 +1415,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10788"
+          "Value": "12333"
         },
         {
           "Name": "Content-Type",
@@ -1423,11 +1423,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"SR8BLh7tl4qJHdku/HRAQ0ocZcIAdXNYxMMtpxA9azk=\""
+          "Value": "\"ipQ8emEcbv7miWXkGQ5gIOepYBcJTyqvdZWMot/Jb2c=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 17 Nov 2024 15:54:22 GMT"
+          "Value": "Sun, 17 Nov 2024 17:15:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1437,12 +1437,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-SR8BLh7tl4qJHdku/HRAQ0ocZcIAdXNYxMMtpxA9azk="
+          "Value": "sha256-ipQ8emEcbv7miWXkGQ5gIOepYBcJTyqvdZWMot/Jb2c="
         }
       ]
     },
     {
-      "Route": "css/site.rna7n2jr8w.css",
+      "Route": "css/site.qj7t47m1ko.css",
       "AssetFile": "C:\\Projects\\UniMarte\\UniMarte.Web\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1452,7 +1452,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10788"
+          "Value": "12333"
         },
         {
           "Name": "Content-Type",
@@ -1460,11 +1460,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"SR8BLh7tl4qJHdku/HRAQ0ocZcIAdXNYxMMtpxA9azk=\""
+          "Value": "\"ipQ8emEcbv7miWXkGQ5gIOepYBcJTyqvdZWMot/Jb2c=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 17 Nov 2024 15:54:22 GMT"
+          "Value": "Sun, 17 Nov 2024 17:15:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1474,7 +1474,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "rna7n2jr8w"
+          "Value": "qj7t47m1ko"
         },
         {
           "Name": "label",
@@ -1482,7 +1482,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-SR8BLh7tl4qJHdku/HRAQ0ocZcIAdXNYxMMtpxA9azk="
+          "Value": "sha256-ipQ8emEcbv7miWXkGQ5gIOepYBcJTyqvdZWMot/Jb2c="
         }
       ]
     },
@@ -1919,7 +1919,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 17 Nov 2024 15:59:56 GMT"
+          "Value": "Sun, 17 Nov 2024 16:55:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1956,7 +1956,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 17 Nov 2024 15:59:56 GMT"
+          "Value": "Sun, 17 Nov 2024 16:55:15 GMT"
         },
         {
           "Name": "Cache-Control",

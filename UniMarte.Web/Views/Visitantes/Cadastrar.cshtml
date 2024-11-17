@@ -14,11 +14,14 @@
             <div class="tela-cadastro">
                 <h1>Cadastro</h1>
                 <div class="campo-texto">
-                    <input asp-for="Nome" class="form-control" placeholder="Nome" required>
+                    <label for="Nome" class="label-cadastro">Nome</label>
+                    <input asp-for="Nome" id="Nome" class="form-control" placeholder="Nome" required>
                     <span asp-validation-for="Nome" class="text-danger"></span>
                 </div>
+
                 <div class="campo-texto">
-                    <input asp-for="DataNascimento" class="form-control" type="date" placeholder="Data de Nascimento" required>
+                    <label for="DataNascimento" class="label-cadastro">Data de Nascimento</label>
+                    <input asp-for="DataNascimento" id="DataNascimento" class="form-control" type="date" required>
                     <span asp-validation-for="DataNascimento" class="text-danger"></span>
                 </div>
                 <button type="submit" class="btn-cadastro">Cadastrar</button>

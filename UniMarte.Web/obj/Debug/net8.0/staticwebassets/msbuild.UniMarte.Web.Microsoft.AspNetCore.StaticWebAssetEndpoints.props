@@ -3,14 +3,14 @@
     <StaticWebAssetEndpoint Include="_content/UniMarte.Web/css/site.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-SR8BLh7tl4qJHdku/HRAQ0ocZcIAdXNYxMMtpxA9azk="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"10788"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022SR8BLh7tl4qJHdku/HRAQ0ocZcIAdXNYxMMtpxA9azk=\u0022"},{"Name":"Last-Modified","Value":"Sun, 17 Nov 2024 15:54:22 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ipQ8emEcbv7miWXkGQ5gIOepYBcJTyqvdZWMot/Jb2c="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"12333"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ipQ8emEcbv7miWXkGQ5gIOepYBcJTyqvdZWMot/Jb2c=\u0022"},{"Name":"Last-Modified","Value":"Sun, 17 Nov 2024 17:15:39 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/UniMarte.Web/css/site.rna7n2jr8w.css">
+    <StaticWebAssetEndpoint Include="_content/UniMarte.Web/css/site.qj7t47m1ko.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"rna7n2jr8w"},{"Name":"integrity","Value":"sha256-SR8BLh7tl4qJHdku/HRAQ0ocZcIAdXNYxMMtpxA9azk="},{"Name":"label","Value":"_content/UniMarte.Web/css/site.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"10788"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022SR8BLh7tl4qJHdku/HRAQ0ocZcIAdXNYxMMtpxA9azk=\u0022"},{"Name":"Last-Modified","Value":"Sun, 17 Nov 2024 15:54:22 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"qj7t47m1ko"},{"Name":"integrity","Value":"sha256-ipQ8emEcbv7miWXkGQ5gIOepYBcJTyqvdZWMot/Jb2c="},{"Name":"label","Value":"_content/UniMarte.Web/css/site.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"12333"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ipQ8emEcbv7miWXkGQ5gIOepYBcJTyqvdZWMot/Jb2c=\u0022"},{"Name":"Last-Modified","Value":"Sun, 17 Nov 2024 17:15:39 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/UniMarte.Web/favicon.61n19gt1b8.ico">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</AssetFile>
@@ -76,13 +76,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-K9I1b83VTWGjmHLXDlMwhcNUJCkeLUCLpqUVSl5vXC0="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5392"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022K9I1b83VTWGjmHLXDlMwhcNUJCkeLUCLpqUVSl5vXC0=\u0022"},{"Name":"Last-Modified","Value":"Sun, 17 Nov 2024 15:59:56 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5392"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022K9I1b83VTWGjmHLXDlMwhcNUJCkeLUCLpqUVSl5vXC0=\u0022"},{"Name":"Last-Modified","Value":"Sun, 17 Nov 2024 16:55:15 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/UniMarte.Web/js/site.t23l79k3oi.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"t23l79k3oi"},{"Name":"integrity","Value":"sha256-K9I1b83VTWGjmHLXDlMwhcNUJCkeLUCLpqUVSl5vXC0="},{"Name":"label","Value":"_content/UniMarte.Web/js/site.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5392"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022K9I1b83VTWGjmHLXDlMwhcNUJCkeLUCLpqUVSl5vXC0=\u0022"},{"Name":"Last-Modified","Value":"Sun, 17 Nov 2024 15:59:56 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5392"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022K9I1b83VTWGjmHLXDlMwhcNUJCkeLUCLpqUVSl5vXC0=\u0022"},{"Name":"Last-Modified","Value":"Sun, 17 Nov 2024 16:55:15 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/UniMarte.Web/lib/bootstrap/dist/css/bootstrap-grid.agp80tu62r.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-grid.css'))</AssetFile>
