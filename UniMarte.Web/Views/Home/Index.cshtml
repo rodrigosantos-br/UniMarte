@@ -3,14 +3,35 @@
 }
 
 <div class="slideshow-container" id="slideshow" onclick="navigateToVisitantes()">
+    <!-- Imagem do Museu (Inauguração) -->
     <div class="slides fade">
+        <div class="text-overlay text-overlay-1">
+            <h1>Bem-vindo ao UniMarte!</h1>
+            <p>Venha explorar o futuro e o passado na nossa grande inauguração!</p>
+        </div>
         <img src="https://unimarteimages.blob.core.windows.net/unimarteimages/UniMarte.jpg" alt="Obra 1" style="width:100%">
     </div>
+
+    <!-- Imagem de Marte (Possível Viagem) -->
     <div class="slides fade">
+        <div class="text-overlay text-overlay-2">
+            <h1>Marte te espera!</h1>
+            <p>Descubra como será a vida no Planeta Vermelho.</p>
+        </div>
         <img src="https://unimarteimages.blob.core.windows.net/unimarteimages/MarteTerra.jpg" alt="Obra 2" style="width:100%">
     </div>
+
+    <!-- Imagem do Interior do Museu (Obras em Exposição) -->
     <div class="slides fade">
+        <div class="text-overlay text-overlay-3">
+            <h1>Arte que conecta mundos</h1>
+            <p>Explore nossa coleção de obras que inspiram e emocionam.</p>
+        </div>
         <img src="https://unimarteimages.blob.core.windows.net/unimarteimages/UniMarteInterior.jpg" alt="Obra 3" style="width:100%">
     </div>
 </div>
 
+<!-- Caixa de aviso (com evento de clique para redirecionar) -->
+<div class="alert-box" onclick="window.location.href='/Visitantes/Cadastrar'">
+    <p>Clique na tela para começar</p>
+</div>

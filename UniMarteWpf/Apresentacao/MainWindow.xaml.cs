@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
 using System.Windows.Input;
 using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
@@ -15,6 +16,20 @@ namespace UniMarteWpf.Apresentacao
         private string[] imagePaths;
         private int currentImageIndex;
         private TimeSpan transitionDuration = TimeSpan.FromSeconds(1);  // Duração da transição
+
+        private string[] titles = new string[]
+        {
+            "Bem-vindo ao UniMarte!",
+            "Marte te espera!",
+            "Arte que conecta mundos"
+        };
+
+        private string[] paragraphs = new string[]
+        {
+            "Venha explorar o futuro e o passado na nossa grande inauguração!",
+            "Descubra como será a vida no Planeta Vermelho.",
+            "Explore nossa coleção de obras que inspiram e emocionam."
+        };
 
         public MainWindow()
         {
@@ -36,17 +51,16 @@ namespace UniMarteWpf.Apresentacao
 
             // Definir a primeira imagem
             SetBackgroundImage();
+            UpdateText();
         }
 
         private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
         {
             if (e.LeftButton == MouseButtonState.Pressed)
             {
-                imageTimer.Stop();
-
+                // Ao clicar, navega para o cadastro, mas mantém o slideshow rodando.
                 Cadastro cadastro = new Cadastro();
                 cadastro.Show();
-                this.Close();
             }
         }
 
@@ -55,10 +69,12 @@ namespace UniMarteWpf.Apresentacao
             // Alternar para a próxima imagem
             currentImageIndex = (currentImageIndex + 1) % imagePaths.Length;
             TransitionToNextImage();
+            UpdateText();
         }
 
         private void SetBackgroundImage()
         {
+            // Atualiza a imagem de fundo
             BackgroundImage.Source = new BitmapImage(new Uri(imagePaths[currentImageIndex], UriKind.Relative));
         }
 
@@ -77,6 +93,13 @@ namespace UniMarteWpf.Apresentacao
 
             // Iniciar o fade out
             BackgroundImage.BeginAnimation(UIElement.OpacityProperty, fadeOut);
+        }
+
+        private void UpdateText()
+        {
+            // Atualiza o título e o parágrafo conforme a imagem
+            TitleText.Text = titles[currentImageIndex];
+            ParagraphText.Text = paragraphs[currentImageIndex];
         }
     }
 }

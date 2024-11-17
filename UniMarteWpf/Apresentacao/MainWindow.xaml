@@ -6,18 +6,26 @@
         xmlns:local="clr-namespace:UniMarteWpf.Apresentacao"
         mc:Ignorable="d"
         Title="MainWindow" WindowState="Maximized" WindowStyle="None">
-    
+
     <Grid MouseDown="Grid_MouseDown">
         <!-- Imagem de fundo -->
-        <Image x:Name="BackgroundImage" Stretch="UniformToFill"/>
+        <Image x:Name="BackgroundImage" Stretch="UniformToFill" />
 
-        <!-- Informação ao usuário -->
-        <Border CornerRadius="30" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="White" Margin="100" Padding="20 10 20 10">
+        <!-- Texto sobre a imagem - Centralizado -->
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" 
+                    Background="Transparent" >
+            <TextBlock x:Name="TitleText" FontSize="48" FontFamily="Montserrat" 
+                       Foreground="White" HorizontalAlignment="Center" TextAlignment="Center" 
+                       FontWeight="Bold" Margin="0,0,0,20"/>
+            <TextBlock x:Name="ParagraphText" FontSize="24" FontFamily="Montserrat" 
+                       Foreground="White" HorizontalAlignment="Center" TextAlignment="Center"/>
+        </StackPanel>
+
+        <!-- Caixa de aviso (com evento de clique para redirecionar) -->
+        <Border CornerRadius="30" HorizontalAlignment="Center" VerticalAlignment="Bottom" 
+                Background="White" Margin="100" Padding="20 10 20 10">
             <TextBlock Text="Toque na tela para iniciar a navegação"
-                       FontSize="32"
-                       FontFamily="Montserrat"
-                       Foreground="Black"/>
+                       FontSize="32" FontFamily="Montserrat" Foreground="Black"/>
         </Border>
-
     </Grid>
 </Window>
