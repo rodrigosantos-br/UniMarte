@@ -1,40 +1,43 @@
 ﻿@model IEnumerable<Obra>
-<div class="obras-container">
-    @{
-        var count = 0;
-        foreach (var obra in Model)
-        {
-            var isEven = count % 2 == 0;
-            <div class="obra-section">
-                <div class="obra-content @(isEven ? "content-left" : "content-right")">
-                    <div class="obra-number">0@(count + 1)</div>
-                    <h2 class="obra-title">@obra.Titulo</h2>
-                    <p class="obra-text">@obra.Historico</p>
+<body class="scrollable">
+    <div class="obras-container">
+        @{
+            var count = 0;
+            foreach (var obra in Model)
+            {
+                var isEven = count % 2 == 0;
+                <div class="obra-section">
+                    <div class="obra-content @(isEven ? "content-left" : "content-right")">
+                        <div class="obra-number">0@(count + 1)</div>
+                        <h2 class="obra-title">@obra.Titulo</h2>
+                        <p class="obra-text">@obra.Historico</p>
+                    </div>
+                    <div class="obra-image @(isEven ? "image-right" : "image-left")">
+                        <img src="@obra.ImagemUrl" alt="@obra.Titulo">
+                    </div>
                 </div>
-                <div class="obra-image @(isEven ? "image-right" : "image-left")">
-                    <img src="@obra.ImagemUrl" alt="@obra.Titulo">
-                </div>
-            </div>
-            count++;
+                count++;
+            }
         }
-    }
-    <div class="survey-container">
-        <p class="survey-question">
-            Gostaríamos de saber sua opinião sobre nossos serviços.<br>
-            Você teria um momento para responder uma breve pesquisa de satisfação?
-        </p>
-        <div class="button-container">
-            <button onclick="redirectToSurvey()" class="survey-button btn-yes">Sim</button>
-            <button onclick="showThankYouModal()" class="survey-button btn-no">Não</button>
+        <div class="survey-container">
+            <p class="survey-question">
+                Gostaríamos de saber sua opinião sobre nossos serviços.<br>
+                Você teria um momento para responder uma breve pesquisa de satisfação?
+            </p>
+            <div class="button-container">
+                <button onclick="redirectToSurvey()" class="survey-button btn-yes">Sim</button>
+                <button onclick="showThankYouModal()" class="survey-button btn-no">Não</button>
+            </div>
         </div>
-    </div>
 
-    <!-- Modal de agradecimento -->
-    <div id="thankYouModal" class="thank-you-modal">
-        <div class="modal-content">
-            <h3 class="modal-title">Obrigado pela Visita!</h3>
-            <p class="modal-text">Agradecemos por explorar nosso conteúdo. Esperamos vê-lo novamente em breve!</p>
-            <button onclick="redirectToHome()" class="modal-button">Continuar</button>
+        <!-- Modal de agradecimento -->
+        <div id="thankYouModal" class="thank-you-modal">
+            <div class="modal-content">
+                <h3 class="modal-title">Obrigado pela Visita!</h3>
+                <p class="modal-text">Agradecemos por explorar nosso conteúdo. Esperamos vê-lo novamente em breve!</p>
+                <button onclick="redirectToHome()" class="modal-button">Continuar</button>
+            </div>
         </div>
     </div>
-</div>
+</body>
+

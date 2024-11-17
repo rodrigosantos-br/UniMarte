@@ -1,6 +1,7 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\Images\MarteTerra.jpg
+wwwroot\Images\planetas.svg
 wwwroot\Images\UniMarte.jpg
 wwwroot\Images\UniMarteInterior.jpg
 wwwroot\js\site.js

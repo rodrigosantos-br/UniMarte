@@ -188,6 +188,5 @@ namespace UniMarteWpf.ControleCustomizado
             // Atribui o modelo ao PlotView
             plotViewAvaliacoes.Model = LineModel;
         }
-
     }
 }

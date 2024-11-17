@@ -44,59 +44,64 @@ namespace UniMarte.Web.Controllers
         [HttpPost]
         public IActionResult SalvarRespostas(QuestionarioViewModel viewModel)
         {
+            // Obtém o ID do visitante da sessão
             var visitanteId = HttpContext.Session.GetInt32("VisitanteId");
             if (visitanteId == null)
             {
                 return RedirectToAction("Cadastrar", "Visitantes");
             }
 
-            // Debug: Imprime os dados recebidos
-            Debug.WriteLine($"VisitanteId: {visitanteId}");
-            if (viewModel?.Respostas != null)
+            // Verifica se o modelo é válido e todas as respostas foram fornecidas
+            if (viewModel?.Respostas == null || viewModel.Respostas.Any(r => string.IsNullOrWhiteSpace(r.RespostaTexto)))
             {
-                foreach (var resp in viewModel.Respostas)
-                {
-                    Debug.WriteLine($"Pergunta: {resp.IdPergunta}, Resposta: {resp.RespostaTexto}");
-                }
-            }
-            else
-            {
-                Debug.WriteLine("viewModel.Respostas é nulo!");
-            }
+                ModelState.AddModelError("", "Por favor, responda todas as perguntas antes de enviar.");
 
-            try
-            {
-                if (viewModel?.Respostas != null)
-                {
-                    foreach (var respostaVM in viewModel.Respostas.Where(r => !string.IsNullOrEmpty(r.RespostaTexto)))
-                    {
-                        var resposta = new Resposta
-                        {
-                            IdVisitante = visitanteId.Value,
-                            IdPergunta = respostaVM.IdPergunta,
-                            RespostaTexto = respostaVM.RespostaTexto
-                        };
-
-                        _respostaRepository.AdicionarRespostas(resposta);
-                        Debug.WriteLine($"Resposta salva - Visitante: {resposta.IdVisitante}, Pergunta: {resposta.IdPergunta}, Resposta: {resposta.RespostaTexto}");
-                    }
-                }
-
-                return RedirectToAction("ObterRelatorio", "Relatorio");
-            }
-            catch (System.Exception ex)
-            {
-                Debug.WriteLine($"Erro ao salvar respostas: {ex.Message}");
-                Debug.WriteLine($"StackTrace: {ex.StackTrace}");
-
-                ModelState.AddModelError("", "Ocorreu um erro ao salvar as respostas.");
+                // Recupera perguntas e obras novamente para a exibição da página
                 var perguntas = _perguntaRepository.Buscar();
                 var obras = _obraRepository.ObterTodasAsObras().Result;
                 ViewBag.VisitanteId = visitanteId.Value;
                 ViewBag.Obras = obras;
+
+                return View("ExibirPerguntas", perguntas);
+            }
+
+            try
+            {
+                // Salva as respostas no repositório
+                foreach (var respostaVM in viewModel.Respostas)
+                {
+                    var resposta = new Resposta
+                    {
+                        IdVisitante = visitanteId.Value,
+                        IdPergunta = respostaVM.IdPergunta,
+                        RespostaTexto = respostaVM.RespostaTexto
+                    };
+
+                    _respostaRepository.AdicionarRespostas(resposta);
+                }
+
+                // Redireciona para o relatório ao finalizar o salvamento
+                return RedirectToAction("ObterRelatorio", "Relatorio");
+            }
+            catch (Exception ex)
+            {
+                // Log do erro para depuração
+                Debug.WriteLine($"Erro ao salvar respostas: {ex.Message}");
+                Debug.WriteLine($"StackTrace: {ex.StackTrace}");
+
+                // Mensagem de erro para o usuário
+                ModelState.AddModelError("", "Ocorreu um erro ao salvar as respostas. Por favor, tente novamente.");
+
+                // Recupera perguntas e obras novamente para exibir na página
+                var perguntas = _perguntaRepository.Buscar();
+                var obras = _obraRepository.ObterTodasAsObras().Result;
+                ViewBag.VisitanteId = visitanteId.Value;
+                ViewBag.Obras = obras;
+
                 return View("ExibirPerguntas", perguntas);
             }
         }
+
 
     }
 }

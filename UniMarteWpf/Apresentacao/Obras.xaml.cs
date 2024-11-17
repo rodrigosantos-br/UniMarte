@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using UniMarteWpf.Controle;
 
 namespace UniMarteWpf.Apresentacao
 {
@@ -13,19 +14,19 @@ namespace UniMarteWpf.Apresentacao
         {
             InitializeComponent();
             _obrasControle = new ObrasControle(this);
-            _obrasControle.AtualizarImagens(ImagemAtual, ImagemAnterior, ImagemPosterior);
+            _obrasControle.AtualizarImagens();
         }
 
         private void BotaoProximo_Click(object sender, RoutedEventArgs e)
         {
             _obrasControle.Proximo();
-            _obrasControle.AtualizarImagens(ImagemAtual, ImagemAnterior, ImagemPosterior);
+            _obrasControle.AtualizarImagens();
         }
 
         private void BotaoAnterior_Click(object sender, RoutedEventArgs e)
         {
             _obrasControle.Anterior();
-            _obrasControle.AtualizarImagens(ImagemAtual, ImagemAnterior, ImagemPosterior);
+            _obrasControle.AtualizarImagens();
         }
 
         private void PaginaInicial_Click(object sender, RoutedEventArgs e)

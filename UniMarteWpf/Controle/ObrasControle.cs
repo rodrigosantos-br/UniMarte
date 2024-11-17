@@ -3,65 +3,52 @@ using System.Windows.Controls;
 using System.Windows.Media.Imaging;
 using System.Windows.Threading;
 using UniMarteWpf.Apresentacao;
+using UniMarteWpf.DAL;
+using UniMarteWpf.Modelo;
 
 namespace UniMarteWpf
 {
     public class ObrasControle
     {
-        private List<string> _imagens;
+        private List<string> _imagensPaths;
         private int _indiceAtual;
+        private Dictionary<string, Obra> _obrasInfo;
+        private Obras _janela; // Janela "dona" para exibir o popup
         private DispatcherTimer _temporizador; // Timer para controle de tempo na última imagem
         private const int TempoPopUp = 10; // Tempo em segundos para exibir o pop-up
-        private Window _owner; // Janela "dona" para exibir o popup
 
-        public ObrasControle(Window owner)
+        public ObrasControle(Obras janela)
         {
-            _owner = owner; // Atribui a janela recebida
-            CarregarImagens();
+            _janela = janela;
+            _imagensPaths = new List<string>
+            {
+                "chegada_marte.jpg",
+                "colonia_espacial.jpg",
+                "crateras_vulcoes.jpg",
+                "exploracao_robotica.jpg",
+                "horizonte_marte.jpg",
+                "paisagens_noturnas.jpg",
+                "primeira_base_marte.jpg",
+                "solo_formacao_marte.jpg",
+                "solo_vermelho.jpg",
+                "tecnologia_colonizacao.jpg",
+                "vales_marte.jpg",
+                "viagem_marte.jpg"
+            };
             _indiceAtual = 0;
-
+            _obrasInfo = new ObraDAO().ObterInformacoesObras();
             // Configurar o temporizador
             _temporizador = new DispatcherTimer();
             _temporizador.Interval = TimeSpan.FromSeconds(TempoPopUp);
             _temporizador.Tick += ExibirPopUp;
         }
 
-        private void CarregarImagens()
-        {
-            _imagens = new List<string>
-            {
-                "pack://application:,,,/Imagens/Obras/chegada_marte.jpg",
-                "pack://application:,,,/Imagens/Obras/colonia_espacial.jpg",
-                "pack://application:,,,/Imagens/Obras/crateras_vulcoes.jpg",
-                "pack://application:,,,/Imagens/Obras/exploracao_robotica.jpg",
-                "pack://application:,,,/Imagens/Obras/horizonte_marte.jpg",
-                "pack://application:,,,/Imagens/Obras/paisagens_noturnas.jpg",
-                "pack://application:,,,/Imagens/Obras/primeira_base_marte.jpg",
-                "pack://application:,,,/Imagens/Obras/solo_formacao_marte.jpg",
-                "pack://application:,,,/Imagens/Obras/solo_vermelho.jpg",
-                "pack://application:,,,/Imagens/Obras/tecnologia_colonizacao.jpg",
-                "pack://application:,,,/Imagens/Obras/vales_marte.jpg",
-                "pack://application:,,,/Imagens/Obras/viagem_marte.jpg",
-            };
-        }
-
-        public string ObterImagemAtual() => _imagens[_indiceAtual];
-
-        public string ObterImagemAnterior() => _indiceAtual > 0 ? _imagens[_indiceAtual - 1] : null;
-
-        public string ObterImagemPosterior() => _indiceAtual < _imagens.Count - 1 ? _imagens[_indiceAtual + 1] : null;
-
         public void Proximo()
         {
-            if (_indiceAtual < _imagens.Count - 1)
+            if (_indiceAtual < _imagensPaths.Count - 1) // Não vai para a primeira obra se já estiver na última
             {
                 _indiceAtual++;
-            }
-
-            // Verificar se estamos na última imagem e iniciar o temporizador
-            if (_indiceAtual == _imagens.Count - 1)
-            {
-                _temporizador.Start();
+                AtualizarImagens();  // Atualiza as imagens e verifica o pop-up
             }
         }
 
@@ -70,61 +57,79 @@ namespace UniMarteWpf
             if (_indiceAtual > 0)
             {
                 _indiceAtual--;
+                AtualizarImagens();  // Atualiza as imagens e reinicia o temporizador
             }
         }
 
-        public void AtualizarImagens(Image imagemAtual, Image imagemAnterior, Image imagemPosterior)
+        public void AtualizarImagens()
         {
-            string imagemAtualPath = ObterImagemAtual();
-            string imagemAnteriorPath = ObterImagemAnterior();
-            string imagemPosteriorPath = ObterImagemPosterior();
+            int indiceAnterior = _indiceAtual == 0 ? -1 : _indiceAtual - 1; // -1 indica que não há imagem anterior
+            int indicePosterior = _indiceAtual == _imagensPaths.Count - 1 ? -1 : _indiceAtual + 1; // -1 indica que não há imagem posterior
 
-            // Define a imagem atual
-            if (string.IsNullOrEmpty(imagemAtualPath))
-            {
-                throw new InvalidOperationException("Imagem atual não pode ser nula.");
-            }
-            imagemAtual.Source = new BitmapImage(new Uri(imagemAtualPath, UriKind.RelativeOrAbsolute));
+            string caminhoBase = "/Imagens/Obras/";
 
-            // Define a imagem anterior
-            if (!string.IsNullOrEmpty(imagemAnteriorPath))
+            // Atualiza a imagem atual
+            _janela.ImagemAtual.Source = new BitmapImage(new Uri(caminhoBase + _imagensPaths[_indiceAtual], UriKind.Relative));
+
+            // Se não houver imagem anterior (primeira imagem), torna a imagem anterior transparente
+            if (indiceAnterior == -1)
             {
-                imagemAnterior.Source = new BitmapImage(new Uri(imagemAnteriorPath, UriKind.RelativeOrAbsolute));
-                imagemAnterior.Visibility = Visibility.Visible;
+                _janela.ImagemAnterior.Source = null;
+                _janela.ImagemAnterior.Opacity = 0; // Torna a imagem anterior invisível, mas mantém a borda
             }
             else
             {
-                imagemAnterior.Visibility = Visibility.Hidden;
+                _janela.ImagemAnterior.Source = new BitmapImage(new Uri(caminhoBase + _imagensPaths[indiceAnterior], UriKind.Relative));
+                _janela.ImagemAnterior.Opacity = 1; // Torna a imagem visível
             }
 
-            // Define a imagem posterior
-            if (!string.IsNullOrEmpty(imagemPosteriorPath))
+            // Se não houver imagem posterior (última imagem), torna a imagem posterior transparente
+            if (indicePosterior == -1)
             {
-                imagemPosterior.Source = new BitmapImage(new Uri(imagemPosteriorPath, UriKind.RelativeOrAbsolute));
-                imagemPosterior.Visibility = Visibility.Visible;
+                _janela.ImagemPosterior.Source = null;
+                _janela.ImagemPosterior.Opacity = 0; // Torna a imagem posterior invisível, mas mantém a borda
             }
             else
             {
-                imagemPosterior.Visibility = Visibility.Hidden;
+                _janela.ImagemPosterior.Source = new BitmapImage(new Uri(caminhoBase + _imagensPaths[indicePosterior], UriKind.Relative));
+                _janela.ImagemPosterior.Opacity = 1; // Torna a imagem visível
+            }
+
+            // Atualiza as informações da obra atual
+            if (_obrasInfo.TryGetValue(_imagensPaths[_indiceAtual], out Obra obraAtual))
+            {
+                _janela.TituloObra.Text = obraAtual.Titulo;
+                _janela.HistoricoObra.Text = obraAtual.Historico;
+            }
+
+            // Verifica se é a última obra
+            if (_indiceAtual == _imagensPaths.Count - 1)
+            {
+                // Inicia o temporizador para exibir o pop-up após 10 segundos se for a última obra
+                if (!_temporizador.IsEnabled)
+                {
+                    _temporizador.Start();  // Inicia o temporizador somente se ainda não estiver rodando
+                }
             }
         }
 
         private void ExibirPopUp(object sender, EventArgs e)
         {
-            _temporizador.Stop();
+            _temporizador.Stop(); // Para o temporizador após exibir o pop-up
 
             PopupSatisfacao satisfacao = new PopupSatisfacao
             {
-                Owner = _owner,
+                Owner = _janela,
                 WindowStartupLocation = WindowStartupLocation.CenterOwner
             };
 
             satisfacao.PopupFechado += () =>
             {
-                _owner.Close(); // Fecha a janela "dona" (Obras)
+                _janela.Close(); // Fecha a janela "dona" (Obras)
             };
 
             satisfacao.ShowDialog();
         }
+
     }
 }

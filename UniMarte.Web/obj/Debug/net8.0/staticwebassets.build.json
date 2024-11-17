@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "M7Oe3FqhtrDT+HNbmsTnkNPuTz4qXldudsZJpY8vmZg=",
+  "Hash": "qJNKJeFqdx9ZQSwQsxrQ5v00WoSf3BtxPGV3P3e3HvE=",
   "Source": "UniMarte.Web",
   "BasePath": "_content/UniMarte.Web",
   "Mode": "Default",
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "rmwtu2kmmm",
-      "Integrity": "jc+PglpDIge10NUCWOhi1oDzKTElUZ8AA/tTRELHbFA=",
+      "Fingerprint": "rna7n2jr8w",
+      "Integrity": "SR8BLh7tl4qJHdku/HRAQ0ocZcIAdXNYxMMtpxA9azk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -120,6 +120,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\MarteTerra.jpg"
+    },
+    {
+      "Identity": "C:\\Projects\\UniMarte\\UniMarte.Web\\wwwroot\\Images\\planetas.svg",
+      "SourceId": "UniMarte.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Projects\\UniMarte\\UniMarte.Web\\wwwroot\\",
+      "BasePath": "_content/UniMarte.Web",
+      "RelativePath": "Images/planetas#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "foienxxukf",
+      "Integrity": "D4EjU7wl2O1uaKsYiE6LrjlaMUVOi5pFb0Go+T8xu9Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\planetas.svg"
     },
     {
       "Identity": "C:\\Projects\\UniMarte\\UniMarte.Web\\wwwroot\\Images\\UniMarte.jpg",
@@ -178,8 +199,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "v9w0mofr0p",
-      "Integrity": "Y4lqbw1hVpZ4P+C/sgCjUlJJVppT5IFkJ6iK7rZx7kM=",
+      "Fingerprint": "t23l79k3oi",
+      "Integrity": "K9I1b83VTWGjmHLXDlMwhcNUJCkeLUCLpqUVSl5vXC0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
@@ -1394,7 +1415,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9507"
+          "Value": "10788"
         },
         {
           "Name": "Content-Type",
@@ -1402,11 +1423,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"jc+PglpDIge10NUCWOhi1oDzKTElUZ8AA/tTRELHbFA=\""
+          "Value": "\"SR8BLh7tl4qJHdku/HRAQ0ocZcIAdXNYxMMtpxA9azk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 17 Nov 2024 01:32:13 GMT"
+          "Value": "Sun, 17 Nov 2024 15:54:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1416,12 +1437,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-jc+PglpDIge10NUCWOhi1oDzKTElUZ8AA/tTRELHbFA="
+          "Value": "sha256-SR8BLh7tl4qJHdku/HRAQ0ocZcIAdXNYxMMtpxA9azk="
         }
       ]
     },
     {
-      "Route": "css/site.rmwtu2kmmm.css",
+      "Route": "css/site.rna7n2jr8w.css",
       "AssetFile": "C:\\Projects\\UniMarte\\UniMarte.Web\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1431,7 +1452,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9507"
+          "Value": "10788"
         },
         {
           "Name": "Content-Type",
@@ -1439,11 +1460,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"jc+PglpDIge10NUCWOhi1oDzKTElUZ8AA/tTRELHbFA=\""
+          "Value": "\"SR8BLh7tl4qJHdku/HRAQ0ocZcIAdXNYxMMtpxA9azk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 17 Nov 2024 01:32:13 GMT"
+          "Value": "Sun, 17 Nov 2024 15:54:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1453,7 +1474,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "rmwtu2kmmm"
+          "Value": "rna7n2jr8w"
         },
         {
           "Name": "label",
@@ -1461,7 +1482,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-jc+PglpDIge10NUCWOhi1oDzKTElUZ8AA/tTRELHbFA="
+          "Value": "sha256-SR8BLh7tl4qJHdku/HRAQ0ocZcIAdXNYxMMtpxA9azk="
         }
       ]
     },
@@ -1626,6 +1647,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-iFveUOkD3KGxE8pLXNiTSV7xqRFOI+8CPHGooZgSZQ8="
+        }
+      ]
+    },
+    {
+      "Route": "Images/planetas.foienxxukf.svg",
+      "AssetFile": "C:\\Projects\\UniMarte\\UniMarte.Web\\wwwroot\\Images\\planetas.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25602"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"D4EjU7wl2O1uaKsYiE6LrjlaMUVOi5pFb0Go+T8xu9Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Oct 2024 21:00:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "foienxxukf"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/planetas.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-D4EjU7wl2O1uaKsYiE6LrjlaMUVOi5pFb0Go+T8xu9Y="
+        }
+      ]
+    },
+    {
+      "Route": "Images/planetas.svg",
+      "AssetFile": "C:\\Projects\\UniMarte\\UniMarte.Web\\wwwroot\\Images\\planetas.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25602"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"D4EjU7wl2O1uaKsYiE6LrjlaMUVOi5pFb0Go+T8xu9Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Oct 2024 21:00:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-D4EjU7wl2O1uaKsYiE6LrjlaMUVOi5pFb0Go+T8xu9Y="
         }
       ]
     },
@@ -1804,7 +1907,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3113"
+          "Value": "5392"
         },
         {
           "Name": "Content-Type",
@@ -1812,11 +1915,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Y4lqbw1hVpZ4P+C/sgCjUlJJVppT5IFkJ6iK7rZx7kM=\""
+          "Value": "\"K9I1b83VTWGjmHLXDlMwhcNUJCkeLUCLpqUVSl5vXC0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 17 Nov 2024 01:02:55 GMT"
+          "Value": "Sun, 17 Nov 2024 15:59:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1826,12 +1929,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Y4lqbw1hVpZ4P+C/sgCjUlJJVppT5IFkJ6iK7rZx7kM="
+          "Value": "sha256-K9I1b83VTWGjmHLXDlMwhcNUJCkeLUCLpqUVSl5vXC0="
         }
       ]
     },
     {
-      "Route": "js/site.v9w0mofr0p.js",
+      "Route": "js/site.t23l79k3oi.js",
       "AssetFile": "C:\\Projects\\UniMarte\\UniMarte.Web\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1841,7 +1944,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3113"
+          "Value": "5392"
         },
         {
           "Name": "Content-Type",
@@ -1849,11 +1952,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Y4lqbw1hVpZ4P+C/sgCjUlJJVppT5IFkJ6iK7rZx7kM=\""
+          "Value": "\"K9I1b83VTWGjmHLXDlMwhcNUJCkeLUCLpqUVSl5vXC0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 17 Nov 2024 01:02:55 GMT"
+          "Value": "Sun, 17 Nov 2024 15:59:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1863,7 +1966,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "v9w0mofr0p"
+          "Value": "t23l79k3oi"
         },
         {
           "Name": "label",
@@ -1871,7 +1974,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Y4lqbw1hVpZ4P+C/sgCjUlJJVppT5IFkJ6iK7rZx7kM="
+          "Value": "sha256-K9I1b83VTWGjmHLXDlMwhcNUJCkeLUCLpqUVSl5vXC0="
         }
       ]
     },
@@ -6572,7 +6675,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 17 Nov 2024 01:18:30 GMT"
+          "Value": "Sun, 17 Nov 2024 14:26:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6609,7 +6712,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 17 Nov 2024 01:18:30 GMT"
+          "Value": "Sun, 17 Nov 2024 14:26:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6654,7 +6757,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 17 Nov 2024 01:18:30 GMT"
+          "Value": "Sun, 17 Nov 2024 14:26:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6699,7 +6802,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 17 Nov 2024 01:18:30 GMT"
+          "Value": "Sun, 17 Nov 2024 14:26:35 GMT"
         },
         {
           "Name": "Cache-Control",

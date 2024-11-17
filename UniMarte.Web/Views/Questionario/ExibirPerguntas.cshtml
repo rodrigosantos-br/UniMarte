@@ -3,53 +3,58 @@
     var visitanteId = ViewBag.VisitanteId;
     var index = 0;
 }
-<form asp-action="SalvarRespostas" method="post" class="questionnaire-form">
-    <input type="hidden" name="idVisitante" value="@visitanteId" />
-    @foreach (var pergunta in Model)
-    {
-        <div class="question-container">
-            <label class="question-text">@pergunta.TextoPergunta</label>
-            @if (pergunta.TipoResposta == "SimNao")
-            {
-                <div class="sim-nao-options">
-                    <label class="sim-nao-button">
-                        <input type="radio" name="Respostas[@index].RespostaTexto" value="Sim" required />
-                        <span>Sim</span>
-                    </label>
-                    <label class="sim-nao-button">
-                        <input type="radio" name="Respostas[@index].RespostaTexto" value="Não" />
-                        <span>Não</span>
-                    </label>
-                </div>
-            }
-            else if (pergunta.TipoResposta == "Estrelas")
-            {
-                <div class="stars-options">
-                    <div class="star-rating" data-index="@index">
-                        @for (int i = 1; i <= 5; i++)
+<body class="scrollable">
+    <form asp-action="SalvarRespostas" method="post" class="questionnaire-form">
+        <input type="hidden" name="idVisitante" value="@visitanteId" />
+        @foreach (var pergunta in Model)
+        {
+            <div class="question-container">
+                <label class="question-text">@pergunta.TextoPergunta</label>
+                @if (pergunta.TipoResposta == "SimNao")
+                {
+                    <div class="sim-nao-options">
+                        <label class="sim-nao-button">
+                            <input type="radio" name="Respostas[@index].RespostaTexto" value="Sim" required />
+                            <span>Sim</span>
+                        </label>
+                        <label class="sim-nao-button">
+                            <input type="radio" name="Respostas[@index].RespostaTexto" value="Não" />
+                            <span>Não</span>
+                        </label>
+                    </div>
+                }
+                else if (pergunta.TipoResposta == "Estrelas")
+                {
+                    <div class="stars-options">
+                        <div class="star-rating" data-index="@index">
+                            @for (int i = 1; i <= 5; i++)
+                            {
+                                <span class="star" data-value="@i">★</span>
+                            }
+                        </div>
+                        <input type="hidden" name="Respostas[@index].RespostaTexto" required />
+                    </div>
+                }
+                else if (pergunta.TipoResposta == "EscolhaObra")
+                {
+                    <div class="obra-options">
+                        @foreach (var obra in ViewBag.Obras as List<UniMarte.Web.Models.Obra>)
                         {
-                            <span class="star" data-value="@i">★</span>
+                            <label class="obra-option">
+                                <input type="radio" name="Respostas[@index].RespostaTexto" value="Obra @obra.IdObra" required />
+                                <img src="@obra.ImagemUrl" alt="@obra.Titulo" class="obra-image" />
+                                <div class="obra-title">@obra.Titulo</div>
+                            </label>
                         }
                     </div>
-                    <input type="hidden" name="Respostas[@index].RespostaTexto" required />
-                </div>
-            }
-            else if (pergunta.TipoResposta == "EscolhaObra")
-            {
-                <div class="obra-options">
-                    @foreach (var obra in ViewBag.Obras as List<UniMarte.Web.Models.Obra>)
-                    {
-                        <label class="obra-option">
-                            <input type="radio" name="Respostas[@index].RespostaTexto" value="Obra @obra.IdObra" required />
-                            <img src="@obra.ImagemUrl" alt="@obra.Titulo" class="obra-image" />
-                            <div class="obra-title">@obra.Titulo</div>
-                        </label>
-                    }
-                </div>
-            }
-            <input type="hidden" name="Respostas[@index].IdPergunta" value="@pergunta.IdPergunta" />
-        </div>
-        index++;
-    }
-    <button type="submit" class="submit-button">Enviar Respostas</button>
-</form>
+                }
+                <input type="hidden" name="Respostas[@index].IdPergunta" value="@pergunta.IdPergunta" />
+            </div>
+            index++;
+        }
+        <button type="submit" class="submit-button">Enviar Respostas</button>
+    </form>
+</body>
+
+<script src="~/css/js/site.js"></script>
+

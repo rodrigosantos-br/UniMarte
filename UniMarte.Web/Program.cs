@@ -29,6 +29,17 @@ builder.Services.AddControllersWithViews();
 // Agora que todos os servi�os foram configurados, constru�mos o aplicativo
 var app = builder.Build();
 
+if (!app.Environment.IsDevelopment())
+{
+    app.UseStaticFiles(new StaticFileOptions
+    {
+        OnPrepareResponse = ctx =>
+        {
+            ctx.Context.Response.Headers.Append("Cache-Control", "public,max-age=604800");
+        }
+    });
+}
+
 // Configurar o pipeline de requisi��o HTTP
 if (!app.Environment.IsDevelopment())
 {

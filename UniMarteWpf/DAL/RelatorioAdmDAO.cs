@@ -167,13 +167,17 @@ namespace UniMarteWpf.DataAccess
             using (var con = Conexao.Conectar())
             {
                 var cmd = new SqlCommand(@"
-            SELECT p.TextoPergunta, CAST(v.DataHoraCadastro AS DATE) AS Data, AVG(CAST(r.Resposta AS FLOAT)) AS Media
-            FROM Respostas r
-            JOIN Perguntas p ON r.IdPergunta = p.IdPergunta
-            JOIN Visitantes v ON r.IdVisitante = v.IdVisitante
-            WHERE p.TipoResposta = 'Estrelas' AND v.DataHoraCadastro >= DATEADD(DAY, -7, GETDATE())
-            GROUP BY p.TextoPergunta, CAST(v.DataHoraCadastro AS DATE)
-            ORDER BY p.TextoPergunta, Data", con);
+                    SELECT p.TextoPergunta, 
+                    CAST(v.DataHoraCadastro AS DATE) AS Data, 
+                    ROUND(AVG(CAST(r.Resposta AS FLOAT)), 1) AS Media
+                    FROM Respostas r
+                    JOIN Perguntas p ON r.IdPergunta = p.IdPergunta
+                    JOIN Visitantes v ON r.IdVisitante = v.IdVisitante
+                    WHERE p.TipoResposta = 'Estrelas' 
+                      AND v.DataHoraCadastro >= DATEADD(DAY, -7, GETDATE())
+                    GROUP BY p.TextoPergunta, CAST(v.DataHoraCadastro AS DATE)
+                    ORDER BY p.TextoPergunta, Data;
+                    ", con);
 
                 try
                 {

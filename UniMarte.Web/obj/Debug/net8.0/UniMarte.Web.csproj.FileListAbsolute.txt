@@ -1,5 +1,6 @@
 C:\Projects\UniMarte\UniMarte.Web\bin\Debug\net8.0\appsettings.Development.json
 C:\Projects\UniMarte\UniMarte.Web\bin\Debug\net8.0\appsettings.json
+C:\Projects\UniMarte\UniMarte.Web\bin\Debug\net8.0\bundleconfig.json
 C:\Projects\UniMarte\UniMarte.Web\bin\Debug\net8.0\UniMarte.Web.staticwebassets.runtime.json
 C:\Projects\UniMarte\UniMarte.Web\bin\Debug\net8.0\UniMarte.Web.staticwebassets.endpoints.json
 C:\Projects\UniMarte\UniMarte.Web\bin\Debug\net8.0\UniMarte.Web.exe

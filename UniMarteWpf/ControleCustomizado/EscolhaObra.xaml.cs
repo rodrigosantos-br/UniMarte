@@ -13,18 +13,18 @@ namespace UniMarteWpf.ControleCustomizado
         {
             InitializeComponent();
             ImageListBox.ItemsSource = obras;
-            obras.Add(new Obra { ImagePath = "/Imagens/Obras/chegada_marte.jpg", Titulo = "Chegada à Marte" });
-            obras.Add(new Obra { ImagePath = "/Imagens/Obras/colonia_espacial.jpg", Titulo = "Colônia Espacial"});
-            obras.Add(new Obra { ImagePath = "/Imagens/Obras/crateras_vulcoes.jpg", Titulo = "Cratera e Vulcões" });
-            obras.Add(new Obra { ImagePath = "/Imagens/Obras/exploracao_robotica.jpg", Titulo = "Exploração Robótica"});
-            obras.Add(new Obra { ImagePath = "/Imagens/Obras/horizonte_marte.jpg", Titulo = "Horizonte Marte" });
-            obras.Add(new Obra { ImagePath = "/Imagens/Obras/paisagens_noturnas.jpg", Titulo = "Paisagens Noturnas" });
-            obras.Add(new Obra { ImagePath = "/Imagens/Obras/primeira_base_marte.jpg", Titulo = "Primeira Base em Marte" });
-            obras.Add(new Obra { ImagePath = "/Imagens/Obras/solo_formacao_marte.jpg", Titulo = "Solo Foormação Marte" });
-            obras.Add(new Obra { ImagePath = "/Imagens/Obras/solo_vermelho.jpg", Titulo = "Solo Vermelho" });
-            obras.Add(new Obra { ImagePath = "/Imagens/Obras/tecnologia_colonizacao.jpg", Titulo = "Tecnologia de Colonização" });
-            obras.Add(new Obra { ImagePath = "/Imagens/Obras/vales_marte.jpg", Titulo = "Vales de Marte" });
-            obras.Add(new Obra { ImagePath = "/Imagens/Obras/viagem_marte.jpg", Titulo = "Viagem à Marte" });
+            obras.Add(new Obra { ImagemUrl = "/Imagens/Obras/chegada_marte.jpg", Titulo = "Chegada à Marte" });
+            obras.Add(new Obra { ImagemUrl = "/Imagens/Obras/colonia_espacial.jpg", Titulo = "Colônia Espacial"});
+            obras.Add(new Obra { ImagemUrl = "/Imagens/Obras/crateras_vulcoes.jpg", Titulo = "Cratera e Vulcões" });
+            obras.Add(new Obra { ImagemUrl = "/Imagens/Obras/exploracao_robotica.jpg", Titulo = "Exploração Robótica"});
+            obras.Add(new Obra { ImagemUrl = "/Imagens/Obras/horizonte_marte.jpg", Titulo = "Horizonte Marte" });
+            obras.Add(new Obra { ImagemUrl = "/Imagens/Obras/paisagens_noturnas.jpg", Titulo = "Paisagens Noturnas" });
+            obras.Add(new Obra { ImagemUrl = "/Imagens/Obras/primeira_base_marte.jpg", Titulo = "Primeira Base em Marte" });
+            obras.Add(new Obra { ImagemUrl = "/Imagens/Obras/solo_formacao_marte.jpg", Titulo = "Solo Foormação Marte" });
+            obras.Add(new Obra { ImagemUrl = "/Imagens/Obras/solo_vermelho.jpg", Titulo = "Solo Vermelho" });
+            obras.Add(new Obra { ImagemUrl = "/Imagens/Obras/tecnologia_colonizacao.jpg", Titulo = "Tecnologia de Colonização" });
+            obras.Add(new Obra { ImagemUrl = "/Imagens/Obras/vales_marte.jpg", Titulo = "Vales de Marte" });
+            obras.Add(new Obra { ImagemUrl = "/Imagens/Obras/viagem_marte.jpg", Titulo = "Viagem à Marte" });
 
             ImageListBox.SelectionChanged += ImageListBox_SelectionChanged;
         }

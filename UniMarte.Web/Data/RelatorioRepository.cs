@@ -29,7 +29,7 @@ namespace UniMarte.Web.Data
                                 .DefaultIfEmpty(0)
                                 .Average();
 
-            return mediaEstrelas;
+            return Math.Round(mediaEstrelas, 1);
         }
 
         public int ObterNumeroTotalDeVisitantes()

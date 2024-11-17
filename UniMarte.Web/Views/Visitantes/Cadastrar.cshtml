@@ -4,23 +4,25 @@
     ViewData["Title"] = "Cadastro";
 }
 
-<h1>Museu UniMarte</h1>
-<hr />
-
-<div class="form-container">
-    <button class="close-button">×</button>
-    <h2>Bem Vindo!</h2>
+<div class="cadastro-principal">
+    <div class="cadastro-esquerdo">
+        <h1> Vamos começar? <br> Proxima parada marte!</h1>
+        <img src="~/Images/planetas.svg" class="imagem-cadastro-esquerdo">
+    </div>
     <form id ="visitantesForm" asp-action="Cadastrar" method="post">
-        <div class="form-group">
-            <input asp-for="Nome" class="form-control" placeholder="Nome" required>
-            <span asp-validation-for="Nome" class="text-danger"></span>
-        </div>
-        <div class="form-group">
-            <input asp-for="DataNascimento" class="form-control" type="date" placeholder="Data de Nascimento" required>
-            <span asp-validation-for="DataNascimento" class="text-danger"></span>
-        </div>
-        
-        <button type="submit" class="btn btn-primary">Cadastrar</button>
-        
+        <div class="cadastro-direito">
+            <div class="tela-cadastro">
+                <h1>Cadastro</h1>
+                <div class="campo-texto">
+                    <input asp-for="Nome" class="form-control" placeholder="Nome" required>
+                    <span asp-validation-for="Nome" class="text-danger"></span>
+                </div>
+                <div class="campo-texto">
+                    <input asp-for="DataNascimento" class="form-control" type="date" placeholder="Data de Nascimento" required>
+                    <span asp-validation-for="DataNascimento" class="text-danger"></span>
+                </div>
+                <button type="submit" class="btn-cadastro">Cadastrar</button>
+            </div>
+        </div>        
     </form>
 </div>

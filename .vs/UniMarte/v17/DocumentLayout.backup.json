@@ -3,20 +3,40 @@
   "WorkspaceRootPath": "C:\\Projects\\UniMarte\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|c:\\projects\\unimarte\\unimarte.web\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|solutionrelative:unimarte.web\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|c:\\projects\\unimarte\\unimarte.web\\views\\questionario\\exibirperguntas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|solutionrelative:unimarte.web\\views\\questionario\\exibirperguntas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|c:\\projects\\unimarte\\unimarte.web\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|solutionrelative:unimarte.web\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|c:\\projects\\unimarte\\unimarte.web\\views\\relatorio\\relatorio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|solutionrelative:unimarte.web\\views\\relatorio\\relatorio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|c:\\projects\\unimarte\\unimarte.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|solutionrelative:unimarte.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|c:\\projects\\unimarte\\unimarte.web\\views\\questionario\\exibirperguntas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|solutionrelative:unimarte.web\\views\\questionario\\exibirperguntas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|c:\\projects\\unimarte\\unimarte.web\\views\\visitantes\\cadastrar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|solutionrelative:unimarte.web\\views\\visitantes\\cadastrar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|c:\\projects\\unimarte\\unimarte.web\\controllers\\questionariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|solutionrelative:unimarte.web\\controllers\\questionariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|c:\\projects\\unimarte\\unimarte.web\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|solutionrelative:unimarte.web\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|c:\\projects\\unimarte\\unimarte.web\\models\\pergunta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|solutionrelative:unimarte.web\\models\\pergunta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|c:\\projects\\unimarte\\unimarte.web\\views\\obras\\listar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|solutionrelative:unimarte.web\\views\\obras\\listar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|c:\\projects\\unimarte\\unimarte.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|solutionrelative:unimarte.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -43,14 +63,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Relatorio.cshtml",
-              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarte.Web\\Views\\Relatorio\\Relatorio.cshtml",
-              "RelativeDocumentMoniker": "UniMarte.Web\\Views\\Relatorio\\Relatorio.cshtml",
-              "ToolTip": "C:\\Projects\\UniMarte\\UniMarte.Web\\Views\\Relatorio\\Relatorio.cshtml",
-              "RelativeToolTip": "UniMarte.Web\\Views\\Relatorio\\Relatorio.cshtml",
-              "ViewState": "AgIAAAQAAAAAAAAAAADwvy0AAAAGAAAAAAAAAA==",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarte.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "UniMarte.Web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Projects\\UniMarte\\UniMarte.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "UniMarte.Web\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-17T01:24:25.572Z",
+              "WhenOpened": "2024-11-17T15:56:45.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "QuestionarioController.cs",
+              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarte.Web\\Controllers\\QuestionarioController.cs",
+              "RelativeDocumentMoniker": "UniMarte.Web\\Controllers\\QuestionarioController.cs",
+              "ToolTip": "C:\\Projects\\UniMarte\\UniMarte.Web\\Controllers\\QuestionarioController.cs",
+              "RelativeToolTip": "UniMarte.Web\\Controllers\\QuestionarioController.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAIwGcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T15:51:09.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Pergunta.cs",
+              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarte.Web\\Models\\Pergunta.cs",
+              "RelativeDocumentMoniker": "UniMarte.Web\\Models\\Pergunta.cs",
+              "ToolTip": "C:\\Projects\\UniMarte\\UniMarte.Web\\Models\\Pergunta.cs",
+              "RelativeToolTip": "UniMarte.Web\\Models\\Pergunta.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T15:48:07.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ExibirPerguntas.cshtml",
+              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarte.Web\\Views\\Questionario\\ExibirPerguntas.cshtml",
+              "RelativeDocumentMoniker": "UniMarte.Web\\Views\\Questionario\\ExibirPerguntas.cshtml",
+              "ToolTip": "C:\\Projects\\UniMarte\\UniMarte.Web\\Views\\Questionario\\ExibirPerguntas.cshtml",
+              "RelativeToolTip": "UniMarte.Web\\Views\\Questionario\\ExibirPerguntas.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-17T15:37:53.399Z",
               "EditorCaption": ""
             },
             {
@@ -61,35 +120,61 @@
               "RelativeDocumentMoniker": "UniMarte.Web\\wwwroot\\js\\site.js",
               "ToolTip": "C:\\Projects\\UniMarte\\UniMarte.Web\\wwwroot\\js\\site.js",
               "RelativeToolTip": "UniMarte.Web\\wwwroot\\js\\site.js",
-              "ViewState": "AgIAACoAAAAAAAAAAADwv2UAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAIoAAAAAAAAAAADwv6cAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-11-17T01:01:43.3Z",
+              "WhenOpened": "2024-11-17T15:32:37.835Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarte.Web\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "UniMarte.Web\\wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Projects\\UniMarte\\UniMarte.Web\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "UniMarte.Web\\wwwroot\\css\\site.css",
-              "ViewState": "AgIAALYBAAAAAAAAAAAAALkBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-17T01:00:05.017Z",
+              "DocumentIndex": 7,
+              "Title": "Listar.cshtml",
+              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarte.Web\\Views\\Obras\\Listar.cshtml",
+              "RelativeDocumentMoniker": "UniMarte.Web\\Views\\Obras\\Listar.cshtml",
+              "ToolTip": "C:\\Projects\\UniMarte\\UniMarte.Web\\Views\\Obras\\Listar.cshtml",
+              "RelativeToolTip": "UniMarte.Web\\Views\\Obras\\Listar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-17T15:31:51.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarte.Web\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "UniMarte.Web\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Projects\\UniMarte\\UniMarte.Web\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "UniMarte.Web\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-17T15:12:46.303Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ExibirPerguntas.cshtml",
-              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarte.Web\\Views\\Questionario\\ExibirPerguntas.cshtml",
-              "RelativeDocumentMoniker": "UniMarte.Web\\Views\\Questionario\\ExibirPerguntas.cshtml",
-              "ToolTip": "C:\\Projects\\UniMarte\\UniMarte.Web\\Views\\Questionario\\ExibirPerguntas.cshtml",
-              "RelativeToolTip": "UniMarte.Web\\Views\\Questionario\\ExibirPerguntas.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAHAAAAAAAAAA==",
+              "Title": "Cadastrar.cshtml",
+              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarte.Web\\Views\\Visitantes\\Cadastrar.cshtml",
+              "RelativeDocumentMoniker": "UniMarte.Web\\Views\\Visitantes\\Cadastrar.cshtml",
+              "ToolTip": "C:\\Projects\\UniMarte\\UniMarte.Web\\Views\\Visitantes\\Cadastrar.cshtml",
+              "RelativeToolTip": "UniMarte.Web\\Views\\Visitantes\\Cadastrar.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-17T00:55:21.499Z",
+              "WhenOpened": "2024-11-17T14:53:33.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarte.Web\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "UniMarte.Web\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Projects\\UniMarte\\UniMarte.Web\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "UniMarte.Web\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAACoBAAAAAAAAAAAAAEQBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-17T14:50:44.837Z",
               "EditorCaption": ""
             }
           ]
