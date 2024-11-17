@@ -1,5 +1,0 @@
-C:\Projects\UniMarte\UniMarte.Web\wwwroot\css\cadastro.css
-C:\Projects\UniMarte\UniMarte.Web\wwwroot\css\home.css
-C:\Projects\UniMarte\UniMarte.Web\wwwroot\css\obras.css
-C:\Projects\UniMarte\UniMarte.Web\wwwroot\css\questionario.css
-C:\Projects\UniMarte\UniMarte.Web\wwwroot\css\relatorio.css

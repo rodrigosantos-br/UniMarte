@@ -50,4 +50,53 @@ document.addEventListener("DOMContentLoaded", () => {
     showSlides();
 });
 
+// Sim/Não buttons
+document.querySelectorAll('.sim-nao-button').forEach(button => {
+    button.addEventListener('click', function () {
+        const parent = this.closest('.sim-nao-options');
+        parent.querySelectorAll('.sim-nao-button').forEach(btn => {
+            btn.classList.remove('selected');
+        });
+        this.classList.add('selected');
+    });
+});
 
+// Star rating
+document.querySelectorAll('.star-rating').forEach(container => {
+    const stars = container.querySelectorAll('.star');
+    const index = container.dataset.index;
+    const hiddenInput = container.parentElement.querySelector('input[type="hidden"]');
+
+    stars.forEach((star, i) => {
+        star.addEventListener('click', () => {
+            stars.forEach((s, j) => {
+                s.classList.toggle('filled', j <= i);
+            });
+            hiddenInput.value = i + 1;
+        });
+
+        star.addEventListener('mouseover', () => {
+            stars.forEach((s, j) => {
+                s.classList.toggle('filled', j <= i);
+            });
+        });
+    });
+
+    container.addEventListener('mouseleave', () => {
+        const value = hiddenInput.value;
+        stars.forEach((s, j) => {
+            s.classList.toggle('filled', j < value);
+        });
+    });
+});
+
+// Obra selection
+document.querySelectorAll('.obra-option').forEach(option => {
+    option.addEventListener('click', function () {
+        const parent = this.closest('.obra-options');
+        parent.querySelectorAll('.obra-option').forEach(opt => {
+            opt.classList.remove('selected');
+        });
+        this.classList.add('selected');
+    });
+});

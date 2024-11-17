@@ -5,30 +5,43 @@
     var estrelas = (int)Math.Round(Model.MediaEstrelas); // Quantidade de estrelas baseadas na média
 }
 
-<h2>Relatório de Visitantes</h2>
+<div class="container">
+    <h2>Relatório de Visitantes</h2>
 
-<p>Total de Visitantes: @Model.TotalVisitantes</p>
+    <div class="stats-container">
+        <div class="stat-item">
+            <strong>Total de Visitantes:</strong>
+            <span>@Model.TotalVisitantes</span>
+        </div>
 
-<p>Média das Respostas (Estrelas): @Model.MediaEstrelas</p>
+        <div class="stat-item">
+            <strong>Média das Respostas:</strong>
+            <span>@Model.MediaEstrelas</span>
+        </div>
+    </div>
 
-<div>
-    <label>Avaliação:</label>
-    @for (int i = 1; i <= 5; i++)
-    {
-        if (i <= estrelas)
+    <div class="stars-container">
+        @for (int i = 1; i <= 5; i++)
         {
-            <span style="color: gold;">&#9733;</span>  <!-- Estrela preenchida -->
+            if (i <= estrelas)
+            {
+                <span class="star-filled">&#9733;</span>
+            }
+            else
+            {
+                <span class="star-empty">&#9734;</span>
+            }
         }
-        else
-        {
-            <span>&#9734;</span>  <!-- Estrela vazia -->
-        }
-    }
+    </div>
+
+    <div class="message">
+        @mensagem
+    </div>
+
+    <div class="btn-container">
+        <form action="@Url.Action("Index", "Home")" method="get">
+            <button type="submit" class="btn-fim">Finalizar</button>
+        </form>
+    </div>
 </div>
 
-<p>@mensagem</p>
-
-<!-- Botão para voltar para a tela inicial -->
-<form action="@Url.Action("Index", "Home")" method="get">
-    <button type="submit">Fim</button>
-</form>

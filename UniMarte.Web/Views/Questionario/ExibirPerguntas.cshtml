@@ -5,33 +5,33 @@
 }
 <form asp-action="SalvarRespostas" method="post" class="questionnaire-form">
     <input type="hidden" name="idVisitante" value="@visitanteId" />
-
     @foreach (var pergunta in Model)
     {
         <div class="question-container">
             <label class="question-text">@pergunta.TextoPergunta</label>
-
             @if (pergunta.TipoResposta == "SimNao")
             {
                 <div class="sim-nao-options">
-                    <label>
-                        <input type="radio" name="Respostas[@index].RespostaTexto" value="Sim" required /> Sim
+                    <label class="sim-nao-button">
+                        <input type="radio" name="Respostas[@index].RespostaTexto" value="Sim" required />
+                        <span>Sim</span>
                     </label>
-                    <label>
-                        <input type="radio" name="Respostas[@index].RespostaTexto" value="Não" /> Não
+                    <label class="sim-nao-button">
+                        <input type="radio" name="Respostas[@index].RespostaTexto" value="Não" />
+                        <span>Não</span>
                     </label>
                 </div>
             }
             else if (pergunta.TipoResposta == "Estrelas")
             {
                 <div class="stars-options">
-                    @for (int i = 1; i <= 5; i++)
-                    {
-                        <label>
-                            <input type="radio" name="Respostas[@index].RespostaTexto" value="@i" required />
-                            <span>@i estrela(s)</span>
-                        </label>
-                    }
+                    <div class="star-rating" data-index="@index">
+                        @for (int i = 1; i <= 5; i++)
+                        {
+                            <span class="star" data-value="@i">★</span>
+                        }
+                    </div>
+                    <input type="hidden" name="Respostas[@index].RespostaTexto" required />
                 </div>
             }
             else if (pergunta.TipoResposta == "EscolhaObra")
@@ -42,17 +42,14 @@
                         <label class="obra-option">
                             <input type="radio" name="Respostas[@index].RespostaTexto" value="Obra @obra.IdObra" required />
                             <img src="@obra.ImagemUrl" alt="@obra.Titulo" class="obra-image" />
-                            <span>@obra.Titulo</span>
+                            <div class="obra-title">@obra.Titulo</div>
                         </label>
                     }
                 </div>
             }
-
             <input type="hidden" name="Respostas[@index].IdPergunta" value="@pergunta.IdPergunta" />
         </div>
-
         index++;
     }
-
     <button type="submit" class="submit-button">Enviar Respostas</button>
 </form>
