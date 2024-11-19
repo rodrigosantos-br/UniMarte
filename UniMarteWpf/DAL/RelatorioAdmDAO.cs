@@ -160,10 +160,10 @@ namespace UniMarteWpf.DataAccess
             // Corrigindo o mapeamento para corresponder exatamente aos textos das perguntas
             var perguntaParaSetor = new Dictionary<string, string>
     {
-        { "Como você avalia a arquitetura do museu?", "Infraestrutura" },
-        { "Como você avalia o ambiente e limpeza do museu?", "Ambiente" },
-        { "Como você avalia o atendimento dos funcionários do museu?", "Atendimento" },
-        { "Como você avalia a qualidade das obras do museu?", "Obras" }
+        { "Como você avalia a arquitetura do museu?", "Arquitetura" },
+        { "Como você avalia o ambiente e limpeza do museu?", "Ambiente e Limpeza" },
+        { "Como você avalia o atendimento dos funcionários do museu?", "Atendimento dos Funcionários" },
+        { "Como você avalia a qualidade das obras do museu?", "Qualidade de Obras" }
     };
 
             using (var con = Conexao.Conectar())

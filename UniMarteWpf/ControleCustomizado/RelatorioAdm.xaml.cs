@@ -130,20 +130,18 @@ namespace UniMarteWpf.ControleCustomizado
 
                 // Lista das datas dos últimos 7 dias (do mais antigo para o mais recente)
                 var datas = Enumerable.Range(0, 7)
-                                    .Select(i => DateTime.Today.AddDays(-6 + i))  // Alterado para começar de -6
+                                    .Select(i => DateTime.Today.AddDays(-6 + i))
                                     .OrderBy(d => d)
                                     .ToList();
 
-                // Define cores diferentes para cada setor
-                var cores = new[]
-                {
-            OxyColors.Blue,
-            OxyColors.Red,
-            OxyColors.Green,
-            OxyColors.Orange
+                // Define cores específicas para cada setor
+                var cores = new Dictionary<string, OxyColor>
+        {
+            { "Arquitetura", OxyColor.FromRgb(255, 0, 0) },     // Vermelho para Arquitetura
+            { "Atendimento dos Funcionários", OxyColor.FromRgb(0, 255, 0) },        // Verde para Atendimento
+            { "Ambiente e Limpeza", OxyColor.FromRgb(255, 255, 0) },         // Amarelo para Ambiente
+            { "Qualidade de Obras", OxyColor.FromRgb(255, 165, 0) }            // Laranja para Obras
         };
-
-                int colorIndex = 0;
 
                 // Cria as séries para cada setor
                 foreach (var setor in setores)
@@ -151,13 +149,13 @@ namespace UniMarteWpf.ControleCustomizado
                     var lineSeries = new LineSeries
                     {
                         Title = setor.Key,
-                        Color = cores[colorIndex++ % cores.Length],
+                        Color = cores[setor.Key],
                         StrokeThickness = 2,
                         MarkerType = MarkerType.Circle,
                         MarkerSize = 4,
-                        MarkerStroke = cores[colorIndex % cores.Length],
-                        MarkerFill = cores[colorIndex % cores.Length],
-                        InterpolationAlgorithm = null  // Removida a interpolação
+                        MarkerStroke = cores[setor.Key],
+                        MarkerFill = cores[setor.Key],
+                        InterpolationAlgorithm = null
                     };
 
                     // Garantir que há pelo menos um ponto válido antes de adicionar a série
