@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UniMarte.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3e740e98bf36ed8cbdfdfa5ec2f06047bdea02e5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+01a3574e800e0f133dea57067305678b13d9db46")]
 [assembly: System.Reflection.AssemblyProductAttribute("UniMarte.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UniMarte.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

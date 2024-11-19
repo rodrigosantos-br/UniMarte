@@ -1,5 +1,4 @@
-﻿using System;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Input;
 using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
@@ -61,6 +60,7 @@ namespace UniMarteWpf.Apresentacao
                 // Ao clicar, navega para o cadastro, mas mantém o slideshow rodando.
                 Cadastro cadastro = new Cadastro();
                 cadastro.Show();
+                this.Close();
             }
         }
 
