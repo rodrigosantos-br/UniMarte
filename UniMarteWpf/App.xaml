@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
              xmlns:local="clr-namespace:UniMarteWpf"
-             StartupUri="Apresentacao/MainWindow.xaml">
+             StartupUri="Apresentacao/Adm.xaml">
     <Application.Resources>
         <ResourceDictionary Source="/Estilo/EstiloBotao.xaml"/>
     </Application.Resources>

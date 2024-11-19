@@ -153,31 +153,43 @@ namespace UniMarteWpf.DataAccess
             return resultados; // Retorna a lista, que pode estar vazia se ocorreu um erro
         }
 
-        public Dictionary<string, List<(DateTime Data, double Nota)>> ObterAvaliacoesPorPerguntaUltimos7Dias()
+        public Dictionary<string, List<(DateTime Data, double Nota)>> ObterAvaliacoesPorSetorUltimos7Dias()
         {
             var resultados = new Dictionary<string, List<(DateTime Data, double Nota)>>();
 
-            // Inicializa as listas para cada pergunta
-            var perguntas = new List<string> { "Arquitetura", "Ambiente e Limpeza", "Atendimento dos Funcionários", "Qualidade das Obras" };
-            foreach (var pergunta in perguntas)
-            {
-                resultados[pergunta] = new List<(DateTime, double)>();
-            }
+            // Corrigindo o mapeamento para corresponder exatamente aos textos das perguntas
+            var perguntaParaSetor = new Dictionary<string, string>
+    {
+        { "Como você avalia a arquitetura do museu?", "Infraestrutura" },
+        { "Como você avalia o ambiente e limpeza do museu?", "Ambiente" },
+        { "Como você avalia o atendimento dos funcionários do museu?", "Atendimento" },
+        { "Como você avalia a qualidade das obras do museu?", "Obras" }
+    };
 
             using (var con = Conexao.Conectar())
             {
+                // Resto do código SQL permanece o mesmo...
                 var cmd = new SqlCommand(@"
-                    SELECT p.TextoPergunta, 
-                    CAST(v.DataHoraCadastro AS DATE) AS Data, 
-                    ROUND(AVG(CAST(r.Resposta AS FLOAT)), 1) AS Media
-                    FROM Respostas r
-                    JOIN Perguntas p ON r.IdPergunta = p.IdPergunta
-                    JOIN Visitantes v ON r.IdVisitante = v.IdVisitante
-                    WHERE p.TipoResposta = 'Estrelas' 
-                      AND v.DataHoraCadastro >= DATEADD(DAY, -7, GETDATE())
-                    GROUP BY p.TextoPergunta, CAST(v.DataHoraCadastro AS DATE)
-                    ORDER BY p.TextoPergunta, Data;
-                    ", con);
+            SELECT 
+                p.TextoPergunta, 
+                CAST(v.DataHoraCadastro AS DATE) AS Data, 
+                ROUND(AVG(CAST(r.Resposta AS FLOAT)), 1) AS Media
+            FROM 
+                Respostas r
+            JOIN 
+                Perguntas p ON r.IdPergunta = p.IdPergunta
+            JOIN 
+                Visitantes v ON r.IdVisitante = v.IdVisitante
+            WHERE 
+                p.TipoResposta = 'Estrelas' 
+                AND v.DataHoraCadastro >= DATEADD(DAY, -7, GETDATE())
+                AND r.Resposta IS NOT NULL
+            GROUP BY 
+                p.TextoPergunta, 
+                CAST(v.DataHoraCadastro AS DATE)
+            ORDER BY 
+                p.TextoPergunta, 
+                Data;", con);
 
                 try
                 {
@@ -189,33 +201,37 @@ namespace UniMarteWpf.DataAccess
                             var data = reader.GetDateTime(1);
                             var mediaNota = reader.IsDBNull(2) ? 0 : reader.GetDouble(2);
 
-                            if (resultados.ContainsKey(pergunta))
+                            // Verificar se a pergunta existe no mapeamento
+                            if (perguntaParaSetor.TryGetValue(pergunta, out var setor))
                             {
-                                resultados[pergunta].Add((data, mediaNota));
+                                if (!resultados.ContainsKey(setor))
+                                {
+                                    resultados[setor] = new List<(DateTime, double)>();
+                                }
+                                resultados[setor].Add((data, mediaNota));
                             }
-                            else
-                            {
-                                resultados[pergunta] = new List<(DateTime, double)> { (data, mediaNota) };
-                            }
-
                         }
                     }
                 }
                 catch (Exception ex)
                 {
                     this.mensagem = "Erro ao obter as avaliações diárias: " + ex.Message;
+                    Console.WriteLine($"Erro: {ex.Message}");
                 }
             }
-            foreach (var pergunta in resultados)
-            {
-                Console.WriteLine($"Pergunta: {pergunta.Key} - Total de Avaliações: {pergunta.Value.Count}");
 
-                foreach (var (data, mediaNota) in pergunta.Value)
+            // Log para verificar os resultados
+            foreach (var setor in resultados)
+            {
+                Console.WriteLine($"Setor: {setor.Key} - Total de Avaliações: {setor.Value.Count}");
+                foreach (var (data, mediaNota) in setor.Value)
                 {
                     Console.WriteLine($"  Data: {data.ToShortDateString()}, Média: {mediaNota}");
                 }
             }
+
             return resultados;
         }
+
     }
 }

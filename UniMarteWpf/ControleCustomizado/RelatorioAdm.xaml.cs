@@ -1,5 +1,6 @@
 ﻿using OxyPlot;
 using OxyPlot.Axes;
+using OxyPlot.Legends;
 using OxyPlot.Series;
 using OxyPlot.Wpf;
 using System.Windows.Controls;
@@ -113,80 +114,120 @@ namespace UniMarteWpf.ControleCustomizado
 
         private void ConfigurarGraficoLinhas()
         {
-            // Configuração inicial do modelo
-            LineModel = new PlotModel { Title = "Avaliação Diária" };
-
-            // Obter avaliações agrupadas por pergunta
-            var setores = relatorioAdmDAO.ObterAvaliacoesPorPerguntaUltimos7Dias();
-
-            // Depuração: exibir as avaliações retornadas para verificar os dados
-            foreach (var setor in setores)
+            try
             {
-                Console.WriteLine($"Setor: {setor.Key}");
-                foreach (var (data, nota) in setor.Value)
+                // Configuração inicial do modelo
+                LineModel = new PlotModel { Title = "Avaliação Diária" };
+
+                // Obtém as avaliações agrupadas por setor
+                var setores = relatorioAdmDAO.ObterAvaliacoesPorSetorUltimos7Dias();
+
+                if (setores == null || !setores.Any())
                 {
-                    Console.WriteLine($"Data: {data}, Nota: {nota}");
+                    Console.WriteLine("Não há dados para o gráfico de linhas.");
+                    return;
                 }
-            }
 
-            // Criar a lista das datas dos últimos 7 dias
-            var datas = Enumerable.Range(0, 7)
-                                  .Select(i => DateTime.Today.AddDays(-i))
-                                  .ToList();
+                // Lista das datas dos últimos 7 dias (do mais antigo para o mais recente)
+                var datas = Enumerable.Range(0, 7)
+                                    .Select(i => DateTime.Today.AddDays(-6 + i))  // Alterado para começar de -6
+                                    .OrderBy(d => d)
+                                    .ToList();
 
-            // Criação das séries para cada setor
-            foreach (var setor in setores)
-            {
-                var lineSeries = new LineSeries
+                // Define cores diferentes para cada setor
+                var cores = new[]
                 {
-                    Title = setor.Key,
-                    StrokeThickness = 2,
-                    MarkerType = MarkerType.Circle,
-                    InterpolationAlgorithm = InterpolationAlgorithms.CanonicalSpline
+            OxyColors.Blue,
+            OxyColors.Red,
+            OxyColors.Green,
+            OxyColors.Orange
+        };
+
+                int colorIndex = 0;
+
+                // Cria as séries para cada setor
+                foreach (var setor in setores)
+                {
+                    var lineSeries = new LineSeries
+                    {
+                        Title = setor.Key,
+                        Color = cores[colorIndex++ % cores.Length],
+                        StrokeThickness = 2,
+                        MarkerType = MarkerType.Circle,
+                        MarkerSize = 4,
+                        MarkerStroke = cores[colorIndex % cores.Length],
+                        MarkerFill = cores[colorIndex % cores.Length],
+                        InterpolationAlgorithm = null  // Removida a interpolação
+                    };
+
+                    // Garantir que há pelo menos um ponto válido antes de adicionar a série
+                    bool temPontoValido = false;
+
+                    // Adiciona os pontos às séries
+                    foreach (var data in datas)
+                    {
+                        var item = setor.Value.FirstOrDefault(x => x.Data.Date == data.Date);
+
+                        // Se encontrou um valor para esta data
+                        if (!item.Equals(default((DateTime, double))))
+                        {
+                            lineSeries.Points.Add(new DataPoint(DateTimeAxis.ToDouble(data), item.Nota));
+                            temPontoValido = true;
+                        }
+                        else
+                        {
+                            // Adiciona um ponto nulo para manter a continuidade
+                            lineSeries.Points.Add(new DataPoint(DateTimeAxis.ToDouble(data), double.NaN));
+                        }
+                    }
+
+                    // Só adiciona a série se tiver pelo menos um ponto válido
+                    if (temPontoValido)
+                    {
+                        LineModel.Series.Add(lineSeries);
+                    }
+                }
+
+                // Configura os eixos
+                LineModel.Axes.Clear(); // Limpa os eixos existentes
+
+                var dateAxis = new DateTimeAxis
+                {
+                    Position = AxisPosition.Bottom,
+                    Title = "Data",
+                    StringFormat = "dd/MM",
+                    MinorIntervalType = DateTimeIntervalType.Days,
+                    IntervalType = DateTimeIntervalType.Days,
+                    Minimum = DateTimeAxis.ToDouble(datas.First()),
+                    Maximum = DateTimeAxis.ToDouble(datas.Last()),
+                    MajorStep = 1,
+                    MinorStep = 1
                 };
 
-                // Mapeando as médias às datas
-                foreach (var data in datas)
+                var valueAxis = new LinearAxis
                 {
-                    // Tenta encontrar o valor calculado no dicionário para a data atual
-                    var media = setor.Value.FirstOrDefault(x => x.Data.Date == data.Date).Nota;
+                    Position = AxisPosition.Left,
+                    Title = "Avaliação",
+                    Minimum = 0,
+                    Maximum = 5,
+                    MajorStep = 1,
+                    MinorStep = 0.5,
+                    StringFormat = "0.0"
+                };
 
-                    if (media > 0) // Apenas adiciona se a média for maior que 0
-                    {
-                        lineSeries.Points.Add(new DataPoint(DateTimeAxis.ToDouble(data), media));
-                    }
-                    else
-                    {
-                        lineSeries.Points.Add(new DataPoint(DateTimeAxis.ToDouble(data), double.NaN)); // Usa NaN para não exibir o ponto
-                    }
-                }
+                LineModel.Axes.Add(dateAxis);
+                LineModel.Axes.Add(valueAxis);
 
-                LineModel.Series.Add(lineSeries);
+                // Atualiza o modelo
+                plotViewAvaliacoes.Model = LineModel;
+                plotViewAvaliacoes.InvalidatePlot(true);
             }
-
-            // Configuração dos eixos
-            LineModel.Axes.Add(new DateTimeAxis
+            catch (Exception ex)
             {
-                Position = AxisPosition.Bottom,
-                Title = "Data",
-                Minimum = DateTimeAxis.ToDouble(DateTime.Today.AddDays(-6)), // Exibir de -6 dias até hoje
-                Maximum = DateTimeAxis.ToDouble(DateTime.Today),
-                MajorStep = 1,
-                StringFormat = "dd/MM" // Formato da data
-            });
-
-            LineModel.Axes.Add(new LinearAxis
-            {
-                Position = AxisPosition.Left,
-                Title = "Avaliação",
-                Minimum = 0,
-                Maximum = 5, // Exibir notas de 0 a 5
-                MajorStep = 1,
-                MinorStep = 0.5
-            });
-
-            // Atribui o modelo ao PlotView
-            plotViewAvaliacoes.Model = LineModel;
+                Console.WriteLine($"Erro ao configurar gráfico: {ex.Message}");
+                Console.WriteLine($"StackTrace: {ex.StackTrace}");
+            }
         }
+
     }
 }
