@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using UniMarte.Web.Data.Interfaces;
 using UniMarte.Web.Models;
-using UniMarte.Web.Models.Interfaces;
 
 namespace UniMarte.Web.Data
 {

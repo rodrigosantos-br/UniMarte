@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using UniMarte.Web.Data.Interfaces;
 using UniMarte.Web.Models;
-using UniMarte.Web.Models.Interfaces;
 using UniMarte.Web.ViewModel;
 
 namespace UniMarte.Web.Controllers

@@ -163,7 +163,7 @@ namespace UniMarte.Wpf.DataAccess
         { "Como você avalia a arquitetura do museu?", "Arquitetura" },
         { "Como você avalia o ambiente e limpeza do museu?", "Ambiente e Limpeza" },
         { "Como você avalia o atendimento dos funcionários do museu?", "Atendimento dos Funcionários" },
-        { "Como você avalia a qualidade das obras do museu?", "Qualidade de Obras" }
+        { "Como você avalia a qualidade das obras do museu?", "Qualidade das Obras" }
     };
 
             using (var con = Conexao.Conectar())

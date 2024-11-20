@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using UniMarte.Web.Models.Interfaces;
+using UniMarte.Web.Data.Interfaces;
 
 namespace UniMarte.Web.Controllers
 {

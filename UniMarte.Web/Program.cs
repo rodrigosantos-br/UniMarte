@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using UniMarte.Web.Data;
-using UniMarte.Web.Models.Interfaces;
+using UniMarte.Web.Data.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 

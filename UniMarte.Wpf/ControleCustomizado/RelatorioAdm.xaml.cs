@@ -140,7 +140,7 @@ namespace UniMarte.Wpf.ControleCustomizado
             { "Arquitetura", OxyColor.FromRgb(255, 0, 0) },     // Vermelho para Arquitetura
             { "Atendimento dos Funcionários", OxyColor.FromRgb(0, 255, 0) },        // Verde para Atendimento
             { "Ambiente e Limpeza", OxyColor.FromRgb(255, 255, 0) },         // Amarelo para Ambiente
-            { "Qualidade de Obras", OxyColor.FromRgb(255, 165, 0) }            // Laranja para Obras
+            { "Qualidade das Obras", OxyColor.FromRgb(255, 165, 0) }            // Laranja para Obras
         };
 
                 // Cria as séries para cada setor

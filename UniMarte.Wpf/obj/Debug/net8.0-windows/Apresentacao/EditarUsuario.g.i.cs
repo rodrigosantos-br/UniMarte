@@ -103,7 +103,7 @@ namespace UniMarte.Wpf.Apresentacao {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/UniMarte.Wpf;V1.0.0.0;component/apresentacao/editarusuario.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/UniMarte.Wpf;component/apresentacao/editarusuario.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Apresentacao\EditarUsuario.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

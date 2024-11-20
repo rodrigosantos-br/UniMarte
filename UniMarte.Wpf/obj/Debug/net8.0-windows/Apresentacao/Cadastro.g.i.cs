@@ -94,7 +94,7 @@ namespace UniMarte.Wpf.Apresentacao {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/UniMarte.Wpf;V1.0.0.0;component/apresentacao/cadastro.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/UniMarte.Wpf;component/apresentacao/cadastro.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Apresentacao\Cadastro.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

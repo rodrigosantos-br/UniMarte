@@ -1,5 +1,5 @@
-﻿using UniMarte.Web.Models;
-using UniMarte.Web.Models.Interfaces;
+﻿using UniMarte.Web.Data.Interfaces;
+using UniMarte.Web.Models;
 
 namespace UniMarte.Web.Data
 {

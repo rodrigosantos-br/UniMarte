@@ -102,7 +102,7 @@ namespace UniMarte.Wpf.ControleCustomizado {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/UniMarte.Wpf;V1.0.0.0;component/controlecustomizado/relatorio.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/UniMarte.Wpf;component/controlecustomizado/relatorio.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\ControleCustomizado\Relatorio.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

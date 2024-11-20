@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vK8pz/9VKtAuONT6JWBHBFW5F0F1zRlCT3hXJpWyUhg=",
+  "Hash": "OCCZ8Iy3e/nqWMPWsBWcrvUGRn8IGsOwODssLqNyrEw=",
   "Source": "UniMarte.Web",
   "BasePath": "_content/UniMarte.Web",
   "Mode": "Default",
@@ -1427,7 +1427,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 17 Nov 2024 23:03:35 GMT"
+          "Value": "Wed, 20 Nov 2024 15:27:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1464,7 +1464,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 17 Nov 2024 23:03:35 GMT"
+          "Value": "Wed, 20 Nov 2024 15:27:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1919,7 +1919,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 17 Nov 2024 16:55:15 GMT"
+          "Value": "Wed, 20 Nov 2024 15:25:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1956,7 +1956,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 17 Nov 2024 16:55:15 GMT"
+          "Value": "Wed, 20 Nov 2024 15:25:08 GMT"
         },
         {
           "Name": "Cache-Control",

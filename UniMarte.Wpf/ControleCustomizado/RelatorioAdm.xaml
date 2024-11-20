@@ -117,7 +117,7 @@
                         </StackPanel>
                         <StackPanel Orientation="Horizontal" Margin="5">
                             <Ellipse Width="10" Height="10" Fill="Orange" VerticalAlignment="Center" />
-                            <TextBlock Text="Qualidade da Obras" Margin="5,0,0,0" VerticalAlignment="Center" />
+                            <TextBlock Text="Qualidade das Obras" Margin="5,0,0,0" VerticalAlignment="Center" />
                         </StackPanel>
                     </StackPanel>
 
