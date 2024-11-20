@@ -17,7 +17,7 @@ namespace UniMarte.Web.Controllers
         [Route("obterRelatorio")]
         public IActionResult Relatorio()
         {
-            var totalVisitantes = _relatorioRepository.ObterNumeroTotalDeVisitantes();
+            var totalVisitantes = _relatorioRepository.ObterNumeroVisitantesQueResponderam();
             var mediaEstrelas = _relatorioRepository.ObterMediaEstrelas();
 
             var relatorio = new Relatorio

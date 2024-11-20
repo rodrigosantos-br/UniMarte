@@ -2,7 +2,7 @@
 {
     public interface IRelatorioRepository
     {
-        int ObterNumeroTotalDeVisitantes();
+        int ObterNumeroVisitantesQueResponderam();
         double ObterMediaEstrelas();
     }
 }

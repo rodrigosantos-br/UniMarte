@@ -12,16 +12,17 @@ namespace UniMarte.Wpf.DAL
                 using (SqlConnection con = Conexao.Conectar())
                 {
                     SqlCommand cmd = new SqlCommand(@"
-            SELECT 
-                (SELECT COUNT(DISTINCT idVisitante) FROM Respostas) AS TotalVisitantes,
-                
-                (SELECT AVG(TRY_CONVERT(float, r.resposta)) 
-                 FROM Respostas r 
-                 JOIN Perguntas p ON r.idPergunta = p.IdPergunta 
-                 WHERE p.tipoResposta = 'Estrelas' 
-                   AND r.resposta IS NOT NULL 
-                   AND r.resposta <> '' 
-                   AND ISNUMERIC(r.resposta) = 1) AS MediaRespostas;", con);
+                        SELECT 
+                            (SELECT COUNT(DISTINCT idVisitante) FROM Respostas) AS TotalVisitantes,
+                            
+                            (SELECT AVG(TRY_CONVERT(float, r.resposta)) 
+                             FROM Respostas r 
+                             JOIN Perguntas p ON r.idPergunta = p.IdPergunta 
+                             WHERE p.tipoResposta = 'Estrelas' 
+                               AND r.resposta IS NOT NULL 
+                               AND r.resposta <> '' 
+                               AND ISNUMERIC(r.resposta) = 1) AS MediaRespostas;
+                        ", con);
 
                     using (SqlDataReader reader = cmd.ExecuteReader())
                     {

@@ -1,4 +1,5 @@
-﻿using UniMarte.Web.Data.Interfaces;
+﻿using Microsoft.EntityFrameworkCore;
+using UniMarte.Web.Data.Interfaces;
 
 namespace UniMarte.Web.Data
 {
@@ -32,9 +33,19 @@ namespace UniMarte.Web.Data
             return Math.Round(mediaEstrelas, 1);
         }
 
-        public int ObterNumeroTotalDeVisitantes()
+        public int ObterNumeroVisitantesQueResponderam()
         {
-            return _context.Visitantes.Count();
+            var totalVisitantesQueResponderam = _context.Respostas
+                                                        .Join(_context.Perguntas, r => r.IdPergunta, p => p.IdPergunta, (r, p) => new { r, p })
+                                                        .Where(x => !string.IsNullOrEmpty(x.r.RespostaTexto) &&
+                                                                    x.p.TipoResposta == "Estrelas" &&
+                                                                    EF.Functions.IsNumeric(x.r.RespostaTexto)) // Usa a função IsNumeric do EF
+                                                        .Select(x => x.r.IdVisitante)
+                                                        .Distinct()
+                                                        .Count();
+
+            return totalVisitantesQueResponderam;
         }
+
     }
 }
