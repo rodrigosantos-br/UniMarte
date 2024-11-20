@@ -1,6 +1,6 @@
-﻿using UniMarteWpf.DAL;
+﻿using UniMarte.Wpf.DAL;
 
-namespace UniMarteWpf.Controle
+namespace UniMarte.Wpf.Controle
 {
     public class RelatorioControle
     {

@@ -1,6 +1,6 @@
 ﻿using Microsoft.Data.SqlClient;
 
-namespace UniMarteWpf.DAL
+namespace UniMarte.Wpf.DAL
 {
     public class Conexao
     {

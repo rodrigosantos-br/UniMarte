@@ -1,4 +1,4 @@
-﻿namespace UniMarteWpf.Modelo
+﻿namespace UniMarte.Wpf.Modelo
 {
     public class Visitante
     {

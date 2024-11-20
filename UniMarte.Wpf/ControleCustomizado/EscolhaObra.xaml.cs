@@ -1,8 +1,8 @@
 ﻿using System.Collections.ObjectModel;
 using System.Windows.Controls;
-using UniMarteWpf.Modelo;
+using UniMarte.Wpf.Modelo;
 
-namespace UniMarteWpf.ControleCustomizado
+namespace UniMarte.Wpf.ControleCustomizado
 {
     public partial class EscolhaObra : UserControl, IResposta
     {

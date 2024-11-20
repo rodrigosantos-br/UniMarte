@@ -1,7 +1,7 @@
 ﻿using Microsoft.Data.SqlClient;
-using UniMarteWpf.Modelo;
+using UniMarte.Wpf.Modelo;
 
-namespace UniMarteWpf.DAL
+namespace UniMarte.Wpf.DAL
 {
     public class ObraDAO
     {

@@ -1,7 +1,7 @@
 ﻿using Microsoft.Data.SqlClient;
-using UniMarteWpf.DAL;
+using UniMarte.Wpf.DAL;
 
-namespace UniMarteWpf.DataAccess
+namespace UniMarte.Wpf.DataAccess
 {
     public class RelatorioAdmDAO
     {

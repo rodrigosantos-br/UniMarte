@@ -1,8 +1,8 @@
 ﻿using System.Windows;
-using UniMarteWpf.Controle;
-using UniMarteWpf.Modelo;
+using UniMarte.Wpf.Controle;
+using UniMarte.Wpf.Modelo;
 
-namespace UniMarteWpf.Apresentacao
+namespace UniMarte.Wpf.Apresentacao
 {
     /// <summary>
     /// Lógica interna para AdicionarUsuario.xaml

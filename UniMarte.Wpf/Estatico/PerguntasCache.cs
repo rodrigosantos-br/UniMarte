@@ -1,6 +1,6 @@
-﻿using UniMarteWpf.Modelo;
+﻿using UniMarte.Wpf.Modelo;
 
-namespace UniMarteWpf.Estatico
+namespace UniMarte.Wpf.Estatico
 {
     public static class PerguntasCache
     {

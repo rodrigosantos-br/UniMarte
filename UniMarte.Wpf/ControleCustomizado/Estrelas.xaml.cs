@@ -1,9 +1,9 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media.Imaging;
-using UniMarteWpf.Modelo;
+using UniMarte.Wpf.Modelo;
 
-namespace UniMarteWpf.ControleCustomizado
+namespace UniMarte.Wpf.ControleCustomizado
 {
     /// <summary>
     /// Interação lógica para Estrelas.xam

@@ -1,4 +1,4 @@
-﻿namespace UniMarteWpf.Estatico
+﻿namespace UniMarte.Wpf.Estatico
 {
     public static class SessaoVisitante
     {

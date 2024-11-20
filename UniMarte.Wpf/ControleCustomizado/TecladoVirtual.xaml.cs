@@ -1,7 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 
-namespace UniMarteWpf.ControleCustomizado
+namespace UniMarte.Wpf.ControleCustomizado
 {
     /// <summary>
     /// Interação lógica para TecladoVirtual.xam

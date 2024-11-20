@@ -1,8 +1,8 @@
 ﻿using Microsoft.Data.SqlClient;
-using UniMarteWpf.Estatico;
-using UniMarteWpf.Modelo;
+using UniMarte.Wpf.Estatico;
+using UniMarte.Wpf.Modelo;
 
-namespace UniMarteWpf.DAL
+namespace UniMarte.Wpf.DAL
 {
     public class VisitanteDAO
     {

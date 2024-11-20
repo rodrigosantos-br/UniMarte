@@ -1,7 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 
-namespace UniMarteWpf.Utils
+namespace UniMarte.Wpf.Utils
 {
     internal class TecladoUtils
     {

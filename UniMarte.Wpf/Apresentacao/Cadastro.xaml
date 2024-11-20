@@ -1,7 +1,7 @@
-﻿<Window x:Class="UniMarteWpf.Apresentacao.Cadastro"
+﻿<Window x:Class="UniMarte.Wpf.Apresentacao.Cadastro"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:custom="clr-namespace:UniMarteWpf.ControleCustomizado" 
+        xmlns:custom="clr-namespace:UniMarte.Wpf.ControleCustomizado" 
         Title="Cadastro"
         WindowStyle="None" WindowState="Maximized">
     

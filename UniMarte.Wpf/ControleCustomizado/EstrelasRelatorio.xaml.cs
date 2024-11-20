@@ -2,7 +2,7 @@
 using System.Windows.Controls;
 using System.Windows.Media.Imaging;
 
-namespace UniMarteWpf.ControleCustomizado
+namespace UniMarte.Wpf.ControleCustomizado
 {
     public partial class EstrelasRelatorio : UserControl
     {

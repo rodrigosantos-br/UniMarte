@@ -1,7 +1,7 @@
 ﻿using System.Windows;
-using UniMarteWpf.ControleCustomizado;
+using UniMarte.Wpf.ControleCustomizado;
 
-namespace UniMarteWpf.Apresentacao
+namespace UniMarte.Wpf.Apresentacao
 {
     /// <summary>
     /// Lógica interna para Adm.xaml

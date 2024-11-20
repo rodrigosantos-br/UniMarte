@@ -1,11 +1,11 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
-using UniMarteWpf.DAL;
-using UniMarteWpf.Estatico;
-using UniMarteWpf.Modelo;
-using UniMarteWpf.ControleCustomizado;
+using UniMarte.Wpf.DAL;
+using UniMarte.Wpf.Estatico;
+using UniMarte.Wpf.Modelo;
+using UniMarte.Wpf.ControleCustomizado;
 
-namespace UniMarteWpf.Controle
+namespace UniMarte.Wpf.Controle
 {
     public class PerguntaControle
     {

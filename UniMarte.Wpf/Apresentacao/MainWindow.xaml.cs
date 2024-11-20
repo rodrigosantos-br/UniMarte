@@ -4,7 +4,7 @@ using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Threading;
 
-namespace UniMarteWpf.Apresentacao
+namespace UniMarte.Wpf.Apresentacao
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

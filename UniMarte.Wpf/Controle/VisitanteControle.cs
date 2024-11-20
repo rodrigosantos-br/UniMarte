@@ -1,8 +1,8 @@
-﻿using UniMarteWpf.DAL;
-using UniMarteWpf.Estatico;
-using UniMarteWpf.Modelo;
+﻿using UniMarte.Wpf.DAL;
+using UniMarte.Wpf.Estatico;
+using UniMarte.Wpf.Modelo;
 
-namespace UniMarteWpf.Controle
+namespace UniMarte.Wpf.Controle
 {
     public class VisitanteControle
     {

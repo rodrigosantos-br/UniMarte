@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace UniMarteWpf.Apresentacao
+namespace UniMarte.Wpf.Apresentacao
 {
     public partial class PopupSatisfacao : Window
     {

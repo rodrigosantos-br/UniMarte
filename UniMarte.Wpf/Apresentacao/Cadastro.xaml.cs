@@ -1,8 +1,8 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
-using UniMarteWpf.Controle;
+using UniMarte.Wpf.Controle;
 
-namespace UniMarteWpf.Apresentacao
+namespace UniMarte.Wpf.Apresentacao
 {
     /// <summary>
     /// Lógica interna para Cadastro.xaml

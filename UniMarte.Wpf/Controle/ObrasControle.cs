@@ -2,11 +2,11 @@
 using System.Windows.Controls;
 using System.Windows.Media.Imaging;
 using System.Windows.Threading;
-using UniMarteWpf.Apresentacao;
-using UniMarteWpf.DAL;
-using UniMarteWpf.Modelo;
+using UniMarte.Wpf.Apresentacao;
+using UniMarte.Wpf.DAL;
+using UniMarte.Wpf.Modelo;
 
-namespace UniMarteWpf
+namespace UniMarte.Wpf
 {
     public class ObrasControle
     {

@@ -4,9 +4,9 @@ using OxyPlot.Legends;
 using OxyPlot.Series;
 using OxyPlot.Wpf;
 using System.Windows.Controls;
-using UniMarteWpf.DataAccess;
+using UniMarte.Wpf.DataAccess;
 
-namespace UniMarteWpf.ControleCustomizado
+namespace UniMarte.Wpf.ControleCustomizado
 {
     public partial class RelatorioAdm : UserControl
     {

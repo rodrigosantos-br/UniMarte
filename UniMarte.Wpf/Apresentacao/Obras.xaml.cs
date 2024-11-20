@@ -1,7 +1,7 @@
 ﻿using System.Windows;
-using UniMarteWpf.Controle;
+using UniMarte.Wpf.Controle;
 
-namespace UniMarteWpf.Apresentacao
+namespace UniMarte.Wpf.Apresentacao
 {
     /// <summary>
     /// Lógica interna para Obras.xaml

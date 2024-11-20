@@ -1,9 +1,9 @@
 ﻿using System.Windows;
 using System.Windows.Input;
 using System.Windows.Threading;
-using UniMarteWpf.Apresentacao;
+using UniMarte.Wpf.Apresentacao;
 
-namespace UniMarteWpf
+namespace UniMarte.Wpf
 {
     /// <summary>
     /// Interaction logic for App.xaml

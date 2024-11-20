@@ -1,9 +1,9 @@
 ﻿using System.Windows;
-using UniMarteWpf.Controle;
-using UniMarteWpf.Modelo;
-using UniMarteWpf.ControleCustomizado;
+using UniMarte.Wpf.Controle;
+using UniMarte.Wpf.Modelo;
+using UniMarte.Wpf.ControleCustomizado;
 
-namespace UniMarteWpf.Apresentacao
+namespace UniMarte.Wpf.Apresentacao
 {
     /// <summary>
     /// Lógica interna para Satisfacao.xaml
