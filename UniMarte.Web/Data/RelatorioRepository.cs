@@ -14,7 +14,7 @@ namespace UniMarte.Web.Data
 
         public double ObterMediaEstrelas()
         {
-            // Primeiro, pegue as perguntas e respostas relacionadas ao tipo "Estrelas"
+            
             var respostas = _context.Perguntas
                                     .Join(_context.Respostas,
                                         p => p.IdPergunta,
@@ -22,9 +22,9 @@ namespace UniMarte.Web.Data
                                         (p, r) => new { p, r })
                                     .Where(x => x.p.TipoResposta == "Estrelas")
                                     .Select(x => x.r.RespostaTexto)
-                                    .ToList();  // Executa a consulta no banco e traz os dados para memória
+                                    .ToList();
 
-            // Depois, converta e calcule a média na memória
+            
             var mediaEstrelas = respostas
                                 .Select(resposta => double.TryParse(resposta, out var result) ? result : 0)
                                 .DefaultIfEmpty(0)
