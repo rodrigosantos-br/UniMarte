@@ -14,11 +14,11 @@
                 {
                     <div class="sim-nao-options">
                         <label class="sim-nao-button">
-                            <input type="radio" name="Respostas[@index].RespostaTexto" value="Sim" required />
+                            <input type="hidden" name="Respostas[@index].RespostaTexto" value="Sim" required />
                             <span>Sim</span>
                         </label>
                         <label class="sim-nao-button">
-                            <input type="radio" name="Respostas[@index].RespostaTexto" value="Não" />
+                            <input type="hidden" name="Respostas[@index].RespostaTexto" value="Não" />
                             <span>Não</span>
                         </label>
                     </div>
@@ -41,7 +41,7 @@
                         @foreach (var obra in ViewBag.Obras as List<UniMarte.Web.Models.Obra>)
                         {
                             <label class="obra-option">
-                                <input type="radio" name="Respostas[@index].RespostaTexto" value="Obra @obra.IdObra" required />
+                                <input type="hidden" name="Respostas[@index].RespostaTexto" value="Obra @obra.IdObra" required />
                                 <img src="@obra.ImagemUrl" alt="@obra.Titulo" class="obra-image" />
                                 <div class="obra-title">@obra.Titulo</div>
                             </label>
