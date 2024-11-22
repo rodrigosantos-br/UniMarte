@@ -11,7 +11,6 @@ namespace UniMarte.Wpf.Apresentacao
     public partial class Satisfacao : Window
     {
         private PerguntaControle perguntaControle;
-        private RelatorioControle relatorioControle = new RelatorioControle();
 
         public Satisfacao()
         {
@@ -39,7 +38,11 @@ namespace UniMarte.Wpf.Apresentacao
                 btnProximaPergunta.Visibility = Visibility.Collapsed;
                 stkRelatorio.Visibility = Visibility.Visible;
                 btnFim.Visibility = Visibility.Visible;
+
+                // Carrega o relatório apenas no final
+                ctcRelatorio.CarregarRelatorio();
             }
+
         }
 
         private void BtnFinalizar_Click(object sender, RoutedEventArgs e)

@@ -52,7 +52,7 @@
                         Foreground="White" FontFamily="Montserrat" VerticalAlignment="Center"  HorizontalAlignment="Center" Cursor="Hand"
                         Style="{StaticResource Padrao}" Margin="0 50 0 0" Visibility="Collapsed" Width="150" Height="50"/>
                 <StackPanel x:Name="stkRelatorio" Background="White" Grid.Row="0" Grid.RowSpan="2" Visibility="Collapsed">
-                    <custom:Relatorio x:Name="ctcRelatorio" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <custom:Relatorio x:Name="ctcRelatorio" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
                 </StackPanel>
             </Grid>
         </Border>
