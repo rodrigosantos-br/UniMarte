@@ -1,7 +1,32 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Projects\\UniMarte\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|c:\\projects\\unimarte\\unimarte.web\\views\\relatorio\\relatorio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|solutionrelative:unimarte.web\\views\\relatorio\\relatorio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|c:\\projects\\unimarte\\unimarte.web\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|solutionrelative:unimarte.web\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53944BE0-952E-4F70-8504-D6C7B31AF52E}|UniMarte.Wpf\\UniMarte.Wpf.csproj|c:\\projects\\unimarte\\unimarte.wpf\\controlecustomizado\\estrelasrelatorio.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53944BE0-952E-4F70-8504-D6C7B31AF52E}|UniMarte.Wpf\\UniMarte.Wpf.csproj|solutionrelative:unimarte.wpf\\controlecustomizado\\estrelasrelatorio.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53944BE0-952E-4F70-8504-D6C7B31AF52E}|UniMarte.Wpf\\UniMarte.Wpf.csproj|c:\\projects\\unimarte\\unimarte.wpf\\controle\\relatoriocontrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53944BE0-952E-4F70-8504-D6C7B31AF52E}|UniMarte.Wpf\\UniMarte.Wpf.csproj|solutionrelative:unimarte.wpf\\controle\\relatoriocontrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|c:\\projects\\unimarte\\unimarte.web\\controllers\\relatoriocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|solutionrelative:unimarte.web\\controllers\\relatoriocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|c:\\projects\\unimarte\\unimarte.web\\data\\relatoriorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF9D7BD8-549A-4752-942A-D1BE4364B3DC}|UniMarte.Web\\UniMarte.Web.csproj|solutionrelative:unimarte.web\\data\\relatoriorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +47,84 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EstrelasRelatorio.xaml.cs",
+              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarte.Wpf\\ControleCustomizado\\EstrelasRelatorio.xaml.cs",
+              "RelativeDocumentMoniker": "UniMarte.Wpf\\ControleCustomizado\\EstrelasRelatorio.xaml.cs",
+              "ToolTip": "C:\\Projects\\UniMarte\\UniMarte.Wpf\\ControleCustomizado\\EstrelasRelatorio.xaml.cs",
+              "RelativeToolTip": "UniMarte.Wpf\\ControleCustomizado\\EstrelasRelatorio.xaml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAQwCEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T09:08:03.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RelatorioControle.cs",
+              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarte.Wpf\\Controle\\RelatorioControle.cs",
+              "RelativeDocumentMoniker": "UniMarte.Wpf\\Controle\\RelatorioControle.cs",
+              "ToolTip": "C:\\Projects\\UniMarte\\UniMarte.Wpf\\Controle\\RelatorioControle.cs",
+              "RelativeToolTip": "UniMarte.Wpf\\Controle\\RelatorioControle.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T09:07:54.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarte.Web\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "UniMarte.Web\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Projects\\UniMarte\\UniMarte.Web\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "UniMarte.Web\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAEADAAAAAAAAAAAAAF8DAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-22T08:59:42.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Relatorio.cshtml",
+              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarte.Web\\Views\\Relatorio\\Relatorio.cshtml",
+              "RelativeDocumentMoniker": "UniMarte.Web\\Views\\Relatorio\\Relatorio.cshtml",
+              "ToolTip": "C:\\Projects\\UniMarte\\UniMarte.Web\\Views\\Relatorio\\Relatorio.cshtml",
+              "RelativeToolTip": "UniMarte.Web\\Views\\Relatorio\\Relatorio.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T08:57:37.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RelatorioRepository.cs",
+              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarte.Web\\Data\\RelatorioRepository.cs",
+              "RelativeDocumentMoniker": "UniMarte.Web\\Data\\RelatorioRepository.cs",
+              "ToolTip": "C:\\Projects\\UniMarte\\UniMarte.Web\\Data\\RelatorioRepository.cs",
+              "RelativeToolTip": "UniMarte.Web\\Data\\RelatorioRepository.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAwwDMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T08:57:19.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RelatorioController.cs",
+              "DocumentMoniker": "C:\\Projects\\UniMarte\\UniMarte.Web\\Controllers\\RelatorioController.cs",
+              "RelativeDocumentMoniker": "UniMarte.Web\\Controllers\\RelatorioController.cs",
+              "ToolTip": "C:\\Projects\\UniMarte\\UniMarte.Web\\Controllers\\RelatorioController.cs",
+              "RelativeToolTip": "UniMarte.Web\\Controllers\\RelatorioController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T08:57:06.948Z",
+              "EditorCaption": ""
             }
           ]
         }

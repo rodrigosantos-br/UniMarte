@@ -780,11 +780,15 @@ body {
         text-align: center;
     }
 
-    .stars-container {
-        text-align: center;
-        margin: 2rem 0;
-        font-size: 2rem;
-    }
+.stars-container {
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 5px; /* Espaço entre as estrelas */
+}
+
 
     .star-filled {
         color: #ffd700;
@@ -794,6 +798,23 @@ body {
     .star-empty {
         color: #ddd;
     }
+
+.star-half {
+    position: relative;
+    display: inline-block;
+    color: lightgray; /* Base para a estrela vazia */
+}
+
+    .star-half::before {
+        content: '★'; /* Caracter de estrela */
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 50%; /* Define metade da largura */
+        overflow: hidden;
+        color: gold; /* Cor dourada para a parte preenchida */
+    }
+
 
     .message {
         text-align: center;
