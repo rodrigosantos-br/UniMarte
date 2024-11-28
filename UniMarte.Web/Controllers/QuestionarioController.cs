@@ -92,16 +92,8 @@ namespace UniMarte.Web.Controllers
                 // Mensagem de erro para o usuário
                 ModelState.AddModelError("", "Ocorreu um erro ao salvar as respostas. Por favor, tente novamente.");
 
-                // Recupera perguntas e obras novamente para exibir na página
-                var perguntas = _perguntaRepository.Buscar();
-                var obras = _obraRepository.ObterTodasAsObras().Result;
-                ViewBag.VisitanteId = visitanteId.Value;
-                ViewBag.Obras = obras;
-
-                return View("ExibirPerguntas", perguntas);
+                return RedirectToAction("Cadastrar", "Visitantes");
             }
         }
-
-
     }
 }
