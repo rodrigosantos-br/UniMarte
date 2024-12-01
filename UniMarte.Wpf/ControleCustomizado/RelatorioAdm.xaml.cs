@@ -32,6 +32,11 @@ namespace UniMarte.Wpf.ControleCustomizado
             ConfigurarGraficoLinhas();
         }
 
+        public void AtualizarDados()
+        {
+            CarregarDados();
+        }
+
         private void ConfigurarGraficoPizza()
         {
             // Configurando o gráfico de pizza

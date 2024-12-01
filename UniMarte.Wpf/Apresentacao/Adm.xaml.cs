@@ -16,9 +16,17 @@ namespace UniMarte.Wpf.Apresentacao
 
         private void CarregarRelatorio()
         {
-            // Limpa o conteúdo anterior do Grid
-            grdGerenciador.Children.Clear();
-            grdGerenciador.Children.Add(relatorioAdm);
+            // Tenta acessar o controle existente
+            if (grdGerenciador.Children.Count > 0 && grdGerenciador.Children[0] is RelatorioAdm relatorioAtual)
+            {
+                relatorioAtual.AtualizarDados(); // Atualiza os dados sem recriar o controle
+            }
+            else
+            {
+                // Caso o controle não exista, cria um novo
+                grdGerenciador.Children.Clear();
+                grdGerenciador.Children.Add(new RelatorioAdm());
+            }
         }
 
         private void Relatorio_Click(object sender, RoutedEventArgs e)
